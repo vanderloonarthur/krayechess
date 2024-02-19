@@ -158,9 +158,9 @@ permalink: /milaan.md/
 <figcaption>Sloppenwijk</figcaption>
     </div>
     <div class="center-text">
-      <p>Gisteren (10 mei 2016) ben ik door Dini van de fysiotherapeut achter het huis, afgezet bij een tankstation voor Rotterdam. Ze is echt een schat. We hebben namelijk ongeveer een uur naar Europoort 1213 gezocht. Ik ben tot de conclusie gekomen dat ie niet bestaat.
+      <p>Gisteren (10 mei 2016) ben ik door Dini van de fysiotherapeut achter het huis, afgezet bij een tankstation voor Rotterdam. Ze is echt een schat. We hebben namelijk ongeveer een uur naar Europoort 1213 gezocht. Ik ben tot de conclusie gekomen dat ie niet bestaat.</p>
       
-      Milaan
+  <h2>Milaan</h2><p>
       Dit ging niet als gepland, niet dat ik iets gepland had!
       Donderdag 12 mei ben ik op Hoop van Zegen naar het centrum van Milaan gegaan. Ik wist niet dat ik “dat gevoel” zou krijgen. Het gevoel van verdwaasdheid. Dat je je extreem moeilijk kan concentreren. Een soort blindheid. 
       Toch maar vanuit Genova met de trein richting Milan CLE gegaan. Ik had in gedachte om op een eerdere stop te stoppen en ergens mijn tentje op te slaan.
@@ -180,9 +180,9 @@ permalink: /milaan.md/
       En ja, na wat heen en weer gebel heeft ze me geld geleend en heb ik in een 2-sterrenhotel kunnen slapen: Hotel Virgilio. Tot 08:00 uur uitgeslapen.
       De dag erna geprobeerd of er een blablacar reed, van de website blablacar.com, wat niet het geval was en me begeven naar het station. Ik kocht een kaartje naar Amsterdam via Zurich en dronk een kop van de heerlijkste koffie.
       Ik ben blij dat ik zulke lieve ouders heb. Ik wil niet weten wat voor stress ik hen heb bezorgd. 
-      Ik neem volgende keer in ieder geval meer geld mee en zorg ik dat ik een soort van plan heb, maar wat een avontuur en ik heb eindelijk Italië gezien!
+      Ik neem volgende keer in ieder geval meer geld mee en zorg ik dat ik een soort van plan heb, maar wat een avontuur en ik heb eindelijk Italië gezien!</p>
       
-      Eerste dag.
+  <h2>Eerste dag</h2><p>
       Ik was dus half voorbereid, in een impuls, meegegaan met Dini op zoek naar een havenpoort die niet bestaat, zonder geld op de bank noch schone kleren in mijn tas. Ik was klaar om me in het avontuur te storten. 
       Dus na eindeloos rond en door Rotterdam rijden afgezet op de parkeerplaats net voor Rotterdam.
       Aldaar kwam ik in contact met een aantal vrachtwagenchauffeurs. Van 1 dacht ik te begrijpen dat hij over 2 uur naar Turkije zou rijden en me wel ergens in Zwitserland af zou kunnen zetten. Ik dacht: “nu kan je niet mee terug Arthur” en ik ging ervoor.
@@ -204,24 +204,23 @@ permalink: /milaan.md/
       Ik werd opgepikt, door Giel. Een joviale ICT ’er die werkte al administrator voor McDonalds restaurants. Hij reed standaard 158 km per uur, omdat hij als McDonalds medewerker geen punt van zijn rijbewijs af zou krijgen en enkel een boete van 45 euro zou krijgen. 
       Om niet in slaap te vallen, zei hij, dronk hij een flesje wijn!
       Hij had een app genaamd Waye op zijn telefoon die hem een seintje gaf wanneer hij langs een flitser die was gesignaleerd langsreed, waarbij hij hard op de rem trapte om vervolgens weer hard door te rijden. Hij verdiende goed bij McDonalds, maar had hiernaast nog allemaal handeltjes, zoals het verkopen van de onderdelen die hij verving in de restaurants van McDonalds en kleding direct uit China.
-      Hij zette me op het “tankstation eiland” voor Dijon af, waar hij me een van zijn flesjes wijn gaf.
+      Hij zette me op het “tankstation eiland” voor Dijon af, waar hij me een van zijn flesjes wijn gaf.</p>
       
-      Dijon.
+  <h2>Dijon</h2><p>
       Op de plek waar ik sliep was enkel een vrachtwagenpark, een tankstation en een aantal winkels. Lifters zullen weten dat het moeilijk is om van zo’n terrein af te komen om een goede plek voor je tent te vinden. Het is een soort eilandje.
       Die dag had het wat geregend en de grond was daardoor erg drassig, waardoor de goede plekken waar de bomen stonden onbegaanbaar waren.
       Uiteindelijk heb ik een plekje gevonden achter een struik zo’n 20 meter verwijderd van de eerste parkeerplek. Dit was mijn beste kans om niet in de modder te slapen of ontdekt te worden.
       Ik heb héérlijk geslapen, waarschijnlijk door het flesje wijn wat Giel me gegeven had. Ik werd rond 07:00 - 07:30 wakker. Even gedoucht en wat kleren gewassen (ik was in dermate een opwelling vertrokken dat ik enkel 2 paar sokken en 2 onderbroeken bij me had, waarvan ik er 1 aanhad.) Ik had alleen survivalspullen bij me. Dit zou een heuse expeditie worden. Sommige mensen zouden het dom of idioot noemen.
-      De mensen bij het tankstation bij Dijon waren erg aardig en het duurde dan ook niet lang voordat ik de lift met Jamil had geregeld. Jamil was een man van rond de 40 met een half Marokkaanse en half Franse afkomst. Hij bracht me naar Burg en Bresse.
+      De mensen bij het tankstation bij Dijon waren erg aardig en het duurde dan ook niet lang voordat ik de lift met Jamil had geregeld. Jamil was een man van rond de 40 met een half Marokkaanse en half Franse afkomst. Hij bracht me naar Burg en Bresse.</p>
       
-      Richting Milaan.
+  <h2>Richting Milaan</h2><p>
       Ik was erg moe, dus heb het voornaamste deel van de reis met Jamil geslapen. In Burg en Bresse ben ik zo’n 80 minuten gebleven tot ik Dennis vond, een man van 43 uit Italië. 
       Dennis kwam net uit Engeland terug waar hij dure winkels als Armani en Versace inrichtte, hij was erg amicaal en we hadden goed contact. Hij zou me naar Genova, net buiten Milaan brengen.
       Dennis had de meest intense verhalen over Italië, voornamelijk over Berlusconi en de Maffia. 
       Berlusconi behoort tot de 20 rijkste mensen ter wereld. Hij heeft deze positie verkregen door afpersing van het Italiaanse volk. De verhalen die Dennis me vertelde hebben veel indruk op me gemaakt.
       Politiek wordt hier geleid door de Maffia. Zij gaan waar het geld zit. De burgers van Italië worden erg hard genaaid. De politiek die hen eigenlijk zou moeten beschermen buit ze uit en vernield de cultuur. Dit doen ze bijvoorbeeld door de schoolsystemen te veranderen, waarbij voornamelijk privé scholen worden geattendeerd. Zo creëerde Berlusconi dus een samenleving van “managers” die eigenlijk niks kunnen. Ik denk dat de verandering naar privé scholen gemaakt was om de burgers af te persen.
       De Maffia is in controle hier en de mensen zijn er bang voor!
-      Gelukkig heb ik niet veel geld dus zullen ze mij met rust laten.
-      </p>
+      Gelukkig heb ik niet veel geld dus zullen ze mij met rust laten.</p>
     </div>
     <!-- Back to Gallery button -->
     <a href="{{ site.baseurl }}/travelblog.md/" class="back-to-gallery">Back to Gallery</a>

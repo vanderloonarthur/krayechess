@@ -20,9 +20,6 @@ permalink: /stuttgart.md/
 body, p {
   color: white;
 }
-h1, h2, h3, h4, h5, h6 {
-  color: white;
-}
 .center-text {
   font-size: 1.5vw;
   color: #FF2400; /* You may adjust this color if needed */
@@ -225,7 +222,7 @@ Dankzij een uitmuntende advocaat is de zaak onvoorwaardelijk geseponeerd en ben 
 Bij schizofrenie verlies je schijnbaar na loop van tijd intelligentie, waarbij bij mij geen sprake van was, zegt mijn psychiater...</p>
 <img src="{{ site.baseurl }}/assets/images/bloemen.jpeg" alt="Excuses">
 <figcaption>Excuses</figcaption>
-<h1>Een waargebeurd verhaal over psychose</h1>
+<h1>Een waargebeurd verhaal van psychose</h1>
 <h2>5 December, 2020</h2>
 <p>
 Ik merkte dat ze achter mijn generaal aankwamen, dus stuurde ik de spion eropaf en warempel de maarschalk!</p>
