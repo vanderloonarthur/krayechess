@@ -169,7 +169,6 @@ h2 + p {
   </div>
   <div class="fullscreen-container">
       <img src="{{ site.baseurl }}/assets/images/afghan2.jpeg" alt="Afghan Girl" class="small-image" />
-      <figcaption>Afghan Girl</figcaption>
   </div>
   <div class="center-text">
   <h1>Even slikken en weer doorgaan</h1>
