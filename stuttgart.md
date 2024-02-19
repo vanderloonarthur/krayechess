@@ -238,7 +238,7 @@ Het heeft even mogen duren, maar ik heb uiteindelijk een slaapplek gevonden in G
 • Mafia oppakken
 • Drugs van de straat • Prostitutie afschaffen • Beschaving brengen
 • Verdrag afsluiten van de landen omringende Nederland: 5 landen verband</p>
-<img src="{{ site.baseurl }}/assets/images/fist.jpg" alt="Powerfist">
+<img src="{{ site.baseurl }}/assets/images/fist.JPG" alt="Powerfist">
 <figcaption>Powerfist</figcaption>
 <h3>III. Power to the People</h3>
 <p>
