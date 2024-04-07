@@ -159,15 +159,48 @@ h2 + p {
 <body>
 <div class="center-content">
   <div id="newText" style="display: block;">
-  <br>
     <h1>Marshall Stuttgart</h1>
       <img src="{{ site.baseurl }}/assets/images/afghan2.jpeg" alt="Afghan Girl" class="small-image" />
-      <figcaption>Afghan Girl</figcaption>
+      <figcaption>Afghan Girl [source: https://www.nationalgeographic.com]</figcaption>
   </div>
-  <div class="fullscreen-container">
-      <img src="{{ site.baseurl }}/assets/images/afghan2.jpeg" alt="Afghan Girl" class="small-image" />
-  </div>
+
   <div class="center-text">
+  <h1>Een waargebeurd verhaal van psychose</h1>
+<h2>5 December, 2020</h2>
+<p>
+Ik merkte dat ze achter mijn generaal aankwamen, dus stuurde ik de spion eropaf en warempel de maarschalk!</p>
+ <h3>I. Het begin</h3>
+ <p>
+Het plan is om te vragen om me mee te nemen de K2 op. Ik blijf daar bij de passage, totdat ik ze tegenkom in China/Pakistan. Ik ben nu op weg naar Groningen, waar ik zal overnachten. Ik zit in treinstel 8721 richting Amsterdam dat is mijn eerste stop. Volgende stop: Almere. Ik voel me goed, maar ik weet dat het gevaar loert. K2 is de heilige graal voor bergbeklimmers en er wordt gefluisterd, dat het beter is dan het leven zelf. Ik doe dit om mezelf te vinden en van mezelf te leren houden, want alleen dan kan ik van een ander leren houden.
+In Zwolle uitgestapt, maar kon nergens slapen, dus gelukkig nog een bus naar Meppel gevonden en zit nu in de trein naar Groningen, daar ga ik lekker slapen.</p>
+<h3>II. Réal</h3>
+<p>
+Het heeft even mogen duren, maar ik heb uiteindelijk een slaapplek gevonden in Groningen. Ik heb een aantal punten opgeschreven.
+• Honger
+• Corruptie verslaan
+• Mafia oppakken
+• Drugs van de straat • Prostitutie afschaffen • Beschaving brengen
+• Verdrag afsluiten van de landen omringende Nederland: 5 landen verband</p>
+<img src="{{ site.baseurl }}/assets/images/fist.JPG" alt="Powerfist">
+<figcaption>Powerfist</figcaption>
+<h3>III. Power to the People</h3>
+<p>
+I was just stopped by the German police in Weener, now I’m in the bus to Leer and going to Berlin.. they wanted to see my passport and asked if I had drugs on me.
+I’m in the back of the bus I like the back of the bus. I told myself to not let any woman stop me and trust the planet Mars.
+’Not all people are good, but ALL people want to help!’
+Im in Bremen, I need clean clothes. I’m in the tram now to Stuttgart through train also I need my medication but most of all I need money and a place to stay.
+ 1
+Viorel is my new friend from Romania he’s coming to Amsterdam in March hopefully. I met him in the train station in Bremen. We both agreed that we don’t like police. Now I’m in the train to Frankfurt and after Stuttgart. I believe I saw an eagle, the crows had nothing on the eagle. It was over at the flight command center. I took a picture.
+They checked to see if I had a ticket, which I didn’t have. I’m getting out now in 20 minutes I’m hoping shes not going to get another train conductor. Bless her.. she let me stay till the next stop, which is Frankfurt. She’s an angel! I think god put one on earth bless her, she’s more precious than any gem!</p>
+<h3>IV. To Oberhausen</h3>
+<p>
+So I slept till late this morning. I need new clothes. I need new everything. I’m in the train now to Köln. And after Stuttgart, where I’ll probably spend the night. I need comfort, something these train chairs don’t provide. I’m arriving at Köln trainstation. Can’t wait to see what its like nowadays.
+So I’ve finally found a place to sleep after crossing Stuttgart for most of the night. I’m staying at some lovely hotel, the only problem was that they only let businessmen stay in Stuttgart. So I’m a community entrepreneur for a private company. So I’m enjoying a beer in my room while I write this. What I’m going to do tomorrow is still a mystery.. At first I didnt know that they didn’t allow privates to stay at Stuttgart. So I said I was a private. The owner of the hotel said that it’s not allowed so I took my chances and said I misunderstood him: I’m from a private company!
+So let’s make this world a better place so our children can overcome and their children and their children’s children for generations to come, prosperous under the sun! You can either be with us, or be wrong.</p>
+<h3>V. Stuttgart</h3>
+<p>
+I didn’t like those sugar almonds the pastor gave me, I just wanted to swallow it whole, but couldn’t. I was definitely impolite to spit it out so I munched it up, just a bit of headache.
+Completely disconnected from society and from his generation. I’m hungry, my clothes stink and need sleep. I need to get home because my business is failing. I go home tomorrow at 05:35 on the bus to Amsterdam.</p>
   <h1>Even slikken en weer doorgaan</h1>
 <h2>Dinsdag 1 november, 2022</h2>
       <p>
@@ -222,42 +255,6 @@ Dankzij een uitmuntende advocaat is de zaak onvoorwaardelijk geseponeerd en ben 
 Bij schizofrenie verlies je schijnbaar na loop van tijd intelligentie, waarbij bij mij geen sprake van was, zegt mijn psychiater...</p>
 <img src="{{ site.baseurl }}/assets/images/bloemen.jpeg" alt="Excuses">
 <figcaption>Excuses</figcaption>
-<h1>Een waargebeurd verhaal van psychose</h1>
-<h2>5 December, 2020</h2>
-<p>
-Ik merkte dat ze achter mijn generaal aankwamen, dus stuurde ik de spion eropaf en warempel de maarschalk!</p>
- <h3>I. Het begin</h3>
- <p>
-Het plan is om te vragen om me mee te nemen de K2 op. Ik blijf daar bij de passage, totdat ik ze tegenkom in China/Pakistan. Ik ben nu op weg naar Groningen, waar ik zal overnachten. Ik zit in treinstel 8721 richting Amsterdam dat is mijn eerste stop. Volgende stop: Almere. Ik voel me goed, maar ik weet dat het gevaar loert. K2 is de heilige graal voor bergbeklimmers en er wordt gefluisterd, dat het beter is dan het leven zelf. Ik doe dit om mezelf te vinden en van mezelf te leren houden, want alleen dan kan ik van een ander leren houden.
-In Zwolle uitgestapt, maar kon nergens slapen, dus gelukkig nog een bus naar Meppel gevonden en zit nu in de trein naar Groningen, daar ga ik lekker slapen.</p>
-<h3>II. Réal</h3>
-<p>
-Het heeft even mogen duren, maar ik heb uiteindelijk een slaapplek gevonden in Groningen. Ik heb een aantal punten opgeschreven.
-• Honger
-• Corruptie verslaan
-• Mafia oppakken
-• Drugs van de straat • Prostitutie afschaffen • Beschaving brengen
-• Verdrag afsluiten van de landen omringende Nederland: 5 landen verband</p>
-<img src="{{ site.baseurl }}/assets/images/fist.JPG" alt="Powerfist">
-<figcaption>Powerfist</figcaption>
-<h3>III. Power to the People</h3>
-<p>
-I was just stopped by the German police in Weener, now I’m in the bus to Leer and going to Berlin.. they wanted to see my passport and asked if I had drugs on me.
-I’m in the back of the bus I like the back of the bus. I told myself to not let any woman stop me and trust the planet Mars.
-’Not all people are good, but ALL people want to help!’
-Im in Bremen, I need clean clothes. I’m in the tram now to Stuttgart through train also I need my medication but most of all I need money and a place to stay.
- 1
-Viorel is my new friend from Romania he’s coming to Amsterdam in March hopefully. I met him in the train station in Bremen. We both agreed that we don’t like police. Now I’m in the train to Frankfurt and after Stuttgart. I believe I saw an eagle, the crows had nothing on the eagle. It was over at the flight command center. I took a picture.
-They checked to see if I had a ticket, which I didn’t have. I’m getting out now in 20 minutes I’m hoping shes not going to get another train conductor. Bless her.. she let me stay till the next stop, which is Frankfurt. She’s an angel! I think god put one on earth bless her, she’s more precious than any gem!</p>
-<h3>IV. To Oberhausen</h3>
-<p>
-So I slept till late this morning. I need new clothes. I need new everything. I’m in the train now to Köln. And after Stuttgart, where I’ll probably spend the night. I need comfort, something these train chairs don’t provide. I’m arriving at Köln trainstation. Can’t wait to see what its like nowadays.
-So I’ve finally found a place to sleep after crossing Stuttgart for most of the night. I’m staying at some lovely hotel, the only problem was that they only let businessmen stay in Stuttgart. So I’m a community entrepreneur for a private company. So I’m enjoying a beer in my room while I write this. What I’m going to do tomorrow is still a mystery.. At first I didnt know that they didn’t allow privates to stay at Stuttgart. So I said I was a private. The owner of the hotel said that it’s not allowed so I took my chances and said I misunderstood him: I’m from a private company!
-So let’s make this world a better place so our children can overcome and their children and their children’s children for generations to come, prosperous under the sun! You can either be with us, or be wrong.</p>
-<h3>V. Stuttgart</h3>
-<p>
-I didn’t like those sugar almonds the pastor gave me, I just wanted to swallow it whole, but couldn’t. I was definitely impolite to spit it out so I munched it up, just a bit of headache.
-Completely disconnected from society and from his generation. I’m hungry, my clothes stink and need sleep. I need to get home because my business is failing. I go home tomorrow at 05:35 on the bus to Amsterdam.</p>
 </div>
   </div>
     <!-- Back to Gallery button -->
