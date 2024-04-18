@@ -187,6 +187,15 @@ sidebar:
         </div>
       </a>
     </div>
+    <div class="image-gallery">
+    <div class="image-item">
+      <a href="/Edinburgh.md/" class="golden-link">
+        <img src="/assets/images/stag3.jpeg" alt="Stuttgart" />
+        <div class="image-caption">
+          <p class="golden-text">Marshall Stuttgart</p>
+        </div>
+      </a>
+    </div>
 
   <button onclick="openModal()">Give Feedback</button>
 

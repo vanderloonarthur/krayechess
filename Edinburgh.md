@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Marshall Stuttgart
-permalink: /stuttgart.md/
+permalink: /Edinburgh.md/
 ---
 <html lang="en">
 <head>
