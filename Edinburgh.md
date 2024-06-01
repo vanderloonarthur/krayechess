@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Marshall Stuttgart
+title: D'Arthur is coming home
 permalink: /Edinburgh.md/
 ---
 <html lang="en">
@@ -160,7 +160,7 @@ h2 + p {
 <div class="center-content">
   <div id="newText" style="display: block;">
     <h1>Marshall Stuttgart</h1>
-      <img src="{{ site.baseurl }}/assets/images/afghan2.jpeg" alt="Afghan Girl" class="small-image" />
+      <img src="{{ site.baseurl }}/assets/images/Edinburgh.webp" alt="Afghan Girl" class="small-image" />
       <figcaption>Afghan Girl [source: https://www.nationalgeographic.com]</figcaption>
   </div>
   <div class="center-text">

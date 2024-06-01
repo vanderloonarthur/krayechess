@@ -190,9 +190,9 @@ sidebar:
     <div class="image-gallery">
     <div class="image-item">
       <a href="/Edinburgh.md/" class="golden-link">
-        <img src="/assets/images/stag3.jpeg" alt="Stuttgart" />
+        <img src="/assets/images/Edinburgh.webp" alt="Edinburgh" />
         <div class="image-caption">
-          <p class="golden-text">Marshall Stuttgart</p>
+          <p class="golden-text">D'Arthur is coming home</p>
         </div>
       </a>
     </div>

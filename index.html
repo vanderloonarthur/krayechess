@@ -3,7 +3,6 @@ layout: default
 permalink: index
 ---
 <html lang="en">
-
 <head>
   <!-- other head elements -->
   <style>
@@ -25,6 +24,7 @@ permalink: index
       width: 100%;
       height: 100%;
       object-fit: cover;
+      opacity: 1; /* Initially set opacity to 1 for immediate visibility */
       transition: opacity 2s ease;
     }
 
@@ -41,9 +41,27 @@ permalink: index
       transition: opacity 2s ease; /* Apply transition to opacity */
     }
 
+    .enter-button {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    background-color: red; /* Change background color to red */
+    color: silver; /* Change text color to silver */
+    border: 2px solid silver; /* Add silver border */
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 5px;
+  }
+
     @media only screen and (max-width: 768px) {
       .intro-text h1 {
         font-size: 1.5em;
+      }
+      .enter-button {
+        font-size: 0.8em;
+        padding: 8px 16px;
       }
     }
   </style>
@@ -57,6 +75,7 @@ permalink: index
         alt="Fullscreen Image"
         class="fullscreen-image fade-out"
         id="fade-out-image"
+        onload="imageLoaded()"
       />
       <!-- Introductory Text Section -->
       <div class="intro-text">
@@ -66,27 +85,58 @@ permalink: index
         </p>
       </div>
       <!-- End Introductory Text Section -->
+      <!-- Enter Website Button -->
+      <button class="enter-button" id="enter-button">Get ready!</button>
     </div>
   </div>
 
-  <!-- JavaScript to initiate the fade-out effect -->
-  <script>
-    // Wait for the DOM to be fully loaded
-    document.addEventListener("DOMContentLoaded", function () {
-      // Select the image and text elements
-      var image = document.getElementById("fade-out-image");
-      var introText = document.querySelector(".intro-text");
+  <!-- Audio element to play the tune -->
+  <audio id="intro-tune" src="{{ site.baseurl }}/assets/audio/intro_tune.wav" preload="auto"></audio>
 
-      // Add the fade-out class to the image after a delay (adjust the delay as needed)
-      setTimeout(function () {
-        image.classList.add("fade-out");
-        // After the image fade-out, fade in the text
+  <script>
+    // Function to handle the image load
+    function imageLoaded() {
+      // Select the image, text, button, and audio elements
+      var image = document.querySelector(".fullscreen-image");
+      var introText = document.querySelector(".intro-text");
+      var button = document.getElementById("enter-button");
+      var audio = document.getElementById("intro-tune");
+
+      // Set the image opacity to 1 when it's loaded
+      image.style.opacity = 1;
+
+      // Function to handle the button click
+      var enterWebsite = function() {
+        audio.play().catch(function(error) {
+          console.log("Autoplay failed:", error);
+        });
+
+        // Fade out the image
+        image.style.opacity = 0;
+
+        // Fade in the intro text
         setTimeout(function () {
           introText.style.opacity = 1;
-        }, 1000); // Adjust the delay based on your needs
-      }, 1000); // Delay in milliseconds (1000ms = 1 second)
-    });
-  </script>
-</body>
+        }, 2000); // Delay in milliseconds (2000ms = 2 seconds)
 
+        // Hide the button
+        button.style.display = 'none';
+      };
+
+      // Function to handle the tune end
+      var handleTuneEnd = function() {
+        // Redirect to the travelblog URL
+        window.location.href = "{{ site.baseurl }}/travelblog.md";
+      };
+
+      // Add event listener to the button
+      button.addEventListener("click", enterWebsite);
+
+      // Add event listener for the tune end
+      audio.addEventListener("ended", handleTuneEnd);
+    }
+  </script>
+
+
+</body>
 </html>
