@@ -1,39 +1,43 @@
-from http.server import HTTPServer, BaseHTTPRequestHandler
+from http.server import BaseHTTPRequestHandler, HTTPServer
+from urllib.parse import urlparse, parse_qs
 import json
 
-class FeedbackHandler(BaseHTTPRequestHandler):
+class RequestHandler(BaseHTTPRequestHandler):
+    def do_OPTIONS(self):
+        self.send_response(200)
+        self.send_header("Access-Control-Allow-Origin", "*")
+        self.send_header("Access-Control-Allow-Methods", "POST, OPTIONS")
+        self.send_header("Access-Control-Allow-Headers", "Content-Type")
+        self.end_headers()
+
     def do_POST(self):
         content_length = int(self.headers['Content-Length'])
         post_data = self.rfile.read(content_length)
-        feedback_data = json.loads(post_data.decode('utf-8'))
+        data = json.loads(post_data)
 
-        try:
-            # Handle the feedback data (e.g., store it in a file or database)
-            with open('feedback.txt', 'a') as f:
-                f.write(f"Feedback: {feedback_data['feedback']}, Reaction: {feedback_data['reaction']}, Additional Comments: {feedback_data['additionalComments']}\n")
-        except Exception as e:
-            print(f"Error writing to feedback.txt: {e}")
+        print("Received feedback:", data)
 
-        # Send a response
         self.send_response(200)
-        self.send_header('Content-type', 'text/plain')
+        self.send_header("Access-Control-Allow-Origin", "*")
+        self.send_header("Content-type", "application/json")
         self.end_headers()
-        self.wfile.write(b'Thank you for your feedback!')
+
+        response = {
+            "message": "Feedback received successfully"
+        }
+        self.wfile.write(json.dumps(response).encode('utf-8'))
 
     def do_GET(self):
-        # Send a 200 OK response for GET requests
-        self.send_response(200)
-        self.send_header('Content-type', 'text/plain')
+        self.send_response(405)
+        self.send_header("Content-type", "text/plain")
         self.end_headers()
-        self.wfile.write(b'Hello, World! This is a GET request response.')
+        self.wfile.write("GET method is not supported. Please use POST or OPTIONS.".encode())
 
-        # Alternatively, you can customize the response based on your requirements
-
-def run(server_class=HTTPServer, handler_class=FeedbackHandler, port=8000):
+def run(server_class=HTTPServer, handler_class=RequestHandler, port=8000):
     server_address = ('', port)
     httpd = server_class(server_address, handler_class)
-    print(f'Starting server on port {port}...')
+    print(f"Starting server on port {port}...")
     httpd.serve_forever()
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     run()

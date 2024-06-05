@@ -300,31 +300,20 @@ sidebar:
 
     function sendFeedback(feedback, reaction, additionalComments) {
   var xhr = new XMLHttpRequest();
-  xhr.open("POST", 'http://localhost:8000', true); // Update the endpoint URL
+  var url = "localhost:8000"; // Replace this URL with your actual server's endpoint URL
+  xhr.open("POST", url, true);
   xhr.setRequestHeader("Content-Type", "application/json");
   xhr.onreadystatechange = function () {
-    if (xhr.readyState === 4 && xhr.status === 200) {
-      console.log('Feedback submitted successfully');
-    } else if (xhr.readyState === 4) {
-      console.error('Error submitting feedback:', xhr.status);
+    if (xhr.readyState === 4) {
+      if (xhr.status === 200) {
+        console.log('Feedback submitted successfully');
+      } else {
+        console.error('Error submitting feedback:', xhr.status);
+      }
     }
   };
-  xhr.send(JSON.stringify({ feedback, reaction, additionalComments }));
+  xhr.send(JSON.stringify({ feedback: feedback, reaction: reaction, additionalComments: additionalComments }));
 }
-
-    window.onscroll = function () {
-      var scrollUpBtn = document.getElementById("scrollUpBtn");
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        scrollUpBtn.style.display = "block";
-      } else {
-        scrollUpBtn.style.display = "none";
-      }
-    };
-
-    function scrollToTop() {
-      document.body.scrollTop = 0;
-      document.documentElement.scrollTop = 0;
-    }
   </script>
 </body>
 
