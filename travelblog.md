@@ -10,17 +10,20 @@ sidebar:
     image_alt: "logo"
     text: "Globetrotter"
 ---
-
 <html lang="en">
 
 <head>
-  <!-- Your existing styles and head content -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Reis door Europa met Arthur Ross! Ontdek de schoonheid van Europa met deze boeiende reisverhalen.">
+  <title>Gallery - Reis door Europa met Arthur Ross!</title>
 
   <style>
     /* Additional styles for better formatting */
     body {
-      color: red !important; /* Set the text color to yellow for the entire page */
+      color: red !important; /* Set the text color to red */
       background-color: black; /* Set the background color to black */
+      font-family: 'Arial', sans-serif;
     }
 
     .image-gallery {
@@ -54,11 +57,12 @@ sidebar:
     }
 
     .image-item img {
+      width: 100%;
       transition: transform 0.3s ease-in-out; /* Add transition effect */
     }
 
     .image-item:hover img {
-      transform: scale(1.2); /* Increase the scale on hover (adjust the value as needed) */
+      transform: scale(1.2); /* Increase the scale on hover */
     }
 
     .image-caption {
@@ -66,7 +70,7 @@ sidebar:
     }
 
     .golden-link {
-      color: red !important; /* Set the text color to yellow */
+      color: red !important; /* Set the text color to red */
       text-decoration: none; /* Remove the default underline */
       font-weight: bold; /* Optionally set the font weight to bold */
     }
@@ -76,7 +80,7 @@ sidebar:
     }
 
     .golden-text {
-      color: red !important; /* Set the text color to yellow */
+      color: red !important; /* Set the text color to red */
     }
 
     /* Styles for moving the request a quote to the side */
@@ -93,29 +97,66 @@ sidebar:
     }
 
     .modal {
-      display: none;
-      position: fixed;
-      top: auto;
-      right: 0; /* Stick to the right */
-      bottom: 0;
-      left: auto; /* Unset left */
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.5);
-    }
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 0.3s ease-out; /* Entrance animation */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+}
+
+/* Other modal styles remain the same */
+
 
     .modal-content {
-      background-color: #f8f8f8; /* Adjust background color to match your website */
-      color: #333; /* Adjust text color to match your website */
-      margin: 15% auto; /* Updated margin for centering vertically and horizontally */
-      padding: 20px;
-      border: 1px solid #888;
-      width: 80%; /* Adjust the width as needed for responsiveness */
-    }
+  background-color: #f8f8f8; /* Adjust background color to match your website */
+  color: #333; /* Adjust text color to match your website */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 90%; /* Adjust the width as needed for responsiveness */
+  max-width: 800px; /* Increase the max-width for a larger modal */
+  border-radius: 5px;
+  margin: auto;
+}
+
 
     .modal-content textarea {
+      width: 100%;
       background-color: #333; /* Darken the background color of the textarea */
       color: #fff; /* Adjust text color to match your website */
+      border: 1px solid #888;
+      border-radius: 5px;
+      padding: 10px;
+      resize: none;
     }
 
     .feedback-text {
@@ -127,13 +168,13 @@ sidebar:
       float: right;
       font-size: 28px;
       font-weight: bold;
+      cursor: pointer;
     }
 
     .close:hover,
     .close:focus {
       color: black;
       text-decoration: none;
-      cursor: pointer;
     }
 
     /* Responsive styles */
@@ -147,7 +188,7 @@ sidebar:
       }
 
       .modal-content {
-        width: 100%;
+        width: 90%;
       }
     }
 
@@ -159,7 +200,6 @@ sidebar:
 </head>
 
 <body>
-  <!-- Rest of your HTML content -->
   <div class="image-gallery">
     <div class="image-item">
       <a href="/milaan.md/" class="golden-link">
@@ -169,7 +209,6 @@ sidebar:
         </div>
       </a>
     </div>
-    <div class="image-gallery">
     <div class="image-item">
       <a href="/madrid.md/" class="golden-link">
         <img src="/assets/images/bear-1.jpg" alt="Madrid" />
@@ -178,7 +217,6 @@ sidebar:
         </div>
       </a>
     </div>
-    <div class="image-gallery">
     <div class="image-item">
       <a href="/stuttgart.md/" class="golden-link">
         <img src="/assets/images/stag3.jpeg" alt="Stuttgart" />
@@ -187,7 +225,6 @@ sidebar:
         </div>
       </a>
     </div>
-    <div class="image-gallery">
     <div class="image-item">
       <a href="/Edinburgh.md/" class="golden-link">
         <img src="/assets/images/Edinburgh.webp" alt="Edinburgh" />
@@ -196,6 +233,7 @@ sidebar:
         </div>
       </a>
     </div>
+  </div>
 
   <button onclick="openModal()">Give Feedback</button>
 
@@ -213,7 +251,7 @@ sidebar:
       </div>
       <div>
         <label for="additionalComments">Additional Comments:</label>
-        <textarea id="additionalComments" rows="4" cols="50"></textarea>
+        <textarea id="additionalComments" rows="4" placeholder="Enter your comments here..."></textarea>
       </div>
       <button onclick="submitFeedback()">Submit Feedback</button>
     </div>
@@ -223,89 +261,71 @@ sidebar:
 
   <!-- Scroll-up button -->
   <button id="scrollUpBtn" onclick="scrollToTop()">Scroll to Top</button>
-<script>
-  function openModal() {
-    var modal = document.getElementById("feedback-modal");
-    modal.style.display = "block";
-  }
-  function closeModal() {
-    var modal = document.getElementById("feedback-modal");
-    modal.style.display = "none";
-  }
-  function sendFeedback(feedback, reaction, additionalComments) {
-  // Perform an AJAX request to submit feedback to the server
-  // Replace 'https://localhost:3000/submit-feedback' with the actual URL of your server-side route
-  var xhr = new XMLHttpRequest();
-xhr.open("POST", 'https://localhost:3000/submit-feedback', true); // Use the correct URL
-xhr.setRequestHeader("Content-Type", "application/json");
-var data = {
-  feedback: feedback,
-  reaction: reaction,
-  additionalComments: additionalComments
-};
-  xhr.onreadystatechange = function () {
-    if (xhr.readyState === 4) {
-      if (xhr.status === 200) {
-        console.log('Feedback submitted successfully');
+
+  <script>
+    function openModal() {
+      document.getElementById("feedback-modal").style.display = "flex";
+    }
+
+    function closeModal() {
+      document.getElementById("feedback-modal").style.display = "none";
+    }
+
+    function selectFeedback(button, feedback, reaction) {
+      document.querySelectorAll('#feedback-buttons button').forEach(function (btn) {
+        btn.classList.remove('selected-feedback');
+      });
+      button.classList.add('selected-feedback');
+      console.log('Selected Feedback:', feedback, 'Reaction:', reaction);
+    }
+
+    function submitFeedback() {
+      var selectedButton = document.querySelector('#feedback-buttons button.selected-feedback');
+      var feedback = selectedButton ? selectedButton.textContent : '';
+      var reaction = selectedButton ? selectedButton.getAttribute('data-reaction') : '';
+      var additionalComments = document.getElementById("additionalComments").value;
+      console.log('Feedback:', feedback, 'Reaction:', reaction, 'Additional Comments:', additionalComments);
+
+      sendFeedback(feedback, reaction, additionalComments);
+
+      var confirmationMessage = document.createElement('p');
+      confirmationMessage.innerText = 'Thank you for your feedback!';
+      var modalContent = document.querySelector('.modal-content');
+      modalContent.appendChild(confirmationMessage);
+
+      setTimeout(function () {
+        closeModal();
+      }, 2000);
+    }
+
+    function sendFeedback(feedback, reaction, additionalComments) {
+      var xhr = new XMLHttpRequest();
+      xhr.open("POST", 'https://localhost:3000/submit-feedback', true);
+      xhr.setRequestHeader("Content-Type", "application/json");
+      xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+          console.log('Feedback submitted successfully');
+        } else if (xhr.readyState === 4) {
+          console.error('Error submitting feedback:', xhr.status);
+        }
+      };
+      xhr.send(JSON.stringify({ feedback, reaction, additionalComments }));
+    }
+
+    window.onscroll = function () {
+      var scrollUpBtn = document.getElementById("scrollUpBtn");
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        scrollUpBtn.style.display = "block";
       } else {
-        console.error('Error submitting feedback:', xhr.status);
+        scrollUpBtn.style.display = "none";
       }
+    };
+
+    function scrollToTop() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
     }
-  };
-  xhr.send(JSON.stringify(data));
-}
-  function selectFeedback(button, feedback, reaction) {
-    // Remove the selected class from all buttons
-    var feedbackButtons = document.querySelectorAll('#feedback-buttons button');
-    feedbackButtons.forEach(function (btn) {
-      btn.classList.remove('selected-feedback');
-    });
-    // Add the selected class to the clicked button
-    button.classList.add('selected-feedback');
-    // Log the selected feedback
-    console.log('Selected Feedback:', feedback, 'Reaction:', reaction);
-  }
-  // Function to close the modal
-  function closeModal() {
-    var modal = document.getElementById("feedback-modal");
-    modal.style.display = "none";
-  }
-  // Function to submit feedback
-  // Function to submit feedback
-function submitFeedback() {
-  var selectedButton = document.querySelector('#feedback-buttons button.selected-feedback');
-  var feedback = selectedButton ? selectedButton.textContent : '';
-  var reaction = selectedButton ? selectedButton.getAttribute('data-reaction') : '';
-  var additionalComments = document.getElementById("additionalComments").value;
-  console.log('Feedback:', feedback, 'Reaction:', reaction, 'Additional Comments:', additionalComments);
-  // Implement your actual feedback submission logic here
-  sendFeedback(feedback, reaction, additionalComments);
-  // Display a confirmation message
-  var confirmationMessage = document.createElement('p');
-  confirmationMessage.innerText = 'Thank you for your feedback!';
-  // Append the message to the modal content
-  var modalContent = document.querySelector('.modal-content');
-  modalContent.appendChild(confirmationMessage);
-  // Close the modal after submission (optional)
-  setTimeout(function () {
-    closeModal();
-  }, 2000); // Close the modal after 2 seconds (adjust the delay as needed)
-}
-  // Show/hide the scroll-up button based on scroll position
-  window.onscroll = function () {
-    showScrollUpButton();
-  };
-  function showScrollUpButton() {
-    var scrollUpBtn = document.getElementById("scrollUpBtn");
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-      scrollUpBtn.style.display = "block";
-    } else {
-      scrollUpBtn.style.display = "none";
-    }
-  }
-  // Scroll to the top function
-  function scrollToTop() {
-    document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
-  }
-</script>
+  </script>
+</body>
+
+</html>
