@@ -20,7 +20,6 @@ class FeedbackHandler(BaseHTTPRequestHandler):
         self.end_headers()
         self.wfile.write(b'Thank you for your feedback!')
 
-
     def do_GET(self):
         # Send a 405 Method Not Allowed response for GET requests
         self.send_response(405)
