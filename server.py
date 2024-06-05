@@ -7,15 +7,19 @@ class FeedbackHandler(BaseHTTPRequestHandler):
         post_data = self.rfile.read(content_length)
         feedback = parse_qs(post_data.decode('utf-8'))
 
-        # Handle the feedback data (e.g., store it in a file or database)
-        with open('feedback.txt', 'a') as f:
-            f.write(f"Feedback: {feedback.get('feedback')[0]}, Reaction: {feedback.get('reaction')[0]}, Additional Comments: {feedback.get('additionalComments')[0]}\n")
+        try:
+            # Handle the feedback data (e.g., store it in a file or database)
+            with open('feedback.txt', 'a') as f:
+                f.write(f"Feedback: {feedback.get('feedback')[0]}, Reaction: {feedback.get('reaction')[0]}, Additional Comments: {feedback.get('additionalComments')[0]}\n")
+        except Exception as e:
+            print(f"Error writing to feedback.txt: {e}")
 
         # Send a response
         self.send_response(200)
         self.send_header('Content-type', 'text/plain')
         self.end_headers()
         self.wfile.write(b'Thank you for your feedback!')
+
 
     def do_GET(self):
         # Send a 405 Method Not Allowed response for GET requests
