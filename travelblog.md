@@ -99,7 +99,7 @@ sidebar:
     .modal {
   display: none;
   position: fixed;
-  top: 50%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: rgba(0, 0, 0, 0.5);
@@ -229,13 +229,13 @@ sidebar:
       <a href="/Edinburgh.md/" class="golden-link">
         <img src="/assets/images/Edinburgh.webp" alt="Edinburgh" />
         <div class="image-caption">
-          <p class="golden-text">D'Arthur is coming home</p>
+          <p class="golden-text">D'Arthur is coming home!</p>
         </div>
       </a>
     </div>
   </div>
 
-  <button onclick="openModal()">Give Feedback</button>
+  <button onclick="openModal()">Geef Feedback</button>
 
   <!-- Feedback Modal -->
   <div id="feedback-modal" class="modal">
@@ -243,11 +243,11 @@ sidebar:
       <span class="close" onclick="closeModal()">&times;</span>
       <h2>How happy are you with the website?</h2>
       <div id="feedback-buttons">
-        <button onclick="selectFeedback(this, 'Very Happy', '😃')">Very Happy</button>
-        <button onclick="selectFeedback(this, 'Happy', '😊')">Happy</button>
-        <button onclick="selectFeedback(this, 'Neutral', '😐')">Neutral</button>
-        <button onclick="selectFeedback(this, 'Unhappy', '😞')">Unhappy</button>
-        <button onclick="selectFeedback(this, 'Very Unhappy', '😢')">Very Unhappy</button>
+        <button onclick="selectFeedback(this, 'Very Happy', '😃')">Very Happy 😃</button>
+        <button onclick="selectFeedback(this, 'Happy', '😊')">Happy 😊</button>
+        <button onclick="selectFeedback(this, 'Neutral', '😐')">Neutral 😐</button>
+        <button onclick="selectFeedback(this, 'Unhappy', '😞')">Unhappy 😞</button>
+        <button onclick="selectFeedback(this, 'Very Unhappy', '😢')">Very Unhappy 😢</button>
       </div>
       <div>
         <label for="additionalComments">Additional Comments:</label>
