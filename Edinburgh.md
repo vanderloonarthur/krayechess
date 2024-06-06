@@ -7,7 +7,7 @@ permalink: /Edinburgh.md/
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Marshall Stuttgart</title>
+  <title>D'Arthur is coming home</title>
   <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css" />
   <style>
     body, html {
