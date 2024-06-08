@@ -27,17 +27,17 @@ sidebar:
   <title>Gallery - Reis door Europa met Arthur Ross!</title>
 
   <style>
-    /* Additional styles for better formatting */
     body {
-      color: red !important; /* Set the text color to red */
-      background-color: black; /* Set the background color to black */
+      color: red !important;
+      background-color: black;
       font-family: 'Arial', sans-serif;
     }
 
     .image-gallery {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 20px;
     }
 
     #scrollUpBtn {
@@ -56,48 +56,52 @@ sidebar:
     }
 
     #scrollUpBtn:hover {
-      background-color: #FFD700; /* Change color on hover */
+      background-color: #FFD700;
     }
 
     .image-item {
-      margin-bottom: 20px;
-      overflow: hidden; /* Hide overflow to prevent layout shifts on hover */
+      overflow: hidden;
+      border: 2px solid red;
+      transition: border-color 0.3s;
     }
 
     .image-item img {
       width: 100%;
-      transition: transform 0.3s ease-in-out; /* Add transition effect */
+      height: auto;
+      border: 2px solid transparent;
+      transition: transform 0.3s ease-in-out, border-color 0.3s;
     }
 
     .image-item:hover img {
-      transform: scale(1.2); /* Increase the scale on hover */
+      transform: scale(1.2);
+      border-color: red;
     }
 
     .image-caption {
       text-align: center;
+      margin-top: 10px;
     }
 
     .golden-link {
-      color: red !important; /* Set the text color to red */
-      text-decoration: none; /* Remove the default underline */
-      font-weight: bold; /* Optionally set the font weight to bold */
+      color: red !important;
+      text-decoration: none;
+      font-weight: bold;
     }
 
     .golden-link:hover {
-      text-decoration: underline; /* Add underline on hover */
+      text-decoration: underline;
     }
 
     .golden-text {
-      color: red !important; /* Set the text color to red */
+      color: red !important;
     }
 
-    /* Styles for moving the request a quote to the side */
     .quote-container {
       position: fixed;
       top: 50%;
       right: 20px;
       transform: translateY(-50%);
-      width: 300px; /* Adjust the width as needed */
+      width: 300px;
       background-color: #f8f8f8;
       padding: 20px;
       border-radius: 5px;
@@ -105,70 +109,26 @@ sidebar:
     }
 
     .modal {
-  display: none;
-  position: fixed;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  align-items: center;
-  justify-content: center;
-  animation: fadeIn 0.3s ease-out; /* Entrance animation */
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translate(-50%, -50%) scale(0.5);
-  }
-  to {
-    opacity: 1;
-    transform: translate(-50%, -50%) scale(1);
-  }
-}
-
-.close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: color 0.3s; /* Smooth transition for hover effect */
-}
-
-.close:hover,
-.close:focus {
-  color: black;
-  text-decoration: none;
-}
-
-/* Other modal styles remain the same */
-
-
-    .modal-content {
-  background-color: #f8f8f8; /* Adjust background color to match your website */
-  color: #333; /* Adjust text color to match your website */
-  padding: 20px;
-  border: 1px solid #888;
-  width: 90%; /* Adjust the width as needed for responsiveness */
-  max-width: 800px; /* Increase the max-width for a larger modal */
-  border-radius: 5px;
-  margin: auto;
-}
-
-
-    .modal-content textarea {
-      width: 100%;
-      background-color: #333; /* Darken the background color of the textarea */
-      color: #fff; /* Adjust text color to match your website */
-      border: 1px solid #888;
-      border-radius: 5px;
-      padding: 10px;
-      resize: none;
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: rgba(0, 0, 0, 0.5);
+      align-items: center;
+      justify-content: center;
+      animation: fadeIn 0.3s ease-out;
     }
 
-    .feedback-text {
-      color: #FFD700; /* Set the text color to yellow */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.5);
+      }
+      to {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+      }
     }
 
     .close {
@@ -177,6 +137,7 @@ sidebar:
       font-size: 28px;
       font-weight: bold;
       cursor: pointer;
+      transition: color 0.3s;
     }
 
     .close:hover,
@@ -185,14 +146,34 @@ sidebar:
       text-decoration: none;
     }
 
-    /* Responsive styles */
+    .modal-content {
+      background-color: #f8f8f8;
+      color: #333;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 90%;
+      max-width: 800px;
+      border-radius: 5px;
+      margin: auto;
+    }
+
+    .modal-content textarea {
+      width: 100%;
+      background-color: #333;
+      color: #fff;
+      border: 1px solid #888;
+      border-radius: 5px;
+      padding: 10px;
+      resize: none;
+    }
+
+    .feedback-text {
+      color: #FFD700;
+    }
+
     @media only screen and (max-width: 768px) {
       .image-gallery {
-        justify-content: center;
-      }
-
-      .image-item {
-        width: 100%;
+        grid-template-columns: 1fr;
       }
 
       .modal-content {
@@ -200,7 +181,6 @@ sidebar:
       }
     }
 
-    /* Added style for selected feedback button */
     .selected-feedback {
       background-color: #FFD700 !important;
     }
@@ -213,7 +193,7 @@ sidebar:
       <a href="/milaan.md/" class="golden-link">
         <img src="/assets/images/il_duomo.jpeg" alt="Milaan" />
         <div class="image-caption">
-          <p class="golden-text">Naar Milaan zonder geld of plan</p>
+          <p class="golden-text">Naar Milaan zonder geld of plan [mei 2016]</p>
         </div>
       </a>
     </div>
@@ -221,7 +201,7 @@ sidebar:
       <a href="/madrid.md/" class="golden-link">
         <img src="/assets/images/bear-1.jpg" alt="Madrid" />
         <div class="image-caption">
-          <p class="golden-text">Vincent van Gogh achterna</p>
+          <p class="golden-text">Vincent van Gogh achterna [juni/ juli 2020]</p>
         </div>
       </a>
     </div>
@@ -229,7 +209,7 @@ sidebar:
       <a href="/stuttgart.md/" class="golden-link">
         <img src="/assets/images/stag3.jpeg" alt="Stuttgart" />
         <div class="image-caption">
-          <p class="golden-text">Marshall Stuttgart</p>
+          <p class="golden-text">Marshall Stuttgart [december 2020]</p>
         </div>
       </a>
     </div>
@@ -237,7 +217,7 @@ sidebar:
       <a href="/Edinburgh.md/" class="golden-link">
         <img src="/assets/images/Edinburgh.webp" alt="Edinburgh" />
         <div class="image-caption">
-          <p class="golden-text">D'Arthur is coming home!</p>
+          <p class="golden-text">D'Arthur is coming home! [april 2024]</p>
         </div>
       </a>
     </div>
@@ -308,7 +288,7 @@ sidebar:
 
     function sendFeedback(feedback, reaction, additionalComments) {
   var xhr = new XMLHttpRequest();
-  var url = "localhost:8000"; // Replace this URL with your actual server's endpoint URL
+  var url = "http://localhost:8000/feedback"; // Ensure this URL matches your server's endpoint URL
   xhr.open("POST", url, true);
   xhr.setRequestHeader("Content-Type", "application/json");
   xhr.onreadystatechange = function () {
@@ -322,6 +302,20 @@ sidebar:
   };
   xhr.send(JSON.stringify({ feedback: feedback, reaction: reaction, additionalComments: additionalComments }));
 }
+
+
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    window.onscroll = function () {
+      var scrollUpBtn = document.getElementById("scrollUpBtn");
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        scrollUpBtn.style.display = "block";
+      } else {
+        scrollUpBtn.style.display = "none";
+      }
+    };
   </script>
 </body>
 
