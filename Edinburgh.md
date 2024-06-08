@@ -166,7 +166,7 @@ permalink: /Edinburgh.md/
     <h1>Een waargebeurd verhaal.</h1>
     <p>
       10 April, 2024
-      [In de trein naar Antwerpen.]
+      In de trein naar Antwerpen.
       Ik ben onderweg naar de bruiloft van mijn neef in Edinburgh.
       Ik zit nu in de trein en kan elk moment de grens naar België oversteken. Ik had een enkeltje Den Haag gekocht, maar niet naar Antwerpen, want heb nog maar 67 euro. Hopen dat de conducteurs me niet eruit zetten. Daar komt er al één. Shit.
     </p>
@@ -175,23 +175,18 @@ permalink: /Edinburgh.md/
       Ik ben zojuist ternauwernood ontsnapt aan de treinconducteurs. Ik proefde onraad op Breda Centraal, dus was daar uitgestapt. De trein zou 6 minuten stil blijven staan.
       Toen vertelde mijn intuïtie me dat ik trein weer in moest stappen. Echter zat ik nu in het gangpad naast een prachtig getatoeëerde meneer. Ik voelde een sterke connectie met hem. Ik deed mijn capuchon van mijn “PLO scarf” op en begon te wachten. Ik wist dat er vrijwel altijd gecontroleerd wordt bij een grensovergang en zowaar ik zag de conducteur al druk bezig met controle.
       Achter me hoorde ik de schuifdeuren opengaan en twee vrouwelijk conducteurs kwamen het gangpad op. [de man met de tatoeages riep “Hij heeft een mes, waarop ik antwoorde: “Ja ik heb er 2.”]
-      Toen hoorde ik de bevrijdende stem van de machinist: “Volgende halte: Noordenkempen!”
+      Toen hoorde ik de bevrijdende stem van de machinist: “Volgende halte: Noorder kempen!”
       En ik deed alsof ik hier moest uitstappen.
       De twee vrouwelijke conducteurs trapten erin en ik ging de schuifdeuren door naar het volgende gangpad.
       Daar kwam de mannelijke conducteur me tegemoet en ik groette hem beleefd. Zo snel als de treindeuren opengingen ben ik uitgestapt. Nu heerlijk koffie op het terras, in Noorder Kempen.
       In de trein naar Calais.
       Vanaf Noorder Kempen ben ik meegelift met Mohammed tot aan Antwerpen. Hij zette me op een druk tankstation, langs de kant van de weg af. Ik stond in de berm, dus moest rennen om over te steken en niet geraakt te worden door langsrijdende auto’s.
-      Een maal bij het tankstation aangekomen vroeg ik een Engelsman om een lift.Hij zei echter dat hij de andere kant opging en dat hij me dus niet kon helpen.
+      Een maal bij het tankstation aangekomen vroeg ik een Engelsman om een lift. Hij zei echter dat hij de andere kant opging en dat hij me dus niet kon helpen.
       Toen ik verder liep en andere mensen vroeg stopte de Engelsman zijn auto. Hij gaf me 25 euro en zei da tik het beste met de trein naar Calais kon gaan. Ik heb maar zijn advies opgevolgd en zit nu ontspannen in de trein naar Calais Ville. Wel ben ik nu 51,60 euro’s lichter. Prijskaartjes zijn tamelijk prijzig. Met nog maar 11 euro over op de bank zal ik het moeten redden. Misschien stuurt mijn oud-huisgenoot Miguel me nog zijn restschuld van 325 euro anders wordt het erg moeilijk. Hopelijk steek ik vannacht nog het kanaal over naar Dover. Anders zal ik moeten overnachten in Calais.
     </p>
     <p>
       11th of April, 2024. 2 days until the wedding.
       I was just dropped off to the ferry port by an English woman and her son. Just a couple of hours before I met a bunch of Sudanese immigrants all trying to go to Britain.
-    </p>
-    <p>
-      13 april, 2024, Edinburgh
-      Ik heb het gehaald, ik wist dat ik het zou redden en ik heb zo veel avonturen meegemaakt!
-      Ik zit nu te genieten van een heerlijke dram: “Port Charlotte”.
     </p>
     <p>
       Vanaf Antwerpen heb ik een treinkaartje gekocht, met de 25 euro, die een vriendelijke Engelsman me gaf, naar Calais.
@@ -202,13 +197,13 @@ permalink: /Edinburgh.md/
       Eerst heb ik zo’n anderhalf uur gelopen tot ik bij een “geschikt tankstation” aankwam. Toen heb ik zo’n 4 à 5 uur iedereen aangesproken om te vragen voor een lift, maar niemand durfde me mee te nemen.
       Naast mij zag ik ook een aantal dozijn vluchtelingen uit Sudan, wanhopig op zoek naar een lift. Ik zag er 2 richting een busje lopen. De één leidde de chauffeur af terwijl de andere naar binnen klauterde. Die zal nu wel in Engeland zijn.
       Uiteindelijk vroeg ik een dame en haar zoon of ze me kon meenemen. Ze zei dat ze zondag pas ging, maar dat zou natuurlijk te laat zijn. Wel bracht ze me naar de ferry’s.
-      Aldaar ontmoette ik Louis “Herman” en Richard. Herman had een half jaar door India gereisd en was net weer onderweg naar huis. Hij was erg amicaal, met enkele mankementen en praatte veel. Hij stelde me erg op mijn gemak.
+      Aldaar ontmoette ik Louis en Richard. Louis had een half jaar door India gereisd en was net weer onderweg naar huis. Hij was erg amicaal, met enkele mankementen en praatte veel. Hij stelde me erg op mijn gemak.
       Richard was een Roma, ex-militair, die blind was geraakt bij de Ariana Grande aanslag in Manchester. Gek genoeg voerde hij de groep aan, ondanks dat hij beperkt was, was hij toch ook heel erg bekwaam. Ik hoefde niet lang te wachten voordat Richard naar de balie liep en drie ferry tickets regelde.
-      Het was een stormachtige bootreis. We zongen Halleluja en buiten op de boot. We hielpen een Indiaas stel met een stuk of 5 kinderen met hun bagage.
+      Het was een stormachtige bootreis. We zongen Halleluja buiten op de boot. We hielpen een Indiaas stel met een stuk of 5 kinderen met hun bagage.
       Een uur nadat we in Dover aankwamen gaf de broer van Louis ons een lift naar Birmingham. We zaten achter in het witte busje tussen een hoop gereedschap en ondanks dat het harde houten vloeren had voelde ik me erg ontspannen.
       Ik en Louis hebben een hoop gekletst achter in het busje en toen we in Birmingham aankwamen bood hij me aan het verblijf in de “Travellodge” te betalen.
       Helaas moesten we voor 02:00 uur ingecheckt hebben en was het al 03:00 uur.
-      Louis raakte in paniek en stak zijn armen in de lucht richting de camera’s en riep: “we are refugees.”
+      Louis raakte in paniek en stak zijn armen in de lucht richting de camera’s en riep: “we are refugees!”
       De deskmedewerkster dreigde met de politie, dus zijn we snel weer weggelopen. Ik kreeg een houten bord van Louis met daarop geschreven zijn aantekeningen van zijn reis door India. Hier heb ik “Edinburgh” op de achterkant geschreven om te gebruiken als liftbordje.
       Richard vertelde me dat ik het meeste kans had bij het CEN, wat een uurtje lopen bleek te zijn, bij de luchthaven.
       Aldaar heb ik mijn ogen gesloten en even geslapen.

@@ -22,8 +22,8 @@ title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Arthur Ross"
 description              : "Travel site"
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : /travelblog
+url                      : https://www.arpross.com
+baseurl                  : #/travelblog
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
@@ -74,7 +74,7 @@ google:
   search_engine_id       : # YOUR_SEARCH_ENGINE_ID
   instant_search         : # false (default), true
 # SEO Related
-google-site-verification : googlef908528c01a0c066.html
+google-site-verification :
 bing_site_verification   :
 naver_site_verification  :
 yandex_site_verification :
@@ -187,8 +187,8 @@ exclude:
 keep_files:
   - .git
   - .svn
-encoding: "utf-8"
-markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+encoding: utf-8
+markdown_ext: markdown,mkdown,mkdn,mkd,md
 
 
 # Conversion
