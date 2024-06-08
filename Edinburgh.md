@@ -187,7 +187,7 @@ permalink: /Edinburgh.md/
 <div class="center-content">
   <div id="newText" style="display: block;">
     <h1>D'Arthur is coming home!</h1>
-    <img src="{{ site.baseurl }}/assets/images/Edinburgh.webp" alt="Edinburgh" class="small-image" />
+    <img src="{{ site.baseurl }}/assets/images/refugees.png" alt="Edinburgh" class="small-image" />
     <figcaption>Edinburgh city</figcaption>
   </div>
   <div class="center-text">
@@ -263,7 +263,7 @@ permalink: /Edinburgh.md/
 
 <div id="myModal" class="modal" onclick="toggleModal()">
   <div class="modal-content">
-    <img src="{{ site.baseurl }}/assets/images/Edinburgh.webp" alt="Popup Image" class="modal-image" />
+    <img src="{{ site.baseurl }}/assets/images/refugees.png" alt="Popup Image" class="modal-image" />
   </div>
 </div>
 
