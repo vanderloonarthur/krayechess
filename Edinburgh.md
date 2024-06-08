@@ -188,7 +188,7 @@ permalink: /Edinburgh.md/
   <div id="newText" style="display: block;">
     <h1>D'Arthur is coming home!</h1>
     <img src="{{ site.baseurl }}/assets/images/refugees.png" alt="Edinburgh" class="small-image" />
-    <figcaption>Edinburgh city</figcaption>
+    <figcaption>Vluchtelingen</figcaption>
   </div>
   <div class="center-text">
     <h1>Een waargebeurd verhaal.</h1>
