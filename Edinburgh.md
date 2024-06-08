@@ -107,13 +107,16 @@ permalink: /Edinburgh.md/
       pointer-events: none; /* Clicks on the modal won't trigger events */
 }
     .modal-content {
-      width: 100%;
-      height: auto;
-      max-width: 100%; /* Adjusted max-width */
-      max-height: 100%; /* Adjusted max-height */
-      object-fit: contain;
-      box-shadow: 0 0 20px rgba(255, 215, 0, 0.8);
-    }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  max-width: 100%; /* Adjusted max-width */
+  max-height: 100%; /* Adjusted max-height */
+  object-fit: contain;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.8);
+}
     .modal-image {
       width: 100%;
       height: auto;
@@ -153,6 +156,31 @@ permalink: /Edinburgh.md/
         font-size: 3vw;
       }
     }
+    .modal-video {
+  width: 80%; /* Adjust as needed */
+  max-width: 800px; /* Maximum width for larger screens */
+  border-radius: 10px;
+  overflow: hidden;
+}
+.modal-video video {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  outline: none; /* Remove default focus outline */
+}
+.modal-video::-webkit-media-controls {
+  /* Style the default video controls for WebKit browsers */
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+}
+.modal-video::-webkit-media-controls-play-button {
+  /* Style the play button */
+  color: white;
+}
+.modal-video::-webkit-media-controls-volume-slider {
+  /* Style the volume slider */
+  background-color: transparent;
+}
   </style>
 </head>
 <body>
@@ -167,7 +195,7 @@ permalink: /Edinburgh.md/
     <p>
       10 April, 2024
       In de trein naar Antwerpen.
-      Ik ben onderweg naar de bruiloft van mijn neef in Edinburgh.
+      Ik ben onderweg naar de bruiloft van mijn neef Duncan in Edinburgh.
       Ik zit nu in de trein en kan elk moment de grens naar België oversteken. Ik had een enkeltje Den Haag gekocht, maar niet naar Antwerpen, want heb nog maar 67 euro. Hopen dat de conducteurs me niet eruit zetten. Daar komt er al één. Shit.
     </p>
     <p>
@@ -197,9 +225,14 @@ permalink: /Edinburgh.md/
       Eerst heb ik zo’n anderhalf uur gelopen tot ik bij een “geschikt tankstation” aankwam. Toen heb ik zo’n 4 à 5 uur iedereen aangesproken om te vragen voor een lift, maar niemand durfde me mee te nemen.
       Naast mij zag ik ook een aantal dozijn vluchtelingen uit Sudan, wanhopig op zoek naar een lift. Ik zag er 2 richting een busje lopen. De één leidde de chauffeur af terwijl de andere naar binnen klauterde. Die zal nu wel in Engeland zijn.
       Uiteindelijk vroeg ik een dame en haar zoon of ze me kon meenemen. Ze zei dat ze zondag pas ging, maar dat zou natuurlijk te laat zijn. Wel bracht ze me naar de ferry’s.
+      <img src="{{ site.baseurl }}/assets/images/Me_and_Richard.JPG" alt="Me and Richard">
       Aldaar ontmoette ik Louis en Richard. Louis had een half jaar door India gereisd en was net weer onderweg naar huis. Hij was erg amicaal, met enkele mankementen en praatte veel. Hij stelde me erg op mijn gemak.
       Richard was een Roma, ex-militair, die blind was geraakt bij de Ariana Grande aanslag in Manchester. Gek genoeg voerde hij de groep aan, ondanks dat hij beperkt was, was hij toch ook heel erg bekwaam. Ik hoefde niet lang te wachten voordat Richard naar de balie liep en drie ferry tickets regelde.
-      Het was een stormachtige bootreis. We zongen Halleluja buiten op de boot. We hielpen een Indiaas stel met een stuk of 5 kinderen met hun bagage.
+      Het was een stormachtige bootreis, we zongen Halleluja buiten op de boot en hielpen een Indiaas stel met een stuk of 5 kinderen met hun bagage.</p>
+      <video controls class="modal-video">
+      <source src="{{ site.baseurl }}/assets/videos/halleluja.mp4" type="video/mp4">
+      </video>
+      <p>
       Een uur nadat we in Dover aankwamen gaf de broer van Louis ons een lift naar Birmingham. We zaten achter in het witte busje tussen een hoop gereedschap en ondanks dat het harde houten vloeren had voelde ik me erg ontspannen.
       Ik en Louis hebben een hoop gekletst achter in het busje en toen we in Birmingham aankwamen bood hij me aan het verblijf in de “Travellodge” te betalen.
       Helaas moesten we voor 02:00 uur ingecheckt hebben en was het al 03:00 uur.
