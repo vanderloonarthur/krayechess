@@ -7,7 +7,7 @@ excerpt: "Baz Boom design system including logo mark, website design, and brandi
 sidebar:
   - title: "Arthur Robert Pieter Ross"
     image: /assets/images/top_hat.jpeg
-    image_alt: "logo"
+    image_alt: "Huldiging Diok"
     text: "Globetrotter"
 ---
 <html lang="en">
@@ -288,7 +288,7 @@ sidebar:
 
     function sendFeedback(feedback, reaction, additionalComments) {
   var xhr = new XMLHttpRequest();
-  var url = "http://localhost:8000/feedback"; // Ensure this URL matches your server's endpoint URL
+  var url = "https://localhost:8000/feedback"; // Ensure this URL matches your server's endpoint URL
   xhr.open("POST", url, true);
   xhr.setRequestHeader("Content-Type", "application/json");
   xhr.onreadystatechange = function () {
