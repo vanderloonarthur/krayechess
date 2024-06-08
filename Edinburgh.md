@@ -225,7 +225,9 @@ permalink: /Edinburgh.md/
       Eerst heb ik zo’n anderhalf uur gelopen tot ik bij een “geschikt tankstation” aankwam. Toen heb ik zo’n 4 à 5 uur iedereen aangesproken om te vragen voor een lift, maar niemand durfde me mee te nemen.
       Naast mij zag ik ook een aantal dozijn vluchtelingen uit Sudan, wanhopig op zoek naar een lift. Ik zag er 2 richting een busje lopen. De één leidde de chauffeur af terwijl de andere naar binnen klauterde. Die zal nu wel in Engeland zijn.
       Uiteindelijk vroeg ik een dame en haar zoon of ze me kon meenemen. Ze zei dat ze zondag pas ging, maar dat zou natuurlijk te laat zijn. Wel bracht ze me naar de ferry’s.
+      </p>
       <img src="{{ site.baseurl }}/assets/images/Me_and_Richard.JPG" alt="Me and Richard">
+      <p>
       Aldaar ontmoette ik Louis en Richard. Louis had een half jaar door India gereisd en was net weer onderweg naar huis. Hij was erg amicaal, met enkele mankementen en praatte veel. Hij stelde me erg op mijn gemak.
       Richard was een Roma, ex-militair, die blind was geraakt bij de Ariana Grande aanslag in Manchester. Gek genoeg voerde hij de groep aan, ondanks dat hij beperkt was, was hij toch ook heel erg bekwaam. Ik hoefde niet lang te wachten voordat Richard naar de balie liep en drie ferry tickets regelde.
       Het was een stormachtige bootreis, we zongen Halleluja buiten op de boot en hielpen een Indiaas stel met een stuk of 5 kinderen met hun bagage.</p>
