@@ -33,7 +33,7 @@ class RequestHandler(BaseHTTPRequestHandler):
         self.end_headers()
         self.wfile.write("GET method is not supported. Please use POST or OPTIONS.".encode())
 
-def run(server_class=HTTPServer, handler_class=RequestHandler, port=8000):
+def run(server_class=HTTPServer, handler_class=RequestHandler, port=8080):
     server_address = ('', port)
     httpd = server_class(server_address, handler_class)
     print(f"Starting server on port {port}...")
