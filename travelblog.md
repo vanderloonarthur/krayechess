@@ -13,33 +13,30 @@ sidebar:
 <html lang="en">
 
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HB19E314J8"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-HB19E314J8');
-</script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HB19E314J8"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-HB19E314J8');
+  </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Reis door Europa met Arthur Ross! Ontdek de schoonheid van Europa met deze boeiende reisverhalen.">
   <title>Gallery - Reis door Europa met Arthur Ross!</title>
-
   <style>
     body {
       color: red !important;
       background-color: black;
       font-family: 'Arial', sans-serif;
     }
-
     .image-gallery {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
       gap: 20px;
       padding: 20px;
     }
-
     #scrollUpBtn {
       display: none;
       position: fixed;
@@ -54,48 +51,39 @@ sidebar:
       font-weight: bold;
       transition: background-color 0.3s;
     }
-
     #scrollUpBtn:hover {
       background-color: #FFD700;
     }
-
     .image-item {
       overflow: hidden;
       border: 2px solid red;
       transition: border-color 0.3s;
     }
-
     .image-item img {
       width: 100%;
       height: auto;
       border: 2px solid transparent;
       transition: transform 0.3s ease-in-out, border-color 0.3s;
     }
-
     .image-item:hover img {
       transform: scale(1.2);
       border-color: red;
     }
-
     .image-caption {
       text-align: center;
       margin-top: 10px;
     }
-
     .golden-link {
       color: red !important;
       text-decoration: none;
       font-weight: bold;
     }
-
     .golden-link:hover {
       text-decoration: underline;
     }
-
     .golden-text {
       color: red !important;
     }
-
     .quote-container {
       position: fixed;
       top: 50%;
@@ -107,7 +95,6 @@ sidebar:
       border-radius: 5px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
-
     .modal {
       display: none;
       position: fixed;
@@ -119,7 +106,6 @@ sidebar:
       justify-content: center;
       animation: fadeIn 0.3s ease-out;
     }
-
     @keyframes fadeIn {
       from {
         opacity: 0;
@@ -130,7 +116,6 @@ sidebar:
         transform: translate(-50%, -50%) scale(1);
       }
     }
-
     .close {
       color: #aaa;
       float: right;
@@ -139,13 +124,11 @@ sidebar:
       cursor: pointer;
       transition: color 0.3s;
     }
-
     .close:hover,
     .close:focus {
       color: black;
       text-decoration: none;
     }
-
     .modal-content {
       background-color: #f8f8f8;
       color: #333;
@@ -156,7 +139,6 @@ sidebar:
       border-radius: 5px;
       margin: auto;
     }
-
     .modal-content textarea {
       width: 100%;
       background-color: #333;
@@ -166,21 +148,17 @@ sidebar:
       padding: 10px;
       resize: none;
     }
-
     .feedback-text {
       color: #FFD700;
     }
-
     @media only screen and (max-width: 768px) {
       .image-gallery {
         grid-template-columns: 1fr;
       }
-
       .modal-content {
         width: 90%;
       }
     }
-
     .selected-feedback {
       background-color: #FFD700 !important;
     }
@@ -231,11 +209,11 @@ sidebar:
       <span class="close" onclick="closeModal()">&times;</span>
       <h2>Hoe blij bent u met de website?</h2>
       <div id="feedback-buttons">
-        <button onclick="selectFeedback(this, 'Very Happy', '😃')">Very Happy 😃</button>
-        <button onclick="selectFeedback(this, 'Happy', '😊')">Happy 😊</button>
-        <button onclick="selectFeedback(this, 'Neutral', '😐')">Neutral 😐</button>
-        <button onclick="selectFeedback(this, 'Unhappy', '😞')">Unhappy 😞</button>
-        <button onclick="selectFeedback(this, 'Very Unhappy', '😢')">Very Unhappy 😢</button>
+        <button onclick="selectFeedback(this, 'Very Happy', '😃')" aria-label="Very Happy">Very Happy 😃</button>
+        <button onclick="selectFeedback(this, 'Happy', '😊')" aria-label="Happy">Happy 😊</button>
+        <button onclick="selectFeedback(this, 'Neutral', '😐')" aria-label="Neutral">Neutral 😐</button>
+        <button onclick="selectFeedback(this, 'Unhappy', '😞')" aria-label="Unhappy">Unhappy 😞</button>
+        <button onclick="selectFeedback(this, 'Very Unhappy', '😢')" aria-label="Very Unhappy">Very Unhappy 😢</button>
       </div>
       <div>
         <label for="additionalComments">Additional Comments:</label>
@@ -248,7 +226,7 @@ sidebar:
   <p>Please tell us what you think of the website. We appreciate your support!</p>
 
   <!-- Scroll-up button -->
-  <button id="scrollUpBtn" onclick="scrollToTop()">Scroll to Top</button>
+  <button id="scrollUpBtn" onclick="scrollToTop()" aria-label="Scroll to Top">Scroll to Top</button>
 
   <script>
     function openModal() {
@@ -270,8 +248,9 @@ sidebar:
     function submitFeedback() {
       var selectedButton = document.querySelector('#feedback-buttons button.selected-feedback');
       var feedback = selectedButton ? selectedButton.textContent : '';
-      var reaction = selectedButton ? selectedButton.getAttribute('data-reaction') : '';
+      var reaction = selectedButton ? selectedButton.getAttribute('aria-label') : '';
       var additionalComments = document.getElementById("additionalComments").value;
+
       console.log('Feedback:', feedback, 'Reaction:', reaction, 'Additional Comments:', additionalComments);
 
       sendFeedback(feedback, reaction, additionalComments);
@@ -287,27 +266,24 @@ sidebar:
     }
 
     function sendFeedback(feedback, reaction, additionalComments) {
-function sendFeedback(feedback, reaction, additionalComments) {
-  var xhr = new XMLHttpRequest();
-  var url = "https://arpross.com/travelblog.md/feedback"; // Ensure this URL matches your server's endpoint URL
-  xhr.open("POST", url, true);
-  xhr.setRequestHeader("Content-Type", "application/json");
-  xhr.onreadystatechange = function () {
-    if (xhr.readyState === 4) {
-      if (xhr.status === 200) {
-        console.log('Feedback submitted successfully');
-      } else {
-        console.error('Error submitting feedback:', xhr.status, xhr.responseText);
-      }
+      var xhr = new XMLHttpRequest();
+      var url = "https://arpross.com/travelblog.md/feedback"; // Ensure this URL matches your server's endpoint URL
+      xhr.open("POST", url, true);
+      xhr.setRequestHeader("Content-Type", "application/json");
+      xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4) {
+          if (xhr.status === 200) {
+            console.log('Feedback submitted successfully');
+          } else {
+            console.error('Error submitting feedback:', xhr.status, xhr.responseText);
+          }
+        }
+      };
+      xhr.onerror = function () {
+        console.error('Network error occurred while submitting feedback');
+      };
+      xhr.send(JSON.stringify({ feedback: feedback, reaction: reaction, additionalComments: additionalComments }));
     }
-  };
-  xhr.onerror = function () {
-    console.error('Network error occurred while submitting feedback');
-  };
-  xhr.send(JSON.stringify({ feedback: feedback, reaction: reaction, additionalComments: additionalComments }));
-}
-
-
 
     function scrollToTop() {
       window.scrollTo({ top: 0, behavior: 'smooth' });
