@@ -1,0 +1,27 @@
+[
+  {
+    "name": "John Doe",
+    "email": "john.doe@example.com",
+    "message": "This is a feedback message."
+  },
+  {
+    "feedback": "Very Happy 😃",
+    "reaction": null,
+    "additionalComments": ""
+  },
+  {
+    "feedback": "Very Happy 😃",
+    "reaction": null,
+    "additionalComments": "coo"
+  },
+  {
+    "feedback": "Very Happy 😃",
+    "reaction": null,
+    "additionalComments": "Fore"
+  },
+  {
+    "feedback": "Very Happy 😃",
+    "reaction": null,
+    "additionalComments": "Fore!!!"
+  }
+]
