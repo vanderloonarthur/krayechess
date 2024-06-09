@@ -287,8 +287,9 @@ sidebar:
     }
 
     function sendFeedback(feedback, reaction, additionalComments) {
+function sendFeedback(feedback, reaction, additionalComments) {
   var xhr = new XMLHttpRequest();
-  var url = "https://arpross.com/travelblog"; // Ensure this URL matches your server's endpoint URL
+  var url = "https://arpross.com/travelblog.md/feedback"; // Ensure this URL matches your server's endpoint URL
   xhr.open("POST", url, true);
   xhr.setRequestHeader("Content-Type", "application/json");
   xhr.onreadystatechange = function () {
@@ -296,12 +297,16 @@ sidebar:
       if (xhr.status === 200) {
         console.log('Feedback submitted successfully');
       } else {
-        console.error('Error submitting feedback:', xhr.status);
+        console.error('Error submitting feedback:', xhr.status, xhr.responseText);
       }
     }
   };
+  xhr.onerror = function () {
+    console.error('Network error occurred while submitting feedback');
+  };
   xhr.send(JSON.stringify({ feedback: feedback, reaction: reaction, additionalComments: additionalComments }));
 }
+
 
 
     function scrollToTop() {

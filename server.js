@@ -24,10 +24,12 @@ app.use(cors(corsOptions));
 app.post('/feedback', (req, res) => {
   const feedbackData = req.body;
 
+  // Validate feedbackData here
+
   // Log received feedback
   console.log('Received feedback:', feedbackData);
 
-  // Write the feedback data to the JSON file
+  // Read the existing feedback data
   fs.readFile(feedbackFilePath, 'utf8', (err, data) => {
     if (err) {
       console.error('Error reading feedback file:', err);
@@ -42,8 +44,10 @@ app.post('/feedback', (req, res) => {
       return res.status(500).send('Error parsing existing feedback data');
     }
 
+    // Add new feedback
     existingFeedback.push(feedbackData);
 
+    // Write the updated feedback data
     fs.writeFile(feedbackFilePath, JSON.stringify(existingFeedback, null, 2), (writeErr) => {
       if (writeErr) {
         console.error('Error saving feedback data:', writeErr);
@@ -64,8 +68,8 @@ const passphrase = process.env.SSL_PASSPHRASE;
 
 // Set up HTTPS server
 const server = https.createServer({
-  key: fs.readFileSync('key.pem'),
-  cert: fs.readFileSync('cert.pem'),
+  key: fs.readFileSync(path.join(__dirname, 'key.pem')),
+  cert: fs.readFileSync(path.join(__dirname, 'cert.pem')),
   passphrase: passphrase
 }, app);
 
