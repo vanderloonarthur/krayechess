@@ -288,7 +288,7 @@ sidebar:
 
     function sendFeedback(feedback, reaction, additionalComments) {
   var xhr = new XMLHttpRequest();
-  var url = "https://localhost:8080/feedback"; // Ensure this URL matches your server's endpoint URL
+  var url = "https://arpross.com/travelblog"; // Ensure this URL matches your server's endpoint URL
   xhr.open("POST", url, true);
   xhr.setRequestHeader("Content-Type", "application/json");
   xhr.onreadystatechange = function () {
