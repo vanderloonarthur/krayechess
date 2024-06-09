@@ -15,7 +15,7 @@ app.use(bodyParser.json());
 
 // CORS configuration
 const corsOptions = {
-  origin: ['https://www.arpross.com', 'http://127.0.0.1:3000'],
+  origin: ['https://www.arpross.com/travelblog.md', 'http://127.0.0.1:3000'],
 };
 
 app.use(cors(corsOptions));
@@ -23,6 +23,9 @@ app.use(cors(corsOptions));
 // Endpoint to receive feedback
 app.post('/feedback', (req, res) => {
   const feedbackData = req.body;
+
+  // Log received feedback
+  console.log('Received feedback:', feedbackData);
 
   // Write the feedback data to the JSON file
   fs.readFile(feedbackFilePath, 'utf8', (err, data) => {

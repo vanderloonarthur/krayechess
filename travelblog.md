@@ -229,7 +229,7 @@ sidebar:
   <div id="feedback-modal" class="modal">
     <div class="modal-content">
       <span class="close" onclick="closeModal()">&times;</span>
-      <h2>How happy are you with the website?</h2>
+      <h2>Hoe blij bent u met de website?</h2>
       <div id="feedback-buttons">
         <button onclick="selectFeedback(this, 'Very Happy', '😃')">Very Happy 😃</button>
         <button onclick="selectFeedback(this, 'Happy', '😊')">Happy 😊</button>
@@ -288,7 +288,7 @@ sidebar:
 
     function sendFeedback(feedback, reaction, additionalComments) {
   var xhr = new XMLHttpRequest();
-  var url = "http://localhost:8080/feedback"; // Ensure this URL matches your server's endpoint URL
+  var url = "https://localhost:8080/feedback"; // Ensure this URL matches your server's endpoint URL
   xhr.open("POST", url, true);
   xhr.setRequestHeader("Content-Type", "application/json");
   xhr.onreadystatechange = function () {
