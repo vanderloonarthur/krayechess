@@ -56,10 +56,14 @@ app.get('/', (req, res) => {
   res.send('Welcome to the home page!');
 });
 
+// Read passphrase from environment variable
+const passphrase = process.env.SSL_PASSPHRASE;
+
 // Set up HTTPS server
 const server = https.createServer({
-  key: fs.readFileSync(path.resolve(__dirname, 'key.pem')),
-  cert: fs.readFileSync(path.resolve(__dirname, 'cert.pem'))
+  key: fs.readFileSync('key.pem'),
+  cert: fs.readFileSync('cert.pem'),
+  passphrase: passphrase
 }, app);
 
 // Start the server
