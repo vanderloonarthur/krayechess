@@ -1,39 +1,49 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
+import sqlite3
 
 app = Flask(__name__)
 CORS(app)  # Enable CORS for all routes
 
-@app.route('/', methods=['GET', 'OPTIONS'])
-def handle_root():
-    if request.method == 'OPTIONS':
-        # Handle OPTIONS request for CORS preflight
-        response = jsonify({'message': 'Preflight request successful'})
-        response.headers.add('Access-Control-Allow-Origin', '*')
-        response.headers.add('Access-Control-Allow-Headers', 'Content-Type')
-        response.headers.add('Access-Control-Allow-Methods', 'POST')
-        return response
-    else:
-        return jsonify({'message': 'Hello, World!'})
+# Connect to SQLite database
+try:
+    conn = sqlite3.connect('feedback.db')
+    cursor = conn.cursor()
 
-@app.route('/feedback', methods=['POST', 'OPTIONS'])
+    # Create a table to store feedback data if not exists
+    cursor.execute('''CREATE TABLE IF NOT EXISTS feedback (
+                        id INTEGER PRIMARY KEY,
+                        feedback TEXT,
+                        reaction TEXT,
+                        additional_comments TEXT
+                    )''')
+    conn.commit()
+except Exception as e:
+    print("Error connecting to database:", e)
+
+@app.route('/', methods=['GET'])
+def index():
+    """
+    Handle GET request to root route.
+    """
+    return jsonify({'message': 'Welcome to the feedback system!'})
+
+@app.route('/feedback', methods=['POST'])
 def receive_feedback():
-    if request.method == 'OPTIONS':
-        # Handle OPTIONS request for CORS preflight
-        response = jsonify({'message': 'Preflight request successful'})
-        response.headers.add('Access-Control-Allow-Origin', '*')
-        response.headers.add('Access-Control-Allow-Headers', 'Content-Type')
-        response.headers.add('Access-Control-Allow-Methods', 'POST')
-        return response
-
-    if request.method == 'POST':
-        # Handle POST request to receive feedback data and store it in the database
+    """
+    Handle POST request to submit feedback.
+    """
+    try:
         data = request.json  # Assuming JSON data is sent in the request body
-        # Assuming you have a function to store feedback in the database
-        # Replace this with your actual database handling code
-        # For now, let's just print the received data
-        print("Received feedback:", data)
-        return jsonify({'message': 'Feedback received successfully'})
+
+        # Insert feedback data into the database
+        cursor.execute('''INSERT INTO feedback (feedback, reaction, additional_comments)
+                          VALUES (?, ?, ?)''', (data['feedback'], data['reaction'], data['additional_comments']))
+        conn.commit()
+        return jsonify({'message': 'Feedback received and stored successfully'})
+    except Exception as e:
+        print("Error storing feedback:", e)
+        return jsonify({'error': 'Failed to store feedback'})
 
 if __name__ == '__main__':
     app.run(debug=True)

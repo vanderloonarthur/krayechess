@@ -267,28 +267,7 @@ sidebar:
 
     function sendFeedback(feedback, reaction, additionalComments) {
     var xhr = new XMLHttpRequest();
-    var url = "http://localhost:5000/feedback"; // Change the URL to match your server's endpoint URL
-    xhr.open("POST", url, true);
-    xhr.setRequestHeader("Content-Type", "application/json");
-
-    // Handle preflight OPTIONS request
-    xhr.onreadystatechange = function () {
-        if (xhr.readyState === 4 && xhr.status === 200) {
-            console.log('Preflight request successful');
-            // After successful preflight request, send the actual POST request
-            sendPostRequest(feedback, reaction, additionalComments);
-        } else if (xhr.readyState === 4 && xhr.status !== 200) {
-            console.error('Error in preflight request:', xhr.status, xhr.responseText);
-        }
-    };
-
-    // Send the OPTIONS request
-    xhr.send();
-}
-
-function sendPostRequest(feedback, reaction, additionalComments) {
-    var xhr = new XMLHttpRequest();
-    var url = "http://localhost:5000/feedback"; // Change the URL to match your server's endpoint URL
+    var url = "http://127.0.0.1:8000/receive_feedback/"; // Adjust the URL as needed
     xhr.open("POST", url, true);
     xhr.setRequestHeader("Content-Type", "application/json");
 
@@ -301,15 +280,48 @@ function sendPostRequest(feedback, reaction, additionalComments) {
 
     // Handle response
     xhr.onreadystatechange = function () {
-        if (xhr.readyState === 4 && xhr.status === 200) {
-            console.log('Feedback sent successfully:', xhr.responseText);
-        } else if (xhr.readyState === 4 && xhr.status !== 200) {
-            console.error('Error in sending feedback:', xhr.status, xhr.responseText);
+        if (xhr.readyState === 4) {
+            if (xhr.status === 200) {
+                console.log('Feedback sent successfully:', xhr.responseText);
+            } else {
+                console.error('Error in sending feedback:', xhr.status, xhr.responseText);
+            }
         }
     };
 
     // Send the POST request with the feedback data
     xhr.send(payload);
+}
+
+// Example usage:
+sendFeedback('Happy', '😊', 'Great website!');
+
+
+function sendPostRequest(feedback, reaction, additionalComments) {
+    var xhr = new XMLHttpRequest();
+    var url = "http://localhost:8000/receive_feedback/";  // URL to the Django view handling feedback submission
+    xhr.open("POST", url, true);
+    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+
+    // Construct the form data
+    var formData = new FormData();
+    formData.append('feedback', feedback);
+    formData.append('reaction', reaction);
+    formData.append('additional_comments', additionalComments);
+
+    // Handle response
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4) {
+            if (xhr.status === 200) {
+                console.log('Feedback sent successfully:', xhr.responseText);
+            } else {
+                console.error('Error in sending feedback:', xhr.status, xhr.responseText);
+            }
+        }
+    };
+
+    // Send the POST request with the feedback data
+    xhr.send(formData);
 }
 
 
