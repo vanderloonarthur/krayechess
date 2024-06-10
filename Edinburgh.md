@@ -26,23 +26,29 @@ permalink: /Edinburgh.md/
       max-width: 80%;
       margin: 15px auto;
     }
-    h2 + p {
+      h1{
+        color: green;
+    }
+    h2{
+      color: red;
+    }
+    p {
       color: white;
     }
     .back-to-gallery {
       display: inline-block;
       margin-top: 20px;
       padding: 10px 20px;
-      background-color: #FF2400;
-      color: black;
+      background-color: red;
+      color: white;
       text-decoration: none;
       font-weight: bold;
       border-radius: 5px;
       transition: background-color 0.3s, color 0.3s;
     }
     .back-to-gallery:hover {
-      background-color: silver;
-      color: #8B0000;
+      background-color: green;
+      color: white;
     }
     .center-content {
       display: flex;
@@ -191,7 +197,7 @@ permalink: /Edinburgh.md/
     <figcaption>Vluchtelingen</figcaption>
   </div>
   <div class="center-text">
-    <h1>Een waargebeurd verhaal.</h1>
+    <h2>Een waargebeurd verhaal.</h2>
     <p>
       10 April, 2024
       In de trein naar Antwerpen.
@@ -210,7 +216,7 @@ permalink: /Edinburgh.md/
       In de trein naar Calais.
       Vanaf Noorder Kempen ben ik meegelift met Mohammed tot aan Antwerpen. Hij zette me op een druk tankstation, langs de kant van de weg af. Ik stond in de berm, dus moest rennen om over te steken en niet geraakt te worden door langsrijdende auto’s.
       Een maal bij het tankstation aangekomen vroeg ik een Engelsman om een lift. Hij zei echter dat hij de andere kant opging en dat hij me dus niet kon helpen.
-      Toen ik verder liep en andere mensen vroeg stopte de Engelsman zijn auto. Hij gaf me 25 euro en zei da tik het beste met de trein naar Calais kon gaan. Ik heb maar zijn advies opgevolgd en zit nu ontspannen in de trein naar Calais Ville. Wel ben ik nu 51,60 euro’s lichter. Prijskaartjes zijn tamelijk prijzig. Met nog maar 11 euro over op de bank zal ik het moeten redden. Misschien stuurt mijn oud-huisgenoot Miguel me nog zijn restschuld van 325 euro anders wordt het erg moeilijk. Hopelijk steek ik vannacht nog het kanaal over naar Dover. Anders zal ik moeten overnachten in Calais.
+      Toen ik verder liep en andere mensen vroeg stopte de Engelsman zijn auto. Hij gaf me 25 euro en zei dat ik het beste met de trein naar Calais kon gaan. Ik heb maar zijn advies opgevolgd en zit nu ontspannen in de trein naar Calais Ville. Wel ben ik nu 51,60 euro’s lichter. Prijskaartjes zijn tamelijk prijzig. Met nog maar 11 euro over op de bank zal ik het moeten redden. Misschien stuurt mijn oud-huisgenoot Miguel me nog zijn restschuld van 325 euro anders wordt het erg moeilijk. Hopelijk steek ik vannacht nog het kanaal over naar Dover. Anders zal ik moeten overnachten in Calais.
     </p>
     <p>
       11th of April, 2024. 2 days until the wedding.

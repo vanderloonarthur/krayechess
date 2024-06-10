@@ -56,7 +56,7 @@ sidebar:
     }
     .image-item {
       overflow: hidden;
-      border: 2px solid red;
+      border: 2px solid green;
       transition: border-color 0.3s;
     }
     .image-item img {
@@ -67,14 +67,14 @@ sidebar:
     }
     .image-item:hover img {
       transform: scale(1.2);
-      border-color: red;
+      border-color: white;
     }
     .image-caption {
       text-align: center;
       margin-top: 10px;
     }
     .golden-link {
-      color: red !important;
+      color: green !important;
       text-decoration: none;
       font-weight: bold;
     }
@@ -82,7 +82,7 @@ sidebar:
       text-decoration: underline;
     }
     .golden-text {
-      color: red !important;
+      color: green !important;
     }
     .quote-container {
       position: fixed;

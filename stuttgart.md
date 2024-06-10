@@ -26,6 +26,9 @@ body, p {
   max-width: 80%;
   margin: 15px auto;
 }
+h1{
+  color: green;
+}
 h2 + p {
   color: white; /* Set text color under h2 to white */
 }
@@ -34,16 +37,16 @@ h2 + p {
     display: inline-block;
     margin-top: 20px;
     padding: 10px 20px;
-    background-color: #FF2400;
-    color: black; /* Set the font color to black */
+    background-color: red;
+    color: white; /* Set the font color to black */
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
     transition: background-color 0.3s, color 0.3s;
   }
   .back-to-gallery:hover {
-    background-color: silver;
-    color: #8B0000;
+    background-color: green;
+    color: white;
   }
     .center-content {
       display: flex;
@@ -164,7 +167,7 @@ h2 + p {
       <figcaption>Afghan Girl [source: https://www.nationalgeographic.com]</figcaption>
   </div>
   <div class="center-text">
-  <h1>Een waargebeurd verhaal van psychose</h1>
+  <h2>Een waargebeurd verhaal van psychose</h2>
 <h2>5 December, 2020</h2>
 <p>
 Ik merkte dat ze achter mijn generaal aankwamen, dus stuurde ik de spion eropaf en warempel de maarschalk!</p>

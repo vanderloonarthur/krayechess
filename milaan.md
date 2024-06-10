@@ -18,6 +18,9 @@ permalink: /milaan.md/
       background-color: black; /* Set the background color to black */
       color: white; /* Set text color to white */
     }
+    h1{
+      color: green;
+    }
     body, p {
       color: white;
     }
@@ -25,16 +28,16 @@ permalink: /milaan.md/
     display: inline-block;
     margin-top: 20px;
     padding: 10px 20px;
-    background-color: #FF2400;
-    color: black; /* Set the font color to black */
+    background-color: red;
+    color: white; /* Set the font color to black */
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
     transition: background-color 0.3s, color 0.3s;
   }
   .back-to-gallery:hover {
-    background-color: silver;
-    color: #8B0000;
+    background-color: green;
+    color: white;
   }
     .center-content {
       display: flex;
