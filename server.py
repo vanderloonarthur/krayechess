@@ -1,43 +1,39 @@
-from http.server import BaseHTTPRequestHandler, HTTPServer
-from urllib.parse import urlparse, parse_qs
-import json
+from flask import Flask, request, jsonify
+from flask_cors import CORS
 
-class RequestHandler(BaseHTTPRequestHandler):
-    def do_OPTIONS(self):
-        self.send_response(200)
-        self.send_header("Access-Control-Allow-Origin", "*")
-        self.send_header("Access-Control-Allow-Methods", "POST, OPTIONS")
-        self.send_header("Access-Control-Allow-Headers", "Content-Type")
-        self.end_headers()
+app = Flask(__name__)
+CORS(app)  # Enable CORS for all routes
 
-    def do_POST(self):
-        content_length = int(self.headers['Content-Length'])
-        post_data = self.rfile.read(content_length)
-        data = json.loads(post_data)
+@app.route('/', methods=['GET', 'OPTIONS'])
+def handle_root():
+    if request.method == 'OPTIONS':
+        # Handle OPTIONS request for CORS preflight
+        response = jsonify({'message': 'Preflight request successful'})
+        response.headers.add('Access-Control-Allow-Origin', '*')
+        response.headers.add('Access-Control-Allow-Headers', 'Content-Type')
+        response.headers.add('Access-Control-Allow-Methods', 'POST')
+        return response
+    else:
+        return jsonify({'message': 'Hello, World!'})
 
+@app.route('/feedback', methods=['POST', 'OPTIONS'])
+def receive_feedback():
+    if request.method == 'OPTIONS':
+        # Handle OPTIONS request for CORS preflight
+        response = jsonify({'message': 'Preflight request successful'})
+        response.headers.add('Access-Control-Allow-Origin', '*')
+        response.headers.add('Access-Control-Allow-Headers', 'Content-Type')
+        response.headers.add('Access-Control-Allow-Methods', 'POST')
+        return response
+
+    if request.method == 'POST':
+        # Handle POST request to receive feedback data and store it in the database
+        data = request.json  # Assuming JSON data is sent in the request body
+        # Assuming you have a function to store feedback in the database
+        # Replace this with your actual database handling code
+        # For now, let's just print the received data
         print("Received feedback:", data)
+        return jsonify({'message': 'Feedback received successfully'})
 
-        self.send_response(200)
-        self.send_header("Access-Control-Allow-Origin", "*")
-        self.send_header("Content-type", "application/json")
-        self.end_headers()
-
-        response = {
-            "message": "Feedback received successfully"
-        }
-        self.wfile.write(json.dumps(response).encode('utf-8'))
-
-    def do_GET(self):
-        self.send_response(405)
-        self.send_header("Content-type", "text/plain")
-        self.end_headers()
-        self.wfile.write("GET method is not supported. Please use POST or OPTIONS.".encode())
-
-def run(server_class=HTTPServer, handler_class=RequestHandler, port=8080):
-    server_address = ('', port)
-    httpd = server_class(server_address, handler_class)
-    print(f"Starting server on port {port}...")
-    httpd.serve_forever()
-
-if __name__ == "__main__":
-    run()
+if __name__ == '__main__':
+    app.run(debug=True)

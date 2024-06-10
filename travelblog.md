@@ -266,24 +266,52 @@ sidebar:
     }
 
     function sendFeedback(feedback, reaction, additionalComments) {
-      var xhr = new XMLHttpRequest();
-      var url = "https://www.arpross.com/travelblog.md/feedback"; // Ensure this URL matches your server's endpoint URL
-      xhr.open("POST", url, true);
-      xhr.setRequestHeader("Content-Type", "application/json");
-      xhr.onreadystatechange = function () {
-        if (xhr.readyState === 4) {
-          if (xhr.status === 200) {
-            console.log('Feedback submitted successfully');
-          } else {
-            console.error('Error submitting feedback:', xhr.status, xhr.responseText);
-          }
+    var xhr = new XMLHttpRequest();
+    var url = "http://localhost:5000/feedback"; // Change the URL to match your server's endpoint URL
+    xhr.open("POST", url, true);
+    xhr.setRequestHeader("Content-Type", "application/json");
+
+    // Handle preflight OPTIONS request
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+            console.log('Preflight request successful');
+            // After successful preflight request, send the actual POST request
+            sendPostRequest(feedback, reaction, additionalComments);
+        } else if (xhr.readyState === 4 && xhr.status !== 200) {
+            console.error('Error in preflight request:', xhr.status, xhr.responseText);
         }
-      };
-      xhr.onerror = function () {
-        console.error('Network error occurred while submitting feedback');
-      };
-      xhr.send(JSON.stringify({ feedback: feedback, reaction: reaction, additionalComments: additionalComments }));
-    }
+    };
+
+    // Send the OPTIONS request
+    xhr.send();
+}
+
+function sendPostRequest(feedback, reaction, additionalComments) {
+    var xhr = new XMLHttpRequest();
+    var url = "http://localhost:5000/feedback"; // Change the URL to match your server's endpoint URL
+    xhr.open("POST", url, true);
+    xhr.setRequestHeader("Content-Type", "application/json");
+
+    // Construct the JSON payload
+    var payload = JSON.stringify({
+        feedback: feedback,
+        reaction: reaction,
+        additional_comments: additionalComments
+    });
+
+    // Handle response
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+            console.log('Feedback sent successfully:', xhr.responseText);
+        } else if (xhr.readyState === 4 && xhr.status !== 200) {
+            console.error('Error in sending feedback:', xhr.status, xhr.responseText);
+        }
+    };
+
+    // Send the POST request with the feedback data
+    xhr.send(payload);
+}
+
 
     function scrollToTop() {
       window.scrollTo({ top: 0, behavior: 'smooth' });
