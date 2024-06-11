@@ -267,7 +267,7 @@ sidebar:
 
     function sendFeedback(feedback, reaction, additionalComments) {
     var xhr = new XMLHttpRequest();
-    var url = "https://kraye.nl:8000/receive_feedback/"; // Adjust the URL as needed
+    var url = "http://localhost:8000/receive_feedback/"; // Adjust the URL as needed
     xhr.open("POST", url, true);
     xhr.setRequestHeader("Content-Type", "application/json");
 
@@ -299,7 +299,7 @@ sendFeedback('Happy', '😊', 'Great website!');
 
 function sendPostRequest(feedback, reaction, additionalComments) {
     var xhr = new XMLHttpRequest();
-    var url = "https://kraye.nl:8000/receive_feedback/";  // URL to the Django view handling feedback submission
+    var url = "http://localhost:8000/receive_feedback/";  // URL to the Django view handling feedback submission
     xhr.open("POST", url, true);
     xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 

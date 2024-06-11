@@ -1,4 +1,5 @@
 from django.http import JsonResponse
+from django.http import HttpResponse
 from django.views.decorators.csrf import csrf_exempt
 from .models import Feedback  # Assuming you have a Feedback model defined in your app
 import json
@@ -10,7 +11,7 @@ def receive_feedback(request):
         try:
             # Assuming the data is sent as JSON
             data = json.loads(request.body)  # Access POST data
-            feedback = data.get('feedback')
+            feedback_text = data.get('feedback')  # Renamed to avoid variable name conflict
             reaction = data.get('reaction')
             additional_comments = data.get('additional_comments')
 
@@ -19,7 +20,7 @@ def receive_feedback(request):
             # Save data to the database
             try:
                 feedback = Feedback.objects.create(
-                    feedback=feedback,
+                    feedback=feedback_text,
                     reaction=reaction,
                     additional_comments=additional_comments
                 )
@@ -36,3 +37,8 @@ def receive_feedback(request):
 def feedback_list(request):
     feedbacks = Feedback.objects.all()
     return render(request, 'feedback_list.html', {'feedbacks': feedbacks})
+# myproject/views.py
+
+
+def home(request):
+    return HttpResponse("Welcome to the Home Page")
