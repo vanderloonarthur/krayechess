@@ -9,30 +9,25 @@ from django.shortcuts import render
 def receive_feedback(request):
     if request.method == 'POST':
         try:
-            # Assuming the data is sent as JSON
-            data = json.loads(request.body)  # Access POST data
-            feedback_text = data.get('feedback')  # Renamed to avoid variable name conflict
+            data = json.loads(request.body)
+            feedback = data.get('feedback')
             reaction = data.get('reaction')
             additional_comments = data.get('additional_comments')
 
-            # Process and validate data (if needed)
-            
-            # Save data to the database
-            try:
-                feedback = Feedback.objects.create(
-                    feedback=feedback_text,
-                    reaction=reaction,
-                    additional_comments=additional_comments
-                )
-                return JsonResponse({'message': 'Feedback received and stored successfully'})
-            except Exception as e:
-                print("Error saving feedback:", e)
-                return JsonResponse({'error': 'Error saving feedback'}, status=500)
+            feedback = Feedback.objects.create(
+                feedback=feedback,
+                reaction=reaction,
+                additional_comments=additional_comments
+            )
+            return JsonResponse({'message': 'Feedback received and stored successfully'})
         except Exception as e:
-            print("Error parsing request data:", e)
-            return JsonResponse({'error': 'Invalid request data'}, status=400)
+            return JsonResponse({'error': 'Error saving feedback'}, status=500)
+    elif request.method == 'GET':
+        # Handle GET request here, if needed
+        return HttpResponse("This endpoint only accepts POST requests.")
     else:
         return JsonResponse({'error': 'Invalid request method'}, status=405)
+
     
 def feedback_list(request):
     feedbacks = Feedback.objects.all()
