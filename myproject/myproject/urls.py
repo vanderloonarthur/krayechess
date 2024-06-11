@@ -17,8 +17,13 @@ Including another URLconf
 
 from django.urls import path
 from .views import receive_feedback
+from .views import feedback_list
+from . import views
 
 urlpatterns = [
     path('receive_feedback/', receive_feedback, name='receive_feedback'),
+    path('feedback/', feedback_list, name='feedback_list'),
+    path('feedback/', views.feedback_view, name='feedback'),
+
     # other URL patterns for your project...
 ]

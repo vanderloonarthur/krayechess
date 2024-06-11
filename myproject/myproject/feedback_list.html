@@ -1,0 +1,22 @@
+<!-- feedback_list.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Feedback List</title>
+</head>
+<body>
+    <h1>Feedback List</h1>
+    <ul>
+        {% for feedback in feedbacks %}
+        <li>
+            <strong>Name:</strong> {{ feedback.name }}<br>
+            <strong>Email:</strong> {{ feedback.email }}<br>
+            <strong>Message:</strong> {{ feedback.message }}<br>
+            <strong>Created at:</strong> {{ feedback.created_at }}
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
