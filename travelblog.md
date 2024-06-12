@@ -266,64 +266,32 @@ sidebar:
     }
 
     function sendFeedback(feedback, reaction, additionalComments) {
-    var xhr = new XMLHttpRequest();
-    var url = "http://0.0.0.0:8000"; // Adjust the URL as needed
-    xhr.open("POST", url, true);
-    xhr.setRequestHeader("Content-Type", "application/json");
+      var xhr = new XMLHttpRequest();
+      var url = "http://0.0.0.0:8000/receive_feedback/";  // URL to your Django endpoint
+      xhr.open("POST", url, true);
+      xhr.setRequestHeader("Content-Type", "application/json");
 
-    // Construct the JSON payload
-    var payload = JSON.stringify({
+      // Construct the JSON payload
+      var payload = JSON.stringify({
         feedback: feedback,
         reaction: reaction,
         additional_comments: additionalComments
-    });
+      });
 
-    // Handle response
-    xhr.onreadystatechange = function () {
+      // Handle response
+      xhr.onreadystatechange = function () {
         if (xhr.readyState === 4) {
-            if (xhr.status === 200) {
-                console.log('Feedback sent successfully:', xhr.responseText);
-            } else {
-                console.error('Error in sending feedback:', xhr.status, xhr.responseText);
-            }
+          if (xhr.status === 200) {
+            console.log('Feedback sent successfully:', xhr.responseText);
+          } else {
+            console.error('Error in sending feedback:', xhr.status, xhr.responseText);
+          }
         }
-    };
+      };
 
-    // Send the POST request with the feedback data
-    xhr.send(payload);
-}
-
-// Example usage:
-sendFeedback('Happy', '😊', 'Great website!');
-
-
-function sendPostRequest(feedback, reaction, additionalComments) {
-    var xhr = new XMLHttpRequest();
-    var url = "http://0.0.0.0:8000";  // URL to the Django view handling feedback submission
-    xhr.open("POST", url, true);
-    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-
-    // Construct the form data
-    var formData = new FormData();
-    formData.append('feedback', feedback);
-    formData.append('reaction', reaction);
-    formData.append('additional_comments', additionalComments);
-
-    // Handle response
-    xhr.onreadystatechange = function () {
-        if (xhr.readyState === 4) {
-            if (xhr.status === 200) {
-                console.log('Feedback sent successfully:', xhr.responseText);
-            } else {
-                console.error('Error in sending feedback:', xhr.status, xhr.responseText);
-            }
-        }
-    };
-
-    // Send the POST request with the feedback data
-    xhr.send(formData);
-}
-
+      // Send the POST request with the feedback data
+      xhr.send(payload);
+    }
 
     function scrollToTop() {
       window.scrollTo({ top: 0, behavior: 'smooth' });
