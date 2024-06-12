@@ -34,6 +34,8 @@ def feedback_list(request):
     return render(request, 'feedback_list.html', {'feedbacks': feedbacks})
 # myproject/views.py
 
+def my_view(request):
+    return HttpResponse("This is my view.")
 
 def home(request):
     return HttpResponse("Welcome to the Home Page")
