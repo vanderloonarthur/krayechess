@@ -167,7 +167,7 @@ h2 + p {
       <figcaption>Afghan Girl [source: https://www.nationalgeographic.com]</figcaption>
   </div>
   <div class="center-text">
-  <h2>[test]Een waargebeurd verhaal van psychose</h2>
+  <h2>[test]2Een waargebeurd verhaal van psychose</h2>
 <h2>5 December, 2020</h2>
 <p>
 Ik merkte dat ze achter mijn generaal aankwamen, dus stuurde ik de spion eropaf en warempel de maarschalk!</p>
