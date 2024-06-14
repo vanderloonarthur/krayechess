@@ -11,8 +11,9 @@ module.exports = {
       myCustomGlobal: 'readonly', // Your custom global variable
     },
   },
-  rules: {
-    // Add your ESLint rules here
-    'no-unused-expressions': 'off', // Disable no-unused-expressions rule if it's causing issues
+  plugins: {
+    es: {
+      // Optional: Add configuration for 'es' plugin if needed
+    },
   },
 };

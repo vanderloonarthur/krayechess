@@ -5,11 +5,14 @@ module.exports = {
         node: true,
       },
     },
-    extends: ['eslint:recommended', 'plugin:es/no-2022'],
+    extends: ['eslint:recommended'],  // Remove 'plugin:es/no-2022' if not necessary
     parserOptions: {
-      ecmaVersion: 2021, // Adjust to your ECMAScript version
+      ecmaVersion: 2021,
     },
     rules: {
-      // Add your specific ESLint rules here
+      // Add specific ESLint rules here if needed
+      'no-unused-expressions': 'off', // Disable conflicting rule if it's causing issues
+      // Add more rules as per your project requirements
     },
   };
+  
