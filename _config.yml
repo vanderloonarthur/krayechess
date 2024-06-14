@@ -19,6 +19,7 @@ favicon                  : /assets/images/europa_west.ico
 locale                   : "en-US"
 title                    : ""
 title_separator          : "-"
+destination              : _site
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Arthur Ross"
 description              : "Travel site"
