@@ -4111,7 +4111,6 @@ var BUGGY_SAFARI_ITERATORS = false;
 // https://tc39.es/ecma262/#sec-%iteratorprototype%-object
 var IteratorPrototype, PrototypeOfArrayIteratorPrototype, arrayIterator;
 
-/* eslint-disable es/no-array-prototype-keys -- safe */
 if ([].keys) {
   arrayIterator = [].keys();
   // Safari 8 has buggy iterators w/o `next`
@@ -4971,7 +4970,6 @@ var forEach = require('../internals/array-for-each');
 
 // `Array.prototype.forEach` method
 // https://tc39.es/ecma262/#sec-array.prototype.foreach
-// eslint-disable-next-line es/no-array-prototype-foreach -- safe
 $({ target: 'Array', proto: true, forced: [].forEach != forEach }, {
   forEach: forEach
 });
@@ -4994,7 +4992,6 @@ $({ target: 'Array', stat: true, forced: INCORRECT_ITERATION }, {
 
 },{"../internals/array-from":62,"../internals/check-correctness-of-iteration":73,"../internals/export":93}],171:[function(require,module,exports){
 'use strict';
-/* eslint-disable es/no-array-prototype-indexof -- required for testing */
 var $ = require('../internals/export');
 var uncurryThis = require('../internals/function-uncurry-this');
 var $IndexOf = require('../internals/array-includes').indexOf;
