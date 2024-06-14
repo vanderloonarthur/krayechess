@@ -1,9 +1,3 @@
-// Import ESLint plugin modules if needed
-// const esPlugin = require('eslint-plugin-es');
-
-// Ensure plugins are installed via npm or yarn
-// npm install eslint-plugin-es --save-dev
-
 module.exports = {
   // Set environment options directly
   env: {
@@ -23,8 +17,8 @@ module.exports = {
 
   // Plugins are specified directly as strings
   plugins: [
-    // 'es', // Example if needed
     // Add other plugins as needed
+    // 'es', // Example if needed
   ],
 
   // Rules are defined directly in the rules object

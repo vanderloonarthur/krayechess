@@ -22,6 +22,9 @@
     "node": "20.x"
   },
   "devDependencies": {
+    "@babel/core": "^7.24.7",
+    "@babel/preset-env": "^7.24.7",
+    "babel-loader": "^9.1.3",
     "chokidar": "^3.6.0",
     "eslint": "^9.4.0",
     "eslint-plugin-es": "^4.1.0",
