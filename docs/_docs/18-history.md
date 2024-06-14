@@ -328,7 +328,7 @@ toc: false
 - Add missing Punjabi and Hindi localized UI text strings. [#2212](https://github.com/mmistakes/minimal-mistakes/pull/2212)
 - Add missing Korean localized UI text strings. [#2209](https://github.com/mmistakes/minimal-mistakes/pull/2209)
 - Use [Font Awesome Kits](https://blog.fontawesome.com/introducing-font-awesome-kits-7134d1d59959) to use the latest version of icons. [#2184](https://github.com/mmistakes/minimal-mistakes/issues/2184)
-- Remove unnecessary console.log in `lunr-en.js` and `lunr-gr.js` JavaScript. [#2193](https://github.com/mmistakes/minimal-mistakes/issues/2193)
+- Remove unnecessary console.log in `lunr-en-custom.js` and `lunr-gr-custom.js` JavaScript. [#2193](https://github.com/mmistakes/minimal-mistakes/issues/2193)
 - Remove unnecessary `type="text/javascript"` from Google Analytics JavaScript. [#2190](https://github.com/mmistakes/minimal-mistakes/pull/2190)
 - Update links and fix typos in documentation. [#2186](https://github.com/mmistakes/minimal-mistakes/pull/2186)
 - Add skip links. [#2182](https://github.com/mmistakes/minimal-mistakes/issues/2182)
@@ -690,8 +690,8 @@ toc: false
 
 ### Bug Fixes
 
-- Fix `post.content` typo in `assets/js/lunr-en.js`. [#1354](https://github.com/mmistakes/minimal-mistakes/pull/1354)
-- Fix "lunr-en.js:1 Uncaught SyntaxError: Unexpected token <" in `assets/js/lunr-en.js`. [#1356](https://github.com/mmistakes/minimal-mistakes/pull/1356)
+- Fix `post.content` typo in `assets/js/lunr-en-custom.js`. [#1354](https://github.com/mmistakes/minimal-mistakes/pull/1354)
+- Fix "lunr-en-custom.js:1 Uncaught SyntaxError: Unexpected token <" in `assets/js/lunr-en-custom.js`. [#1356](https://github.com/mmistakes/minimal-mistakes/pull/1356)
 - Rename Naver verification `naver_site_verification` to be consistent with other site variables.
 - Fix button class in "Post with Table Of Contents" demo content. [#1368](https://github.com/mmistakes/minimal-mistakes/pull/1368)
 - Fix capitalization of WordPress in documentation. [#1381](https://github.com/mmistakes/minimal-mistakes/pull/1381)
