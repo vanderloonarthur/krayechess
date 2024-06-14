@@ -1,24 +1,28 @@
 module.exports = {
-    languageOptions: {
-      parserOptions: {
-        ecmaVersion: 2021,
-        sourceType: 'module',
-      },
-      globals: {
-        browser: true,
-        node: true,
-        myCustomGlobal: 'readonly', // Define your custom global variable here
-      },
+  languageOptions: {
+    parserOptions: {
+      ecmaVersion: 2021,
+      sourceType: 'module',
     },
-    plugins: {
-      es: {
-        // Configuration for 'es' plugin if needed
-      },
+    globals: {
+      browser: true,
+      node: true,
+      myCustomGlobal: 'readonly',
     },
-    rules: {
-      // Specific ESLint rules here
-      // Add more rules as needed
-      'es/no-2022': 'error', // Example rule from the 'es' plugin
-    },
-  };
-  
+  },
+  plugins: {
+    es: require('eslint-plugin-es'), // Ensure this points to the correct plugin
+  },
+  rules: {
+    //'es/no-array-prototype-keys': 'error',
+
+    // Uncomment and configure additional rules as needed
+    // 'no-console': 'warn',
+    // 'no-unused-vars': ['error', { 'vars': 'all', 'args': 'after-used', 'ignoreRestSiblings': false }],
+    // 'no-empty': 'error',
+    // 'comma-dangle': ['error', 'always-multiline'],
+    // 'semi': ['error', 'always'],
+    // 'quotes': ['error', 'single', { 'avoidEscape': true }],
+    // 'indent': ['error', 2, { 'SwitchCase': 1 }],
+  },
+};
