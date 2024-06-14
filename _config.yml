@@ -15,7 +15,7 @@ remote_theme             : #"mmistakes/minimal-mistakes"
 minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-destination              : docs
+destination              : _site
 favicon                  : /assets/images/europa_west.ico
 locale                   : "en-US"
 title                    : ""
