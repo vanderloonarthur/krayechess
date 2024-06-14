@@ -1,13 +1,12 @@
 module.exports = {
     languageOptions: {
+      parserOptions: {
+        ecmaVersion: 2021,
+      },
       globals: {
         browser: true,
         node: true,
       },
-    },
-    extends: ['eslint:recommended'],  // Remove 'plugin:es/no-2022' if not necessary
-    parserOptions: {
-      ecmaVersion: 2021,
     },
     rules: {
       // Add specific ESLint rules here if needed
