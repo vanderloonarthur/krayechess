@@ -74,13 +74,13 @@ lunr.utils = {}
  * @function
  */
 lunr.utils.warn = (function (global) {
-  /* eslint-disable no-console */
+   
   return function (message) {
     if (global.console && console.warn) {
       console.warn(message)
     }
   }
-  /* eslint-enable no-console */
+   
 })(this)
 
 /**
@@ -926,7 +926,7 @@ lunr.Vector.prototype.toArray = function () {
 lunr.Vector.prototype.toJSON = function () {
   return this.elements
 }
-/* eslint-disable */
+ 
 /*!
  * lunr.stemmer
  * Copyright (C) 2020 Oliver Nightingale
