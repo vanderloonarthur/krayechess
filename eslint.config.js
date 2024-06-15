@@ -11,18 +11,9 @@ module.exports = {
     },
   },
   plugins: {
-    es: require('eslint-plugin-es'), // Ensure this points to the correct plugin
+    es: {}, // Ensure this object structure is correct based on the plugin's requirements
   },
   rules: {
-    //'es/no-array-prototype-keys': 'error',
-
-    // Uncomment and configure additional rules as needed
-    // 'no-console': 'warn',
-    // 'no-unused-vars': ['error', { 'vars': 'all', 'args': 'after-used', 'ignoreRestSiblings': false }],
-    // 'no-empty': 'error',
-    // 'comma-dangle': ['error', 'always-multiline'],
-    // 'semi': ['error', 'always'],
-    // 'quotes': ['error', 'single', { 'avoidEscape': true }],
-    // 'indent': ['error', 2, { 'SwitchCase': 1 }],
+    // Define your ESLint rules here
   },
 };

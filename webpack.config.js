@@ -1,29 +1,23 @@
 const path = require('path');
 
 module.exports = {
-  mode: 'development',
-  entry: './assets/js/_main.js',
+  entry: './assets/js/_main.js', // Adjust this path to match your actual entry file
   output: {
-    path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
+    path: path.resolve(__dirname, 'dist'),
   },
   module: {
     rules: [
-      {
-        test: /\.css$/,
-        use: ['style-loader', 'css-loader'],
-      },
       {
         test: /\.js$/,
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['@babel/preset-env'],
-          },
-        },
-      },
-    ],
-  },
-  // Add plugins and other configurations as needed
+            presets: ['@babel/preset-env']
+          }
+        }
+      }
+    ]
+  }
 };
