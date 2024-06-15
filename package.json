@@ -40,6 +40,7 @@
     "watch:js": "onchange \"assets/js/**/*.js\" -e \"assets/js/main.min.js\" -- npm run build:js",
     "build:js": "npm run uglify && npm run add-banner",
     "build": "npm run lint && npm run compile && npm run bundle",
+    "vercel-build": "your-build-command && cp -r build/ _site/",
     "lint": "eslint .",
     "compile": "webpack",
     "bundle": "webpack --config webpack.config.js"
