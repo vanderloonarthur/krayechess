@@ -1,8 +1,0 @@
----
-triple:          'arm64-apple-darwin'
-binary-path:     '../../.ext/arm64-darwin23/fcntl.bundle'
-relocations:
-  - { offsetInCU: 0x1E, offset: 0x1E, size: 0x8, addend: 0x0, symName: _ruby_abi_version, symObjAddr: 0x0, symBinAddr: 0x3C48, symSize: 0x8 }
-  - { offsetInCU: 0x5E, offset: 0x5E, size: 0x8, addend: 0x0, symName: _ruby_abi_version, symObjAddr: 0x0, symBinAddr: 0x3C48, symSize: 0x8 }
-  - { offsetInCU: 0xA2, offset: 0xA2, size: 0x8, addend: 0x0, symName: _Init_fcntl, symObjAddr: 0x8, symBinAddr: 0x3C50, symSize: 0x218 }
-...

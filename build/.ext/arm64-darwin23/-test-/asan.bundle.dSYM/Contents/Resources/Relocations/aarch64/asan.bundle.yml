@@ -1,9 +1,0 @@
----
-triple:          'arm64-apple-darwin'
-binary-path:     '../../../.ext/arm64-darwin23/-test-/asan.bundle'
-relocations:
-  - { offsetInCU: 0x1E, offset: 0x1E, size: 0x8, addend: 0x0, symName: _ruby_abi_version, symObjAddr: 0x0, symBinAddr: 0x3ED0, symSize: 0x8 }
-  - { offsetInCU: 0x57, offset: 0x57, size: 0x8, addend: 0x0, symName: _ruby_abi_version, symObjAddr: 0x0, symBinAddr: 0x3ED0, symSize: 0x8 }
-  - { offsetInCU: 0x70, offset: 0x70, size: 0x8, addend: 0x0, symName: _Init_asan, symObjAddr: 0x8, symBinAddr: 0x3ED8, symSize: 0x4C }
-  - { offsetInCU: 0xEF, offset: 0xEF, size: 0x8, addend: 0x0, symName: _asan_enabled_p, symObjAddr: 0x54, symBinAddr: 0x3F24, symSize: 0x8 }
-...

@@ -1,9 +1,0 @@
----
-triple:          'arm64-apple-darwin'
-binary-path:     '../../../.ext/arm64-darwin23/-test-/rb_call_super_kw.bundle'
-relocations:
-  - { offsetInCU: 0x1E, offset: 0x1E, size: 0x8, addend: 0x0, symName: _ruby_abi_version, symObjAddr: 0x0, symBinAddr: 0x3E7C, symSize: 0x8 }
-  - { offsetInCU: 0x3E, offset: 0x3E, size: 0x8, addend: 0x0, symName: _ruby_abi_version, symObjAddr: 0x0, symBinAddr: 0x3E7C, symSize: 0x8 }
-  - { offsetInCU: 0x57, offset: 0x57, size: 0x8, addend: 0x0, symName: _Init_rb_call_super_kw, symObjAddr: 0x8, symBinAddr: 0x3E84, symSize: 0x40 }
-  - { offsetInCU: 0xD4, offset: 0xD4, size: 0x8, addend: 0x0, symName: _rb_call_super_kw_m, symObjAddr: 0x48, symBinAddr: 0x3EC4, symSize: 0x30 }
-...
