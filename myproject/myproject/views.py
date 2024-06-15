@@ -1,3 +1,4 @@
+# myproject/views.py
 from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 from .models import Feedback  # Assuming you have a Feedback model defined in your app
@@ -32,7 +33,7 @@ def receive_feedback(request):
             return JsonResponse({'error': 'Invalid request data'}, status=400)
     else:
         return JsonResponse({'error': 'Invalid request method'}, status=405)
-    
+
 def feedback_list(request):
     feedbacks = Feedback.objects.all()
     return render(request, 'feedback_list.html', {'feedbacks': feedbacks})

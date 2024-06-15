@@ -16,14 +16,10 @@ Including another URLconf
 """
 
 from django.urls import path
-from .views import receive_feedback
-from .views import feedback_list
-from . import views
+from .views import receive_feedback, feedback_list
 
 urlpatterns = [
     path('receive_feedback/', receive_feedback, name='receive_feedback'),
     path('feedback/', feedback_list, name='feedback_list'),
-    path('feedback/', views.feedback_view, name='feedback'),
-
     # other URL patterns for your project...
 ]

@@ -267,7 +267,7 @@ sidebar:
 
     function sendFeedback(feedback, reaction, additionalComments) {
       var xhr = new XMLHttpRequest();
-      var url = "https://kraye.nl:8000/receive_feedback/";  // URL to your Django endpoint
+      var url = "http://127.0.0.1:8000/receive_feedback/";  // URL to your Django endpoint
       xhr.open("POST", url, true);
       xhr.setRequestHeader("Content-Type", "application/json");
 
