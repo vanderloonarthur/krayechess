@@ -1,0 +1,9 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '../../../.ext/arm64-darwin23/-test-/memory_status.bundle'
+relocations:
+  - { offsetInCU: 0x1E, offset: 0x1E, size: 0x8, addend: 0x0, symName: _ruby_abi_version, symObjAddr: 0x0, symBinAddr: 0x3D78, symSize: 0x8 }
+  - { offsetInCU: 0x80, offset: 0x80, size: 0x8, addend: 0x0, symName: _ruby_abi_version, symObjAddr: 0x0, symBinAddr: 0x3D78, symSize: 0x8 }
+  - { offsetInCU: 0x99, offset: 0x99, size: 0x8, addend: 0x0, symName: _Init_memory_status, symObjAddr: 0x8, symBinAddr: 0x3D80, symSize: 0x60 }
+  - { offsetInCU: 0x182, offset: 0x182, size: 0x8, addend: 0x0, symName: _read_status, symObjAddr: 0x68, symBinAddr: 0x3DE0, symSize: 0xF0 }
+...

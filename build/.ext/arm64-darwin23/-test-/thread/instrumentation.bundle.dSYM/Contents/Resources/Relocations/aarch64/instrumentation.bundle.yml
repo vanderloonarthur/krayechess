@@ -1,0 +1,23 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '../../../../.ext/arm64-darwin23/-test-/thread/instrumentation.bundle'
+relocations:
+  - { offsetInCU: 0x1E, offset: 0x1E, size: 0x8, addend: 0x0, symName: _ruby_abi_version, symObjAddr: 0x0, symBinAddr: 0x32D8, symSize: 0x8 }
+  - { offsetInCU: 0x4A, offset: 0x4A, size: 0x8, addend: 0x0, symName: __MergedGlobals, symObjAddr: 0xB58, symBinAddr: 0x8088, symSize: 0x0 }
+  - { offsetInCU: 0x71, offset: 0x71, size: 0x8, addend: 0x0, symName: _event_timeline_type, symObjAddr: 0xB10, symBinAddr: 0x4010, symSize: 0x0 }
+  - { offsetInCU: 0x17B, offset: 0x17B, size: 0x8, addend: 0x0, symName: __MergedGlobals.25, symObjAddr: 0x73C8, symBinAddr: 0xC098, symSize: 0x0 }
+  - { offsetInCU: 0x1A2, offset: 0x1A2, size: 0x8, addend: 0x0, symName: _event_timeline, symObjAddr: 0x33C8, symBinAddr: 0x8098, symSize: 0x0 }
+  - { offsetInCU: 0x1FB, offset: 0x1FB, size: 0x8, addend: 0x0, symName: __MergedGlobals, symObjAddr: 0xB58, symBinAddr: 0x8088, symSize: 0x0 }
+  - { offsetInCU: 0x212, offset: 0x212, size: 0x8, addend: 0x0, symName: __MergedGlobals.25, symObjAddr: 0x73C8, symBinAddr: 0xC098, symSize: 0x0 }
+  - { offsetInCU: 0x24B, offset: 0x24B, size: 0x8, addend: 0x0, symName: _ruby_abi_version, symObjAddr: 0x0, symBinAddr: 0x32D8, symSize: 0x8 }
+  - { offsetInCU: 0x264, offset: 0x264, size: 0x8, addend: 0x0, symName: _Init_instrumentation, symObjAddr: 0x8, symBinAddr: 0x32E0, symSize: 0xB8 }
+  - { offsetInCU: 0x360, offset: 0x360, size: 0x8, addend: 0x0, symName: _thread_register_callback, symObjAddr: 0xC0, symBinAddr: 0x3398, symSize: 0x34 }
+  - { offsetInCU: 0x49B, offset: 0x49B, size: 0x8, addend: 0x0, symName: _thread_unregister_callback, symObjAddr: 0xF4, symBinAddr: 0x33CC, symSize: 0x260 }
+  - { offsetInCU: 0x716, offset: 0x716, size: 0x8, addend: 0x0, symName: _thread_register_and_unregister_callback, symObjAddr: 0x354, symBinAddr: 0x362C, symSize: 0xF0 }
+  - { offsetInCU: 0x781, offset: 0x781, size: 0x8, addend: 0x0, symName: _thread_unregister_callback.cold.1, symObjAddr: 0x804, symBinAddr: 0x3ADC, symSize: 0x14 }
+  - { offsetInCU: 0x7AD, offset: 0x7AD, size: 0x8, addend: 0x0, symName: _thread_register_and_unregister_callback, symObjAddr: 0x354, symBinAddr: 0x362C, symSize: 0xF0 }
+  - { offsetInCU: 0x8F1, offset: 0x8F1, size: 0x8, addend: 0x0, symName: _event_timeline_gc_mark, symObjAddr: 0x444, symBinAddr: 0x371C, symSize: 0x50 }
+  - { offsetInCU: 0x9E6, offset: 0x9E6, size: 0x8, addend: 0x0, symName: _ex_callback, symObjAddr: 0x494, symBinAddr: 0x376C, symSize: 0x370 }
+  - { offsetInCU: 0xB7D, offset: 0xB7D, size: 0x8, addend: 0x0, symName: _thread_unregister_callback.cold.1, symObjAddr: 0x804, symBinAddr: 0x3ADC, symSize: 0x14 }
+  - { offsetInCU: 0xB87, offset: 0xB87, size: 0x8, addend: 0x0, symName: _ex_callback.cold.1, symObjAddr: 0x818, symBinAddr: 0x3AF0, symSize: 0x14 }
+...

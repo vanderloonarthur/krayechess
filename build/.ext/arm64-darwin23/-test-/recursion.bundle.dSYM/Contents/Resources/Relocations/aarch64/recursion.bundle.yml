@@ -1,0 +1,13 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '../../../.ext/arm64-darwin23/-test-/recursion.bundle'
+relocations:
+  - { offsetInCU: 0x1E, offset: 0x1E, size: 0x8, addend: 0x0, symName: _ruby_abi_version, symObjAddr: 0x0, symBinAddr: 0x3DCC, symSize: 0x8 }
+  - { offsetInCU: 0x57, offset: 0x57, size: 0x8, addend: 0x0, symName: _ruby_abi_version, symObjAddr: 0x0, symBinAddr: 0x3DCC, symSize: 0x8 }
+  - { offsetInCU: 0x70, offset: 0x70, size: 0x8, addend: 0x0, symName: _Init_recursion, symObjAddr: 0x8, symBinAddr: 0x3DD4, symSize: 0x68 }
+  - { offsetInCU: 0xDB, offset: 0xDB, size: 0x8, addend: 0x0, symName: _exec_recursive, symObjAddr: 0x70, symBinAddr: 0x3E3C, symSize: 0x14 }
+  - { offsetInCU: 0x116, offset: 0x116, size: 0x8, addend: 0x0, symName: _exec_recursive_outer, symObjAddr: 0x84, symBinAddr: 0x3E50, symSize: 0x14 }
+  - { offsetInCU: 0x16C, offset: 0x16C, size: 0x8, addend: 0x0, symName: _exec_recursive_outer, symObjAddr: 0x84, symBinAddr: 0x3E50, symSize: 0x14 }
+  - { offsetInCU: 0x1A7, offset: 0x1A7, size: 0x8, addend: 0x0, symName: _recursive_i, symObjAddr: 0x98, symBinAddr: 0x3E64, symSize: 0x40 }
+  - { offsetInCU: 0x1DC, offset: 0x1DC, size: 0x8, addend: 0x0, symName: _recursive_i, symObjAddr: 0x98, symBinAddr: 0x3E64, symSize: 0x40 }
+...

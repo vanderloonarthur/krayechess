@@ -1,0 +1,16 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '../../../.ext/arm64-darwin23/-test-/proc.bundle'
+relocations:
+  - { offsetInCU: 0x1E, offset: 0x1E, size: 0x8, addend: 0x0, symName: _ruby_abi_version, symObjAddr: 0x0, symBinAddr: 0x3D58, symSize: 0x8 }
+  - { offsetInCU: 0x3E, offset: 0x3E, size: 0x8, addend: 0x0, symName: _ruby_abi_version, symObjAddr: 0x0, symBinAddr: 0x3D58, symSize: 0x8 }
+  - { offsetInCU: 0x57, offset: 0x57, size: 0x8, addend: 0x0, symName: _Init_proc, symObjAddr: 0x8, symBinAddr: 0x3D60, symSize: 0x3C }
+  - { offsetInCU: 0x39, offset: 0x15E, size: 0x8, addend: 0x0, symName: _Init_receiver, symObjAddr: 0x8, symBinAddr: 0x3D9C, symSize: 0x28 }
+  - { offsetInCU: 0x5E, offset: 0x183, size: 0x8, addend: 0x0, symName: _bug_proc_make_call_receiver, symObjAddr: 0x30, symBinAddr: 0x3DC4, symSize: 0xC }
+  - { offsetInCU: 0x93, offset: 0x1B8, size: 0x8, addend: 0x0, symName: _bug_proc_call_receiver, symObjAddr: 0x3C, symBinAddr: 0x3DD0, symSize: 0x4 }
+  - { offsetInCU: 0x118, offset: 0x23D, size: 0x8, addend: 0x0, symName: _bug_proc_call_receiver, symObjAddr: 0x3C, symBinAddr: 0x3DD0, symSize: 0x4 }
+  - { offsetInCU: 0x40, offset: 0x2ED, size: 0x8, addend: 0x0, symName: _Init_super, symObjAddr: 0x8, symBinAddr: 0x3DD4, symSize: 0x28 }
+  - { offsetInCU: 0x65, offset: 0x312, size: 0x8, addend: 0x0, symName: _bug_proc_make_call_super, symObjAddr: 0x30, symBinAddr: 0x3DFC, symSize: 0xC }
+  - { offsetInCU: 0x9A, offset: 0x347, size: 0x8, addend: 0x0, symName: _bug_proc_call_super, symObjAddr: 0x3C, symBinAddr: 0x3E08, symSize: 0x7C }
+  - { offsetInCU: 0x11F, offset: 0x3CC, size: 0x8, addend: 0x0, symName: _bug_proc_call_super, symObjAddr: 0x3C, symBinAddr: 0x3E08, symSize: 0x7C }
+...

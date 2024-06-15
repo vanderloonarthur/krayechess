@@ -1,0 +1,15 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '../../../.ext/arm64-darwin23/erb/escape.bundle'
+relocations:
+  - { offsetInCU: 0x1E, offset: 0x1E, size: 0x8, addend: 0x0, symName: _ruby_abi_version, symObjAddr: 0x0, symBinAddr: 0x32F0, symSize: 0x8 }
+  - { offsetInCU: 0x3E, offset: 0x3E, size: 0x8, addend: 0x0, symName: _Init_escape, symObjAddr: 0x8, symBinAddr: 0x32F8, symSize: 0xA0 }
+  - { offsetInCU: 0x5F, offset: 0x5F, size: 0x8, addend: 0x0, symName: __MergedGlobals, symObjAddr: 0x2DE8, symBinAddr: 0x8080, symSize: 0x0 }
+  - { offsetInCU: 0x10C, offset: 0x10C, size: 0x8, addend: 0x0, symName: __MergedGlobals, symObjAddr: 0x2DE8, symBinAddr: 0x8080, symSize: 0x0 }
+  - { offsetInCU: 0x121, offset: 0x121, size: 0x8, addend: 0x0, symName: __MergedGlobals, symObjAddr: 0x2DE8, symBinAddr: 0x8080, symSize: 0x0 }
+  - { offsetInCU: 0x138, offset: 0x138, size: 0x8, addend: 0x0, symName: _html_escape_table, symObjAddr: 0x326, symBinAddr: 0x3796, symSize: 0x0 }
+  - { offsetInCU: 0x33C, offset: 0x33C, size: 0x8, addend: 0x0, symName: _ruby_abi_version, symObjAddr: 0x0, symBinAddr: 0x32F0, symSize: 0x8 }
+  - { offsetInCU: 0x7C2, offset: 0x7C2, size: 0x8, addend: 0x0, symName: _erb_escape_html, symObjAddr: 0xA8, symBinAddr: 0x3398, symSize: 0xAC }
+  - { offsetInCU: 0x8C7, offset: 0x8C7, size: 0x8, addend: 0x0, symName: _optimized_escape_html, symObjAddr: 0x154, symBinAddr: 0x3444, symSize: 0x1A0 }
+  - { offsetInCU: 0x938, offset: 0x938, size: 0x8, addend: 0x0, symName: _optimized_escape_html, symObjAddr: 0x154, symBinAddr: 0x3444, symSize: 0x1A0 }
+...

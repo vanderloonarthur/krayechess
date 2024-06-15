@@ -1,0 +1,20 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '.ext/arm64-darwin23/enc/windows_1251.bundle'
+relocations:
+  - { offsetInCU: 0x1E, offset: 0x1E, size: 0x8, addend: 0x0, symName: _ruby_abi_version, symObjAddr: 0x0, symBinAddr: 0x3928, symSize: 0x8 }
+  - { offsetInCU: 0x4A, offset: 0x4A, size: 0x8, addend: 0x0, symName: _encoding_Windows_1251, symObjAddr: 0x610, symBinAddr: 0x4008, symSize: 0x0 }
+  - { offsetInCU: 0x3AE, offset: 0x3AE, size: 0x8, addend: 0x0, symName: _EncCP1251_ToLowerCaseTable, symObjAddr: 0x208, symBinAddr: 0x3B90, symSize: 0x0 }
+  - { offsetInCU: 0x3D0, offset: 0x3D0, size: 0x8, addend: 0x0, symName: _CaseFoldMap, symObjAddr: 0x308, symBinAddr: 0x3C90, symSize: 0x0 }
+  - { offsetInCU: 0x41E, offset: 0x41E, size: 0x8, addend: 0x0, symName: _EncCP1251_CtypeTable, symObjAddr: 0x410, symBinAddr: 0x3D98, symSize: 0x0 }
+  - { offsetInCU: 0x440, offset: 0x440, size: 0x8, addend: 0x0, symName: _ruby_abi_version, symObjAddr: 0x0, symBinAddr: 0x3928, symSize: 0x8 }
+  - { offsetInCU: 0x459, offset: 0x459, size: 0x8, addend: 0x0, symName: _Init_windows_1251, symObjAddr: 0x8, symBinAddr: 0x3930, symSize: 0x14 }
+  - { offsetInCU: 0x472, offset: 0x472, size: 0x8, addend: 0x0, symName: _cp1251_mbc_case_fold, symObjAddr: 0x1C, symBinAddr: 0x3944, symSize: 0x2C }
+  - { offsetInCU: 0x4A2, offset: 0x4A2, size: 0x8, addend: 0x0, symName: _cp1251_mbc_case_fold, symObjAddr: 0x1C, symBinAddr: 0x3944, symSize: 0x2C }
+  - { offsetInCU: 0x506, offset: 0x506, size: 0x8, addend: 0x0, symName: _cp1251_apply_all_case_fold, symObjAddr: 0x48, symBinAddr: 0x3970, symSize: 0x20 }
+  - { offsetInCU: 0x55B, offset: 0x55B, size: 0x8, addend: 0x0, symName: _cp1251_get_case_fold_codes_by_str, symObjAddr: 0x68, symBinAddr: 0x3990, symSize: 0x24 }
+  - { offsetInCU: 0x5B5, offset: 0x5B5, size: 0x8, addend: 0x0, symName: _cp1251_get_case_fold_codes_by_str, symObjAddr: 0x68, symBinAddr: 0x3990, symSize: 0x24 }
+  - { offsetInCU: 0x619, offset: 0x619, size: 0x8, addend: 0x0, symName: _cp1251_is_code_ctype, symObjAddr: 0x8C, symBinAddr: 0x39B4, symSize: 0x28 }
+  - { offsetInCU: 0x67A, offset: 0x67A, size: 0x8, addend: 0x0, symName: _cp1251_is_code_ctype, symObjAddr: 0x8C, symBinAddr: 0x39B4, symSize: 0x28 }
+  - { offsetInCU: 0x6BB, offset: 0x6BB, size: 0x8, addend: 0x0, symName: _case_map, symObjAddr: 0xB4, symBinAddr: 0x39DC, symSize: 0x118 }
+...

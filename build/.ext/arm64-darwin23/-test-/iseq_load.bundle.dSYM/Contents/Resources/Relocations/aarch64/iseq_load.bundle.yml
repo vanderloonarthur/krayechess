@@ -1,0 +1,9 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '../../../.ext/arm64-darwin23/-test-/iseq_load.bundle'
+relocations:
+  - { offsetInCU: 0x1E, offset: 0x1E, size: 0x8, addend: 0x0, symName: _ruby_abi_version, symObjAddr: 0x0, symBinAddr: 0x3E74, symSize: 0x8 }
+  - { offsetInCU: 0x63, offset: 0x63, size: 0x8, addend: 0x0, symName: _ruby_abi_version, symObjAddr: 0x0, symBinAddr: 0x3E74, symSize: 0x8 }
+  - { offsetInCU: 0x7C, offset: 0x7C, size: 0x8, addend: 0x0, symName: _Init_iseq_load, symObjAddr: 0x8, symBinAddr: 0x3E7C, symSize: 0x34 }
+  - { offsetInCU: 0x1F0, offset: 0x1F0, size: 0x8, addend: 0x0, symName: _iseq_load, symObjAddr: 0x3C, symBinAddr: 0x3EB0, symSize: 0x50 }
+...

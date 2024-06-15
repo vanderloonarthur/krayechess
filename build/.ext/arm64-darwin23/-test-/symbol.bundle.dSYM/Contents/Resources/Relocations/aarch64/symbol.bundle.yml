@@ -1,0 +1,27 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '../../../.ext/arm64-darwin23/-test-/symbol.bundle'
+relocations:
+  - { offsetInCU: 0x1E, offset: 0x1E, size: 0x8, addend: 0x0, symName: _ruby_abi_version, symObjAddr: 0x0, symBinAddr: 0x3918, symSize: 0x8 }
+  - { offsetInCU: 0x5E, offset: 0x5E, size: 0x8, addend: 0x0, symName: _ruby_abi_version, symObjAddr: 0x0, symBinAddr: 0x3918, symSize: 0x8 }
+  - { offsetInCU: 0x77, offset: 0x77, size: 0x8, addend: 0x0, symName: _Init_symbol, symObjAddr: 0x8, symBinAddr: 0x3920, symSize: 0x94 }
+  - { offsetInCU: 0xC8, offset: 0xC8, size: 0x8, addend: 0x0, symName: _sym_find, symObjAddr: 0x9C, symBinAddr: 0x39B4, symSize: 0x24 }
+  - { offsetInCU: 0x117, offset: 0x117, size: 0x8, addend: 0x0, symName: _sym_find, symObjAddr: 0x9C, symBinAddr: 0x39B4, symSize: 0x24 }
+  - { offsetInCU: 0x1F7, offset: 0x1F7, size: 0x8, addend: 0x0, symName: _sym_pinneddown_p, symObjAddr: 0xC0, symBinAddr: 0x39D8, symSize: 0x60 }
+  - { offsetInCU: 0x2C1, offset: 0x2C1, size: 0x8, addend: 0x0, symName: _sym_iv_get, symObjAddr: 0x120, symBinAddr: 0x3A38, symSize: 0x3C }
+  - { offsetInCU: 0x10C, offset: 0x475, size: 0x8, addend: 0x0, symName: _Init_type, symObjAddr: 0x8, symBinAddr: 0x3A74, symSize: 0x14C }
+  - { offsetInCU: 0x131, offset: 0x49A, size: 0x8, addend: 0x0, symName: _bug_sym_const_p, symObjAddr: 0x154, symBinAddr: 0x3BC0, symSize: 0x28 }
+  - { offsetInCU: 0x1CA, offset: 0x533, size: 0x8, addend: 0x0, symName: _bug_sym_class_p, symObjAddr: 0x17C, symBinAddr: 0x3BE8, symSize: 0x28 }
+  - { offsetInCU: 0x240, offset: 0x5A9, size: 0x8, addend: 0x0, symName: _bug_sym_global_p, symObjAddr: 0x1A4, symBinAddr: 0x3C10, symSize: 0x28 }
+  - { offsetInCU: 0x2B6, offset: 0x61F, size: 0x8, addend: 0x0, symName: _bug_sym_instance_p, symObjAddr: 0x1CC, symBinAddr: 0x3C38, symSize: 0x28 }
+  - { offsetInCU: 0x32C, offset: 0x695, size: 0x8, addend: 0x0, symName: _bug_sym_attrset_p, symObjAddr: 0x1F4, symBinAddr: 0x3C60, symSize: 0x28 }
+  - { offsetInCU: 0x3A2, offset: 0x70B, size: 0x8, addend: 0x0, symName: _bug_sym_local_p, symObjAddr: 0x21C, symBinAddr: 0x3C88, symSize: 0x28 }
+  - { offsetInCU: 0x418, offset: 0x781, size: 0x8, addend: 0x0, symName: _bug_sym_junk_p, symObjAddr: 0x244, symBinAddr: 0x3CB0, symSize: 0x28 }
+  - { offsetInCU: 0x48E, offset: 0x7F7, size: 0x8, addend: 0x0, symName: _bug_sym_attrset, symObjAddr: 0x26C, symBinAddr: 0x3CD8, symSize: 0x1C }
+  - { offsetInCU: 0x4F6, offset: 0x85F, size: 0x8, addend: 0x0, symName: _bug_id2str, symObjAddr: 0x288, symBinAddr: 0x3CF4, symSize: 0x8 }
+  - { offsetInCU: 0x522, offset: 0x88B, size: 0x8, addend: 0x0, symName: _bug_id2str, symObjAddr: 0x288, symBinAddr: 0x3CF4, symSize: 0x8 }
+  - { offsetInCU: 0x559, offset: 0x8C2, size: 0x8, addend: 0x0, symName: _bug_static_p, symObjAddr: 0x290, symBinAddr: 0x3CFC, symSize: 0x14 }
+  - { offsetInCU: 0x5A9, offset: 0x912, size: 0x8, addend: 0x0, symName: _bug_static_p, symObjAddr: 0x290, symBinAddr: 0x3CFC, symSize: 0x14 }
+  - { offsetInCU: 0x5DE, offset: 0x947, size: 0x8, addend: 0x0, symName: _bug_static_p, symObjAddr: 0x290, symBinAddr: 0x3CFC, symSize: 0x14 }
+  - { offsetInCU: 0x63B, offset: 0x9A4, size: 0x8, addend: 0x0, symName: _bug_dynamic_p, symObjAddr: 0x2A4, symBinAddr: 0x3D10, symSize: 0x24 }
+...

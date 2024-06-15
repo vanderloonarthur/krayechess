@@ -1,0 +1,11 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '../../../.ext/arm64-darwin23/-test-/rational.bundle'
+relocations:
+  - { offsetInCU: 0x1E, offset: 0x1E, size: 0x8, addend: 0x0, symName: _ruby_abi_version, symObjAddr: 0x0, symBinAddr: 0x3DE8, symSize: 0x8 }
+  - { offsetInCU: 0x3E, offset: 0x3E, size: 0x8, addend: 0x0, symName: _ruby_abi_version, symObjAddr: 0x0, symBinAddr: 0x3DE8, symSize: 0x8 }
+  - { offsetInCU: 0x57, offset: 0x57, size: 0x8, addend: 0x0, symName: _Init_rational, symObjAddr: 0x8, symBinAddr: 0x3DF0, symSize: 0x84 }
+  - { offsetInCU: 0xE3, offset: 0xE3, size: 0x8, addend: 0x0, symName: _gcd_normal, symObjAddr: 0x8C, symBinAddr: 0x3E74, symSize: 0x3C }
+  - { offsetInCU: 0x166, offset: 0x166, size: 0x8, addend: 0x0, symName: _s_rational_raw, symObjAddr: 0xC8, symBinAddr: 0x3EB0, symSize: 0xC }
+  - { offsetInCU: 0x1A9, offset: 0x1A9, size: 0x8, addend: 0x0, symName: _s_rational_raw, symObjAddr: 0xC8, symBinAddr: 0x3EB0, symSize: 0xC }
+...

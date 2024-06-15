@@ -1,0 +1,16 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '../../../../.ext/arm64-darwin23/-test-/gvl/call_without_gvl.bundle'
+relocations:
+  - { offsetInCU: 0x1E, offset: 0x1E, size: 0x8, addend: 0x0, symName: _ruby_abi_version, symObjAddr: 0x0, symBinAddr: 0x3BFC, symSize: 0x8 }
+  - { offsetInCU: 0x77, offset: 0x77, size: 0x8, addend: 0x0, symName: _ruby_abi_version, symObjAddr: 0x0, symBinAddr: 0x3BFC, symSize: 0x8 }
+  - { offsetInCU: 0x90, offset: 0x90, size: 0x8, addend: 0x0, symName: _Init_call_without_gvl, symObjAddr: 0x8, symBinAddr: 0x3C04, symSize: 0x68 }
+  - { offsetInCU: 0x10A, offset: 0x10A, size: 0x8, addend: 0x0, symName: _thread_runnable_sleep, symObjAddr: 0x70, symBinAddr: 0x3C6C, symSize: 0x60 }
+  - { offsetInCU: 0x175, offset: 0x175, size: 0x8, addend: 0x0, symName: _thread_ubf_async_safe, symObjAddr: 0xD0, symBinAddr: 0x3CCC, symSize: 0x58 }
+  - { offsetInCU: 0x23F, offset: 0x23F, size: 0x8, addend: 0x0, symName: _thread_ubf_async_safe, symObjAddr: 0xD0, symBinAddr: 0x3CCC, symSize: 0x58 }
+  - { offsetInCU: 0x328, offset: 0x328, size: 0x8, addend: 0x0, symName: _native_sleep_callback, symObjAddr: 0x128, symBinAddr: 0x3D24, symSize: 0x2C }
+  - { offsetInCU: 0x3F2, offset: 0x3F2, size: 0x8, addend: 0x0, symName: _do_loop, symObjAddr: 0x154, symBinAddr: 0x3D50, symSize: 0x88 }
+  - { offsetInCU: 0x493, offset: 0x493, size: 0x8, addend: 0x0, symName: _stop_set, symObjAddr: 0x1DC, symBinAddr: 0x3DD8, symSize: 0xC }
+  - { offsetInCU: 0x4EF, offset: 0x4EF, size: 0x8, addend: 0x0, symName: _do_loop.cold.1, symObjAddr: 0x1E8, symBinAddr: 0x3DE4, symSize: 0x14 }
+  - { offsetInCU: 0x506, offset: 0x506, size: 0x8, addend: 0x0, symName: _stop_set, symObjAddr: 0x1DC, symBinAddr: 0x3DD8, symSize: 0xC }
+...

@@ -1,0 +1,15 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '../../../../.ext/arm64-darwin23/-test-/load/resolve_symbol_resolver.bundle'
+relocations:
+  - { offsetInCU: 0x1E, offset: 0x1E, size: 0x8, addend: 0x0, symName: _ruby_abi_version, symObjAddr: 0x0, symBinAddr: 0x3CBC, symSize: 0x8 }
+  - { offsetInCU: 0x4A, offset: 0x4A, size: 0x8, addend: 0x0, symName: _rst_any_method, symObjAddr: 0xC68, symBinAddr: 0x8028, symSize: 0x0 }
+  - { offsetInCU: 0x88, offset: 0x88, size: 0x8, addend: 0x0, symName: _ruby_abi_version, symObjAddr: 0x0, symBinAddr: 0x3CBC, symSize: 0x8 }
+  - { offsetInCU: 0xA1, offset: 0xA1, size: 0x8, addend: 0x0, symName: _rsr_any_method, symObjAddr: 0x8, symBinAddr: 0x3CC4, symSize: 0x10 }
+  - { offsetInCU: 0xC7, offset: 0xC7, size: 0x8, addend: 0x0, symName: _rsr_try_resolve_fname, symObjAddr: 0x18, symBinAddr: 0x3CD4, symSize: 0x44 }
+  - { offsetInCU: 0xD7, offset: 0xD7, size: 0x8, addend: 0x0, symName: _rsr_try_resolve_fname, symObjAddr: 0x18, symBinAddr: 0x3CD4, symSize: 0x44 }
+  - { offsetInCU: 0x11B, offset: 0x11B, size: 0x8, addend: 0x0, symName: _rsr_try_resolve_sname, symObjAddr: 0x5C, symBinAddr: 0x3D18, symSize: 0x44 }
+  - { offsetInCU: 0x153, offset: 0x153, size: 0x8, addend: 0x0, symName: _rsr_try_resolve_sname, symObjAddr: 0x5C, symBinAddr: 0x3D18, symSize: 0x44 }
+  - { offsetInCU: 0x197, offset: 0x197, size: 0x8, addend: 0x0, symName: _Init_resolve_symbol_resolver, symObjAddr: 0xA0, symBinAddr: 0x3D5C, symSize: 0xB0 }
+  - { offsetInCU: 0x1A1, offset: 0x1A1, size: 0x8, addend: 0x0, symName: _Init_resolve_symbol_resolver, symObjAddr: 0xA0, symBinAddr: 0x3D5C, symSize: 0xB0 }
+...

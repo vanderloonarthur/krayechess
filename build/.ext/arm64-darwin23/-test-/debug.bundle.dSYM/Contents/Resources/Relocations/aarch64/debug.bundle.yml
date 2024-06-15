@@ -1,0 +1,15 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '../../../.ext/arm64-darwin23/-test-/debug.bundle'
+relocations:
+  - { offsetInCU: 0x1E, offset: 0x1E, size: 0x8, addend: 0x0, symName: _ruby_abi_version, symObjAddr: 0x0, symBinAddr: 0x37B8, symSize: 0x8 }
+  - { offsetInCU: 0x3E, offset: 0x3E, size: 0x8, addend: 0x0, symName: _ruby_abi_version, symObjAddr: 0x0, symBinAddr: 0x37B8, symSize: 0x8 }
+  - { offsetInCU: 0x57, offset: 0x57, size: 0x8, addend: 0x0, symName: _Init_debug, symObjAddr: 0x8, symBinAddr: 0x37C0, symSize: 0x3C }
+  - { offsetInCU: 0x5A, offset: 0x17F, size: 0x8, addend: 0x0, symName: _Init_inspector, symObjAddr: 0x8, symBinAddr: 0x37FC, symSize: 0x28 }
+  - { offsetInCU: 0x7F, offset: 0x1A4, size: 0x8, addend: 0x0, symName: _debug_inspector, symObjAddr: 0x30, symBinAddr: 0x3824, symSize: 0x10 }
+  - { offsetInCU: 0xA7, offset: 0x1CC, size: 0x8, addend: 0x0, symName: _callback, symObjAddr: 0x40, symBinAddr: 0x3834, symSize: 0x108 }
+  - { offsetInCU: 0x195, offset: 0x2BA, size: 0x8, addend: 0x0, symName: _callback, symObjAddr: 0x40, symBinAddr: 0x3834, symSize: 0x108 }
+  - { offsetInCU: 0x65, offset: 0x616, size: 0x8, addend: 0x0, symName: _Init_profile_frames, symObjAddr: 0x8, symBinAddr: 0x393C, symSize: 0x50 }
+  - { offsetInCU: 0x123, offset: 0x6D4, size: 0x8, addend: 0x0, symName: _profile_frames, symObjAddr: 0x58, symBinAddr: 0x398C, symSize: 0x1E4 }
+  - { offsetInCU: 0x579, offset: 0xB2A, size: 0x8, addend: 0x0, symName: _profile_thread_frames, symObjAddr: 0x23C, symBinAddr: 0x3B70, symSize: 0x10C }
+...

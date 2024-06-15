@@ -1,0 +1,12 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '../../../../.ext/arm64-darwin23/-test-/array/to_ary_concat.bundle'
+relocations:
+  - { offsetInCU: 0x1E, offset: 0x1E, size: 0x8, addend: 0x0, symName: _ruby_abi_version, symObjAddr: 0x0, symBinAddr: 0x3DF0, symSize: 0x8 }
+  - { offsetInCU: 0x4A, offset: 0x4A, size: 0x8, addend: 0x0, symName: _Bar_type, symObjAddr: 0xE8, symBinAddr: 0x8040, symSize: 0x0 }
+  - { offsetInCU: 0x15A, offset: 0x15A, size: 0x8, addend: 0x0, symName: _ruby_abi_version, symObjAddr: 0x0, symBinAddr: 0x3DF0, symSize: 0x8 }
+  - { offsetInCU: 0x173, offset: 0x173, size: 0x8, addend: 0x0, symName: _Init_to_ary_concat, symObjAddr: 0x8, symBinAddr: 0x3DF8, symSize: 0x68 }
+  - { offsetInCU: 0x227, offset: 0x227, size: 0x8, addend: 0x0, symName: _Bar_alloc, symObjAddr: 0x70, symBinAddr: 0x3E60, symSize: 0x10 }
+  - { offsetInCU: 0x251, offset: 0x251, size: 0x8, addend: 0x0, symName: _Bar_to_ary, symObjAddr: 0x80, symBinAddr: 0x3E70, symSize: 0x58 }
+  - { offsetInCU: 0x284, offset: 0x284, size: 0x8, addend: 0x0, symName: _Bar_to_ary, symObjAddr: 0x80, symBinAddr: 0x3E70, symSize: 0x58 }
+...

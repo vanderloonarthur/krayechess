@@ -1,0 +1,12 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '../../../.ext/arm64-darwin23/-test-/vm/at_exit.bundle'
+relocations:
+  - { offsetInCU: 0x1E, offset: 0x1E, size: 0x8, addend: 0x0, symName: _ruby_abi_version, symObjAddr: 0x0, symBinAddr: 0x3E28, symSize: 0x8 }
+  - { offsetInCU: 0x3E, offset: 0x3E, size: 0x8, addend: 0x0, symName: _ruby_abi_version, symObjAddr: 0x0, symBinAddr: 0x3E28, symSize: 0x8 }
+  - { offsetInCU: 0x57, offset: 0x57, size: 0x8, addend: 0x0, symName: _Init_at_exit, symObjAddr: 0x8, symBinAddr: 0x3E30, symSize: 0x4C }
+  - { offsetInCU: 0xE8, offset: 0xE8, size: 0x8, addend: 0x0, symName: _register_at_exit, symObjAddr: 0x54, symBinAddr: 0x3E7C, symSize: 0x4C }
+  - { offsetInCU: 0x15B, offset: 0x15B, size: 0x8, addend: 0x0, symName: _print_begin, symObjAddr: 0xA0, symBinAddr: 0x3EC8, symSize: 0xC }
+  - { offsetInCU: 0x17C, offset: 0x17C, size: 0x8, addend: 0x0, symName: _print_end, symObjAddr: 0xAC, symBinAddr: 0x3ED4, symSize: 0xC }
+  - { offsetInCU: 0x19D, offset: 0x19D, size: 0x8, addend: 0x0, symName: _do_nothing, symObjAddr: 0xB8, symBinAddr: 0x3EE0, symSize: 0x4 }
+...

@@ -1,0 +1,26 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '../../../../.ext/arm64-darwin23/-test-/st/numhash.bundle'
+relocations:
+  - { offsetInCU: 0x1E, offset: 0x1E, size: 0x8, addend: 0x0, symName: _ruby_abi_version, symObjAddr: 0x0, symBinAddr: 0x393C, symSize: 0x8 }
+  - { offsetInCU: 0x4A, offset: 0x4A, size: 0x8, addend: 0x0, symName: _numhash_type, symObjAddr: 0x490, symBinAddr: 0x4018, symSize: 0x0 }
+  - { offsetInCU: 0x28C, offset: 0x28C, size: 0x8, addend: 0x0, symName: _ruby_abi_version, symObjAddr: 0x0, symBinAddr: 0x393C, symSize: 0x8 }
+  - { offsetInCU: 0x2A5, offset: 0x2A5, size: 0x8, addend: 0x0, symName: _Init_numhash, symObjAddr: 0x8, symBinAddr: 0x3944, symSize: 0x110 }
+  - { offsetInCU: 0x34A, offset: 0x34A, size: 0x8, addend: 0x0, symName: _numhash_alloc, symObjAddr: 0x118, symBinAddr: 0x3A54, symSize: 0x10 }
+  - { offsetInCU: 0x374, offset: 0x374, size: 0x8, addend: 0x0, symName: _numhash_init, symObjAddr: 0x128, symBinAddr: 0x3A64, symSize: 0x3C }
+  - { offsetInCU: 0x3A7, offset: 0x3A7, size: 0x8, addend: 0x0, symName: _numhash_init, symObjAddr: 0x128, symBinAddr: 0x3A64, symSize: 0x3C }
+  - { offsetInCU: 0x43D, offset: 0x43D, size: 0x8, addend: 0x0, symName: _numhash_aref, symObjAddr: 0x164, symBinAddr: 0x3AA0, symSize: 0x70 }
+  - { offsetInCU: 0x4C5, offset: 0x4C5, size: 0x8, addend: 0x0, symName: _numhash_aset, symObjAddr: 0x1D4, symBinAddr: 0x3B10, symSize: 0x78 }
+  - { offsetInCU: 0x502, offset: 0x502, size: 0x8, addend: 0x0, symName: _numhash_aset, symObjAddr: 0x1D4, symBinAddr: 0x3B10, symSize: 0x78 }
+  - { offsetInCU: 0x58A, offset: 0x58A, size: 0x8, addend: 0x0, symName: _numhash_each, symObjAddr: 0x24C, symBinAddr: 0x3B88, symSize: 0x48 }
+  - { offsetInCU: 0x5AF, offset: 0x5AF, size: 0x8, addend: 0x0, symName: _numhash_each, symObjAddr: 0x24C, symBinAddr: 0x3B88, symSize: 0x48 }
+  - { offsetInCU: 0x66F, offset: 0x66F, size: 0x8, addend: 0x0, symName: _numhash_update, symObjAddr: 0x294, symBinAddr: 0x3BD0, symSize: 0x48 }
+  - { offsetInCU: 0x7A1, offset: 0x7A1, size: 0x8, addend: 0x0, symName: _numhash_size, symObjAddr: 0x2DC, symBinAddr: 0x3C18, symSize: 0x3C }
+  - { offsetInCU: 0x82B, offset: 0x82B, size: 0x8, addend: 0x0, symName: _numhash_delete_safe, symObjAddr: 0x318, symBinAddr: 0x3C54, symSize: 0x58 }
+  - { offsetInCU: 0x851, offset: 0x851, size: 0x8, addend: 0x0, symName: _numhash_delete_safe, symObjAddr: 0x318, symBinAddr: 0x3C54, symSize: 0x58 }
+  - { offsetInCU: 0x90B, offset: 0x90B, size: 0x8, addend: 0x0, symName: _numhash_free, symObjAddr: 0x370, symBinAddr: 0x3CAC, symSize: 0xC }
+  - { offsetInCU: 0x93B, offset: 0x93B, size: 0x8, addend: 0x0, symName: _numhash_memsize, symObjAddr: 0x37C, symBinAddr: 0x3CB8, symSize: 0x4 }
+  - { offsetInCU: 0x965, offset: 0x965, size: 0x8, addend: 0x0, symName: _numhash_i, symObjAddr: 0x380, symBinAddr: 0x3CBC, symSize: 0x3C }
+  - { offsetInCU: 0x992, offset: 0x992, size: 0x8, addend: 0x0, symName: _numhash_i, symObjAddr: 0x380, symBinAddr: 0x3CBC, symSize: 0x3C }
+  - { offsetInCU: 0xA18, offset: 0xA18, size: 0x8, addend: 0x0, symName: _update_func, symObjAddr: 0x3BC, symBinAddr: 0x3CF8, symSize: 0x74 }
+...

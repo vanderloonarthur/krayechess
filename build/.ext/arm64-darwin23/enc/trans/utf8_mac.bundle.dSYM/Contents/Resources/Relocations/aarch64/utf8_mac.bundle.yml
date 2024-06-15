@@ -1,0 +1,17 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '.ext/arm64-darwin23/enc/trans/utf8_mac.bundle'
+relocations:
+  - { offsetInCU: 0x1E, offset: 0x1E, size: 0x8, addend: 0x0, symName: _ruby_abi_version, symObjAddr: 0x0, symBinAddr: 0x3730, symSize: 0x8 }
+  - { offsetInCU: 0x4D, offset: 0x4D, size: 0x8, addend: 0x0, symName: _rb_to_UTF8_MAC, symObjAddr: 0x3B0, symBinAddr: 0x44010, symSize: 0x0 }
+  - { offsetInCU: 0x303, offset: 0x303, size: 0x8, addend: 0x0, symName: _utf8_mac_byte_array, symObjAddr: 0x500, symBinAddr: 0x3B34, symSize: 0x0 }
+  - { offsetInCU: 0x328, offset: 0x328, size: 0x8, addend: 0x0, symName: _utf8_mac_word_array, symObjAddr: 0x1DD74, symBinAddr: 0x213A8, symSize: 0x0 }
+  - { offsetInCU: 0x34D, offset: 0x34D, size: 0x8, addend: 0x0, symName: _rb_from_UTF8_MAC, symObjAddr: 0x450, symBinAddr: 0x440B0, symSize: 0x0 }
+  - { offsetInCU: 0x356, offset: 0x356, size: 0x8, addend: 0x0, symName: _ruby_abi_version, symObjAddr: 0x0, symBinAddr: 0x3730, symSize: 0x8 }
+  - { offsetInCU: 0x36F, offset: 0x36F, size: 0x8, addend: 0x0, symName: _Init_utf8_mac, symObjAddr: 0x8, symBinAddr: 0x3738, symSize: 0x24 }
+  - { offsetInCU: 0x398, offset: 0x398, size: 0x8, addend: 0x0, symName: _from_utf8_mac_init, symObjAddr: 0x2C, symBinAddr: 0x375C, symSize: 0xC }
+  - { offsetInCU: 0x418, offset: 0x418, size: 0x8, addend: 0x0, symName: _from_utf8_mac_init, symObjAddr: 0x2C, symBinAddr: 0x375C, symSize: 0xC }
+  - { offsetInCU: 0x45C, offset: 0x45C, size: 0x8, addend: 0x0, symName: _from_utf8_mac_init, symObjAddr: 0x2C, symBinAddr: 0x375C, symSize: 0xC }
+  - { offsetInCU: 0x67C, offset: 0x67C, size: 0x8, addend: 0x0, symName: _fun_so_from_utf8_mac, symObjAddr: 0x38, symBinAddr: 0x3768, symSize: 0x31C }
+  - { offsetInCU: 0x99D, offset: 0x99D, size: 0x8, addend: 0x0, symName: _from_utf8_mac_finish, symObjAddr: 0x354, symBinAddr: 0x3A84, symSize: 0x58 }
+...

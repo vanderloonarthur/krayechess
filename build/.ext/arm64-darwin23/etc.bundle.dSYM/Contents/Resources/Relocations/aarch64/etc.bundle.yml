@@ -1,0 +1,61 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '../../.ext/arm64-darwin23/etc.bundle'
+relocations:
+  - { offsetInCU: 0x1E, offset: 0x1E, size: 0x8, addend: 0x0, symName: _ruby_abi_version, symObjAddr: 0x0, symBinAddr: 0xF5C, symSize: 0x8 }
+  - { offsetInCU: 0x56, offset: 0x56, size: 0x8, addend: 0x0, symName: __MergedGlobals, symObjAddr: 0xB348, symBinAddr: 0x81E8, symSize: 0x0 }
+  - { offsetInCU: 0x7D, offset: 0x7D, size: 0x8, addend: 0x0, symName: __MergedGlobals, symObjAddr: 0xB348, symBinAddr: 0x81E8, symSize: 0x0 }
+  - { offsetInCU: 0x95, offset: 0x95, size: 0x8, addend: 0x0, symName: _passwd_blocking, symObjAddr: 0xB340, symBinAddr: 0x81E0, symSize: 0x0 }
+  - { offsetInCU: 0xBD, offset: 0xBD, size: 0x8, addend: 0x0, symName: _group_blocking, symObjAddr: 0xB344, symBinAddr: 0x81E4, symSize: 0x0 }
+  - { offsetInCU: 0xC6, offset: 0xC6, size: 0x8, addend: 0x0, symName: _etc_uname, symObjAddr: 0x1450, symBinAddr: 0x23AC, symSize: 0x1F8 }
+  - { offsetInCU: 0xED, offset: 0xED, size: 0x8, addend: 0x0, symName: __MergedGlobals, symObjAddr: 0xB348, symBinAddr: 0x81E8, symSize: 0x0 }
+  - { offsetInCU: 0x105, offset: 0x105, size: 0x8, addend: 0x0, symName: __MergedGlobals, symObjAddr: 0xB348, symBinAddr: 0x81E8, symSize: 0x0 }
+  - { offsetInCU: 0x11D, offset: 0x11D, size: 0x8, addend: 0x0, symName: __MergedGlobals, symObjAddr: 0xB348, symBinAddr: 0x81E8, symSize: 0x0 }
+  - { offsetInCU: 0x135, offset: 0x135, size: 0x8, addend: 0x0, symName: __MergedGlobals, symObjAddr: 0xB348, symBinAddr: 0x81E8, symSize: 0x0 }
+  - { offsetInCU: 0x14D, offset: 0x14D, size: 0x8, addend: 0x0, symName: __MergedGlobals, symObjAddr: 0xB348, symBinAddr: 0x81E8, symSize: 0x0 }
+  - { offsetInCU: 0x550, offset: 0x550, size: 0x8, addend: 0x0, symName: _ruby_abi_version, symObjAddr: 0x0, symBinAddr: 0xF5C, symSize: 0x8 }
+  - { offsetInCU: 0x5AA, offset: 0x5AA, size: 0x8, addend: 0x0, symName: _Init_etc, symObjAddr: 0x8, symBinAddr: 0xF64, symSize: 0xFC0 }
+  - { offsetInCU: 0x16E4, offset: 0x16E4, size: 0x8, addend: 0x0, symName: _etc_getlogin, symObjAddr: 0xFC8, symBinAddr: 0x1F24, symSize: 0x64 }
+  - { offsetInCU: 0x1C3E, offset: 0x1C3E, size: 0x8, addend: 0x0, symName: _etc_getpwuid, symObjAddr: 0x102C, symBinAddr: 0x1F88, symSize: 0x7C }
+  - { offsetInCU: 0x1DCC, offset: 0x1DCC, size: 0x8, addend: 0x0, symName: _etc_getpwnam, symObjAddr: 0x10A8, symBinAddr: 0x2004, symSize: 0x50 }
+  - { offsetInCU: 0x1ECC, offset: 0x1ECC, size: 0x8, addend: 0x0, symName: _setup_passwd, symObjAddr: 0x1A68, symBinAddr: 0x29C4, symSize: 0x114 }
+  - { offsetInCU: 0x20CE, offset: 0x20CE, size: 0x8, addend: 0x0, symName: _etc_getpwnam, symObjAddr: 0x10A8, symBinAddr: 0x2004, symSize: 0x50 }
+  - { offsetInCU: 0x2156, offset: 0x2156, size: 0x8, addend: 0x0, symName: _etc_setpwent, symObjAddr: 0x10F8, symBinAddr: 0x2054, symSize: 0x18 }
+  - { offsetInCU: 0x218D, offset: 0x218D, size: 0x8, addend: 0x0, symName: _etc_setpwent, symObjAddr: 0x10F8, symBinAddr: 0x2054, symSize: 0x18 }
+  - { offsetInCU: 0x21C8, offset: 0x21C8, size: 0x8, addend: 0x0, symName: _etc_endpwent, symObjAddr: 0x1110, symBinAddr: 0x206C, symSize: 0x18 }
+  - { offsetInCU: 0x2203, offset: 0x2203, size: 0x8, addend: 0x0, symName: _etc_getpwent, symObjAddr: 0x1128, symBinAddr: 0x2084, symSize: 0x24 }
+  - { offsetInCU: 0x22A4, offset: 0x22A4, size: 0x8, addend: 0x0, symName: _etc_passwd, symObjAddr: 0x114C, symBinAddr: 0x20A8, symSize: 0x7C }
+  - { offsetInCU: 0x2359, offset: 0x2359, size: 0x8, addend: 0x0, symName: _etc_getgrgid, symObjAddr: 0x11C8, symBinAddr: 0x2124, symSize: 0x7C }
+  - { offsetInCU: 0x23A0, offset: 0x23A0, size: 0x8, addend: 0x0, symName: _etc_getgrgid, symObjAddr: 0x11C8, symBinAddr: 0x2124, symSize: 0x7C }
+  - { offsetInCU: 0x2537, offset: 0x2537, size: 0x8, addend: 0x0, symName: _etc_getgrnam, symObjAddr: 0x1244, symBinAddr: 0x21A0, symSize: 0x50 }
+  - { offsetInCU: 0x25A1, offset: 0x25A1, size: 0x8, addend: 0x0, symName: _setup_group, symObjAddr: 0x1BF0, symBinAddr: 0x2B4C, symSize: 0xB4 }
+  - { offsetInCU: 0x26B8, offset: 0x26B8, size: 0x8, addend: 0x0, symName: _etc_getgrnam, symObjAddr: 0x1244, symBinAddr: 0x21A0, symSize: 0x50 }
+  - { offsetInCU: 0x2740, offset: 0x2740, size: 0x8, addend: 0x0, symName: _etc_group, symObjAddr: 0x1294, symBinAddr: 0x21F0, symSize: 0x7C }
+  - { offsetInCU: 0x2764, offset: 0x2764, size: 0x8, addend: 0x0, symName: _etc_group, symObjAddr: 0x1294, symBinAddr: 0x21F0, symSize: 0x7C }
+  - { offsetInCU: 0x2819, offset: 0x2819, size: 0x8, addend: 0x0, symName: _etc_setgrent, symObjAddr: 0x1310, symBinAddr: 0x226C, symSize: 0x18 }
+  - { offsetInCU: 0x282E, offset: 0x282E, size: 0x8, addend: 0x0, symName: _etc_setgrent, symObjAddr: 0x1310, symBinAddr: 0x226C, symSize: 0x18 }
+  - { offsetInCU: 0x2869, offset: 0x2869, size: 0x8, addend: 0x0, symName: _etc_endgrent, symObjAddr: 0x1328, symBinAddr: 0x2284, symSize: 0x18 }
+  - { offsetInCU: 0x28A4, offset: 0x28A4, size: 0x8, addend: 0x0, symName: _etc_getgrent, symObjAddr: 0x1340, symBinAddr: 0x229C, symSize: 0x24 }
+  - { offsetInCU: 0x28F5, offset: 0x28F5, size: 0x8, addend: 0x0, symName: _etc_sysconfdir, symObjAddr: 0x1364, symBinAddr: 0x22C0, symSize: 0xC }
+  - { offsetInCU: 0x291F, offset: 0x291F, size: 0x8, addend: 0x0, symName: _etc_systmpdir, symObjAddr: 0x1370, symBinAddr: 0x22CC, symSize: 0xE0 }
+  - { offsetInCU: 0x2988, offset: 0x2988, size: 0x8, addend: 0x0, symName: _etc_systmpdir, symObjAddr: 0x1370, symBinAddr: 0x22CC, symSize: 0xE0 }
+  - { offsetInCU: 0x2C7E, offset: 0x2C7E, size: 0x8, addend: 0x0, symName: _etc_sysconf, symObjAddr: 0x1648, symBinAddr: 0x25A4, symSize: 0x98 }
+  - { offsetInCU: 0x2D87, offset: 0x2D87, size: 0x8, addend: 0x0, symName: _etc_confstr, symObjAddr: 0x16E0, symBinAddr: 0x263C, symSize: 0x150 }
+  - { offsetInCU: 0x2E4C, offset: 0x2E4C, size: 0x8, addend: 0x0, symName: _etc_confstr, symObjAddr: 0x16E0, symBinAddr: 0x263C, symSize: 0x150 }
+  - { offsetInCU: 0x2FF8, offset: 0x2FF8, size: 0x8, addend: 0x0, symName: _io_pathconf, symObjAddr: 0x1830, symBinAddr: 0x278C, symSize: 0xA4 }
+  - { offsetInCU: 0x301E, offset: 0x301E, size: 0x8, addend: 0x0, symName: _etc_confstr.cold.1, symObjAddr: 0x1D18, symBinAddr: 0x2C74, symSize: 0x14 }
+  - { offsetInCU: 0x3035, offset: 0x3035, size: 0x8, addend: 0x0, symName: _io_pathconf, symObjAddr: 0x1830, symBinAddr: 0x278C, symSize: 0xA4 }
+  - { offsetInCU: 0x3156, offset: 0x3156, size: 0x8, addend: 0x0, symName: _etc_nprocessors, symObjAddr: 0x18D4, symBinAddr: 0x2830, symSize: 0x54 }
+  - { offsetInCU: 0x3189, offset: 0x3189, size: 0x8, addend: 0x0, symName: _etc_nprocessors, symObjAddr: 0x18D4, symBinAddr: 0x2830, symSize: 0x54 }
+  - { offsetInCU: 0x322C, offset: 0x322C, size: 0x8, addend: 0x0, symName: _etc_each_passwd, symObjAddr: 0x1928, symBinAddr: 0x2884, symSize: 0xA0 }
+  - { offsetInCU: 0x3236, offset: 0x3236, size: 0x8, addend: 0x0, symName: _etc_each_passwd, symObjAddr: 0x1928, symBinAddr: 0x2884, symSize: 0xA0 }
+  - { offsetInCU: 0x3302, offset: 0x3302, size: 0x8, addend: 0x0, symName: _etc_each_group, symObjAddr: 0x19C8, symBinAddr: 0x2924, symSize: 0xA0 }
+  - { offsetInCU: 0x333C, offset: 0x333C, size: 0x8, addend: 0x0, symName: _etc_each_group, symObjAddr: 0x19C8, symBinAddr: 0x2924, symSize: 0xA0 }
+  - { offsetInCU: 0x3408, offset: 0x3408, size: 0x8, addend: 0x0, symName: _setup_passwd, symObjAddr: 0x1A68, symBinAddr: 0x29C4, symSize: 0x114 }
+  - { offsetInCU: 0x349C, offset: 0x349C, size: 0x8, addend: 0x0, symName: _passwd_iterate, symObjAddr: 0x1B7C, symBinAddr: 0x2AD8, symSize: 0x30 }
+  - { offsetInCU: 0x354B, offset: 0x354B, size: 0x8, addend: 0x0, symName: _passwd_ensure, symObjAddr: 0x1BAC, symBinAddr: 0x2B08, symSize: 0x44 }
+  - { offsetInCU: 0x35A7, offset: 0x35A7, size: 0x8, addend: 0x0, symName: _setup_group, symObjAddr: 0x1BF0, symBinAddr: 0x2B4C, symSize: 0xB4 }
+  - { offsetInCU: 0x35D3, offset: 0x35D3, size: 0x8, addend: 0x0, symName: _group_iterate, symObjAddr: 0x1CA4, symBinAddr: 0x2C00, symSize: 0x30 }
+  - { offsetInCU: 0x364B, offset: 0x364B, size: 0x8, addend: 0x0, symName: _group_ensure, symObjAddr: 0x1CD4, symBinAddr: 0x2C30, symSize: 0x44 }
+  - { offsetInCU: 0x36A7, offset: 0x36A7, size: 0x8, addend: 0x0, symName: _etc_confstr.cold.1, symObjAddr: 0x1D18, symBinAddr: 0x2C74, symSize: 0x14 }
+...

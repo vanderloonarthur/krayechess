@@ -1,0 +1,15 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '../../../.ext/arm64-darwin23/-test-/time.bundle'
+relocations:
+  - { offsetInCU: 0x1E, offset: 0x1E, size: 0x8, addend: 0x0, symName: _ruby_abi_version, symObjAddr: 0x0, symBinAddr: 0x3B9C, symSize: 0x8 }
+  - { offsetInCU: 0x3E, offset: 0x3E, size: 0x8, addend: 0x0, symName: _ruby_abi_version, symObjAddr: 0x0, symBinAddr: 0x3B9C, symSize: 0x8 }
+  - { offsetInCU: 0x57, offset: 0x57, size: 0x8, addend: 0x0, symName: _Init_time, symObjAddr: 0x8, symBinAddr: 0x3BA4, symSize: 0x48 }
+  - { offsetInCU: 0x52, offset: 0x17C, size: 0x8, addend: 0x0, symName: _Init_time_leap_second, symObjAddr: 0x8, symBinAddr: 0x3BEC, symSize: 0x28 }
+  - { offsetInCU: 0x77, offset: 0x1A1, size: 0x8, addend: 0x0, symName: _bug_time_s_reset_leap_second_info, symObjAddr: 0x30, symBinAddr: 0x3C14, symSize: 0x18 }
+  - { offsetInCU: 0x60, offset: 0x241, size: 0x8, addend: 0x0, symName: _Init_time_new, symObjAddr: 0x8, symBinAddr: 0x3C2C, symSize: 0x6C }
+  - { offsetInCU: 0xF5, offset: 0x2D6, size: 0x8, addend: 0x0, symName: _bug_time_s_nano_new, symObjAddr: 0x74, symBinAddr: 0x3C98, symSize: 0x5C }
+  - { offsetInCU: 0x21C, offset: 0x3FD, size: 0x8, addend: 0x0, symName: _bug_time_s_timespec_new, symObjAddr: 0xD0, symBinAddr: 0x3CF4, symSize: 0x84 }
+  - { offsetInCU: 0x28D, offset: 0x46E, size: 0x8, addend: 0x0, symName: _bug_time_s_timespec_new, symObjAddr: 0xD0, symBinAddr: 0x3CF4, symSize: 0x84 }
+  - { offsetInCU: 0x4D4, offset: 0x6B5, size: 0x8, addend: 0x0, symName: _bug_time_s_timespec_now, symObjAddr: 0x154, symBinAddr: 0x3D78, symSize: 0x8C }
+...

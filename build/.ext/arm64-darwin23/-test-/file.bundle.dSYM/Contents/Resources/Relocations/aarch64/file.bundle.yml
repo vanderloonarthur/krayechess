@@ -1,0 +1,27 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '../../../.ext/arm64-darwin23/-test-/file.bundle'
+relocations:
+  - { offsetInCU: 0x1E, offset: 0x1E, size: 0x8, addend: 0x0, symName: _ruby_abi_version, symObjAddr: 0x0, symBinAddr: 0x34AC, symSize: 0x8 }
+  - { offsetInCU: 0x5E, offset: 0x5E, size: 0x8, addend: 0x0, symName: _ruby_abi_version, symObjAddr: 0x0, symBinAddr: 0x34AC, symSize: 0x8 }
+  - { offsetInCU: 0xA2, offset: 0xA2, size: 0x8, addend: 0x0, symName: _get_fsname, symObjAddr: 0x8, symBinAddr: 0x34B4, symSize: 0x160 }
+  - { offsetInCU: 0x404, offset: 0x404, size: 0x8, addend: 0x0, symName: _get_noatime_p, symObjAddr: 0x168, symBinAddr: 0x3614, symSize: 0xB0 }
+  - { offsetInCU: 0x4BA, offset: 0x4BA, size: 0x8, addend: 0x0, symName: _Init_fs, symObjAddr: 0x218, symBinAddr: 0x36C4, symSize: 0x5C }
+  - { offsetInCU: 0x3E, offset: 0x562, size: 0x8, addend: 0x0, symName: _Init_file, symObjAddr: 0x8, symBinAddr: 0x3720, symSize: 0x44 }
+  - { offsetInCU: 0x3E, offset: 0x68F, size: 0x8, addend: 0x0, symName: _open_with_rb_file_open, symObjAddr: 0x64, symBinAddr: 0x37C0, symSize: 0x18C }
+  - { offsetInCU: 0x63, offset: 0x6B4, size: 0x8, addend: 0x0, symName: __MergedGlobals, symObjAddr: 0x1AD8, symBinAddr: 0x80C8, symSize: 0x0 }
+  - { offsetInCU: 0x78, offset: 0x6C9, size: 0x8, addend: 0x0, symName: __MergedGlobals, symObjAddr: 0x1AD8, symBinAddr: 0x80C8, symSize: 0x0 }
+  - { offsetInCU: 0x8F, offset: 0x6E0, size: 0x8, addend: 0x0, symName: __MergedGlobals, symObjAddr: 0x1AD8, symBinAddr: 0x80C8, symSize: 0x0 }
+  - { offsetInCU: 0xA6, offset: 0x6F7, size: 0x8, addend: 0x0, symName: __MergedGlobals, symObjAddr: 0x1AD8, symBinAddr: 0x80C8, symSize: 0x0 }
+  - { offsetInCU: 0x2C5, offset: 0x916, size: 0x8, addend: 0x0, symName: _open_with_rb_io_fdopen, symObjAddr: 0x1F0, symBinAddr: 0x394C, symSize: 0x1D0 }
+  - { offsetInCU: 0x2E1, offset: 0x932, size: 0x8, addend: 0x0, symName: _open_with_rb_io_fdopen, symObjAddr: 0x1F0, symBinAddr: 0x394C, symSize: 0x1D0 }
+  - { offsetInCU: 0x306, offset: 0x957, size: 0x8, addend: 0x0, symName: __MergedGlobals, symObjAddr: 0x1AD8, symBinAddr: 0x80C8, symSize: 0x0 }
+  - { offsetInCU: 0x31D, offset: 0x96E, size: 0x8, addend: 0x0, symName: __MergedGlobals, symObjAddr: 0x1AD8, symBinAddr: 0x80C8, symSize: 0x0 }
+  - { offsetInCU: 0x334, offset: 0x985, size: 0x8, addend: 0x0, symName: __MergedGlobals, symObjAddr: 0x1AD8, symBinAddr: 0x80C8, symSize: 0x0 }
+  - { offsetInCU: 0x34B, offset: 0x99C, size: 0x8, addend: 0x0, symName: __MergedGlobals, symObjAddr: 0x1AD8, symBinAddr: 0x80C8, symSize: 0x0 }
+  - { offsetInCU: 0x5E4, offset: 0xC35, size: 0x8, addend: 0x0, symName: _Init_newline_conv, symObjAddr: 0x8, symBinAddr: 0x3764, symSize: 0x5C }
+  - { offsetInCU: 0x133, offset: 0xF38, size: 0x8, addend: 0x0, symName: _Init_stat, symObjAddr: 0x8, symBinAddr: 0x3B1C, symSize: 0x5C }
+  - { offsetInCU: 0x1BA, offset: 0xFBF, size: 0x8, addend: 0x0, symName: _stat_for_fd, symObjAddr: 0x64, symBinAddr: 0x3B78, symSize: 0x48 }
+  - { offsetInCU: 0x268, offset: 0x106D, size: 0x8, addend: 0x0, symName: _stat_for_path, symObjAddr: 0xAC, symBinAddr: 0x3BC0, symSize: 0x6C }
+  - { offsetInCU: 0x546, offset: 0x134B, size: 0x8, addend: 0x0, symName: _stat_for_path, symObjAddr: 0xAC, symBinAddr: 0x3BC0, symSize: 0x6C }
+...

@@ -1,0 +1,11 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '../../../.ext/arm64-darwin23/-test-/thread_fd.bundle'
+relocations:
+  - { offsetInCU: 0x1E, offset: 0x1E, size: 0x8, addend: 0x0, symName: _ruby_abi_version, symObjAddr: 0x0, symBinAddr: 0x3D78, symSize: 0x8 }
+  - { offsetInCU: 0x60, offset: 0x60, size: 0x8, addend: 0x0, symName: _ruby_abi_version, symObjAddr: 0x0, symBinAddr: 0x3D78, symSize: 0x8 }
+  - { offsetInCU: 0x79, offset: 0x79, size: 0x8, addend: 0x0, symName: _Init_thread_fd, symObjAddr: 0x8, symBinAddr: 0x3D80, symSize: 0x74 }
+  - { offsetInCU: 0xB1, offset: 0xB1, size: 0x8, addend: 0x0, symName: _thread_fd_close, symObjAddr: 0x7C, symBinAddr: 0x3DF4, symSize: 0x38 }
+  - { offsetInCU: 0x1D4, offset: 0x1D4, size: 0x8, addend: 0x0, symName: _thread_fd_wait, symObjAddr: 0xB4, symBinAddr: 0x3E2C, symSize: 0x48 }
+  - { offsetInCU: 0x2A7, offset: 0x2A7, size: 0x8, addend: 0x0, symName: _thread_fd_writable, symObjAddr: 0xFC, symBinAddr: 0x3E74, symSize: 0x48 }
+...
