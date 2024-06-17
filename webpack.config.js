@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-  entry: './assets/js/_main.js', // Adjust this path to match your actual entry file
+  entry: './package.json', // Adjust the entry point to your main JavaScript file
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
@@ -15,6 +15,7 @@ module.exports = {
           loader: 'babel-loader',
           options: {
             presets: ['@babel/preset-env']
+            // add any other babel options if needed
           }
         }
       }

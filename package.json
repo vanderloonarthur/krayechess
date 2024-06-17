@@ -34,8 +34,9 @@
     "semver": "^5.7.2",
     "source-map": "^0.6.1",
     "supports-color": "^5.5.0",
+    "uglifyjs": "^2.4.11",
     "validate-npm-package-license": "^3.0.4",
-    "vercel": "^32.3.0",
+    "vercel": "^34.2.7",
     "webpack-merge": "^5.10.0"
   },
   "keywords": [
@@ -75,10 +76,10 @@
   "scripts": {
     "uglify": "uglifyjs assets/js/vendor/jquery/jquery-3.6.0.js assets/js/plugins/*.js assets/js/_main.js -c -m -o assets/js/main.min.js",
     "add-banner": "node banner.js",
-    "watch:js": "onchange \"assets/js/**/*.js\" -e \"assets/js/main.min.js\" -- npm run build:js",
-    "build:js": "npm run uglify && npm run add-banner",
-    "build": "npm run lint && npm run compile",
-    "vercel-build": "npm run build && cp -r build/ _site/",
+    "watch:js": "onchange 'assets/js/**/*.js' -e 'assets/js/main.min.js' -- yarn run build:js",
+    "build:js": "yarn run uglify && yarn run add-banner",
+    "build": "yarn run lint && yarn run compile",
+    "vercel-build": "yarn run build && cp -r build/ _site/",
     "vercel": "vercel --prod",
     "lint": "eslint .",
     "compile": "webpack --config webpack.config.js"
