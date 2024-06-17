@@ -184,7 +184,7 @@ Het heeft even mogen duren, maar ik heb uiteindelijk een slaapplek gevonden in G
 • Drugs van de straat • Prostitutie afschaffen • Beschaving brengen
 • Verdrag afsluiten van de landen omringende Nederland: 5 landen verband</p>
 <img src="{{ site.baseurl }}/assets/images/fist.JPG" alt="Powerfist">
-<figcaption>Powerfist[testing12]</figcaption>
+<figcaption>Powerfist[testing13]</figcaption>
 <h3>III. Power to the People</h3>
 <p>
 I was just stopped by the German police in Weener, now I’m in the bus to Leer and going to Berlin.. they wanted to see my passport and asked if I had drugs on me.
