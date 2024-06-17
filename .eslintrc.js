@@ -1,4 +1,5 @@
 module.exports = {
+  plugins: ['babel', 'xo'],
   languageOptions: {
     parserOptions: {
       ecmaVersion: 2021,
@@ -12,6 +13,8 @@ module.exports = {
   },
   extends: ['eslint:recommended'],
   rules: {
+    'babel/new-cap': 'error',
+    'xo/throw-new-error': 'error',
     // Define your ESLint rules here
     // Example:
     // 'no-console': 'warn',

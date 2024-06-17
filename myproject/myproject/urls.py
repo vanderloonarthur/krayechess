@@ -20,6 +20,5 @@ from .views import receive_feedback, feedback_list
 
 urlpatterns = [
     path('receive_feedback/', receive_feedback, name='receive_feedback'),
-    path('feedback/', feedback_list, name='feedback_list'),
-    # other URL patterns for your project...
+    path('feedback_list/', feedback_list, name='feedback_list'),
 ]

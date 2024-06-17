@@ -1,5 +1,3 @@
-<!-- feedback_list.html -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,9 +9,9 @@
     <ul>
         {% for feedback in feedbacks %}
         <li>
-            <strong>Name:</strong> {{ feedback.name }}<br>
-            <strong>Email:</strong> {{ feedback.email }}<br>
-            <strong>Message:</strong> {{ feedback.message }}<br>
+            <strong>Feedback:</strong> {{ feedback.feedback }}<br>
+            <strong>Reaction:</strong> {{ feedback.reaction }}<br>
+            <strong>Additional Comments:</strong> {{ feedback.additional_comments }}<br>
             <strong>Created at:</strong> {{ feedback.created_at }}
         </li>
         {% endfor %}

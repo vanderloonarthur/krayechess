@@ -1,7 +1,6 @@
-# myproject/views.py
 from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
-from .models import Feedback  # Assuming you have a Feedback model defined in your app
+from .models import Feedback
 import json
 from django.shortcuts import render
 
@@ -9,17 +8,14 @@ from django.shortcuts import render
 def receive_feedback(request):
     if request.method == 'POST':
         try:
-            # Assuming the data is sent as JSON
-            data = json.loads(request.body)  # Access POST data
+            data = json.loads(request.body)
             feedback = data.get('feedback')
             reaction = data.get('reaction')
             additional_comments = data.get('additional_comments')
 
-            # Process and validate data (if needed)
-
             # Save data to the database
             try:
-                feedback = Feedback.objects.create(
+                Feedback.objects.create(
                     feedback=feedback,
                     reaction=reaction,
                     additional_comments=additional_comments
