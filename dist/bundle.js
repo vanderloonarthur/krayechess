@@ -1,1 +1,1 @@
-(()=>{"use strict";var r={330:r=>{r.exports={}}},t={};!function e(o){var s=t[o];if(void 0!==s)return s.exports;var p=t[o]={exports:{}};return r[o](p,p.exports,e),p.exports}(330)})();
+(()=>{var r={340:r=>{r.exports={languageOptions:{parserOptions:{ecmaVersion:2021,sourceType:"module"},globals:{browser:!0,node:!0,myCustomGlobal:"readonly"}},plugins:{es:{}},rules:{}}}},e={};!function o(s){var n=e[s];if(void 0!==n)return n.exports;var t=e[s]={exports:{}};return r[s](t,t.exports,o),t.exports}(340)})();
