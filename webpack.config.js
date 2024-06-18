@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-  entry: './package.json', // Adjust the entry point to your main JavaScript file
+  entry: './eslint.config.js', // Adjust the entry point to your main JavaScript file
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
