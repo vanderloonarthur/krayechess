@@ -4,16 +4,19 @@ module.exports = {
       ecmaVersion: 2021,
       sourceType: 'module',
     },
-    globals: {
+    env: {
       browser: true,
       node: true,
       myCustomGlobal: 'readonly',
     },
   },
   plugins: {
-    es: {}, // Ensure this object structure is correct based on the plugin's requirements
+    babel: {}, // Ensure this object is correctly defined based on the plugin's requirements
+    es: {},   // Ensure this object is correctly defined based on the plugin's requirements
   },
+  extends: ['eslint:recommended'], // Adjust based on your preferred ESLint configuration
   rules: {
     // Define your ESLint rules here
   },
 };
+

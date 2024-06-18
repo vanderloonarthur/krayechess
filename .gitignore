@@ -19,6 +19,9 @@ package-lock.json
 codekit-config.json
 package-lock.json
 yarn.lock
+.git/
+logs/
+*.log
 
 # macOS
 .DS_Store
