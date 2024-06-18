@@ -17,10 +17,12 @@ node_modules
 npm-debug.log*
 package-lock.json
 codekit-config.json
+package-lock.json
 yarn.lock
 
 # macOS
 .DS_Store
+.env
 
 # Jekyll generated files
 .jekyll-cache
@@ -35,3 +37,4 @@ dist/
 
 # Vercel specific
 .vercel/
+.vercel
