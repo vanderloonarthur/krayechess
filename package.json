@@ -79,7 +79,7 @@
     "watch:js": "onchange 'assets/js/**/*.js' -e 'assets/js/main.min.js' -- yarn run build:js",
     "build:js": "yarn run uglify && yarn run add-banner",
     "build": "yarn run lint && yarn run compile",
-    "vercel-build": "yarn run build && cp -r build/ _site/",
+    "vercel-build": "npm run build && cp -r build/ _site/",
     "vercel": "vercel --prod",
     "lint": "eslint .",
     "compile": "webpack --config webpack.config.js"
