@@ -17,6 +17,7 @@ node_modules
 npm-debug.log*
 package-lock.json
 codekit-config.json
+yarn.lock
 
 # macOS
 .DS_Store
@@ -28,3 +29,9 @@ codekit-config.json
 _asset_bundler_cache
 _site
 
+# Build output
+build/
+dist/
+
+# Vercel specific
+.vercel/

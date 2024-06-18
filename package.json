@@ -92,5 +92,6 @@
   "resolutions": {
     "crypto-browserify/diffie-hellman": "^5.0.0",
     "node-libs-browser/events": "^3.0.0"
-  }
+  },
+  "packageManager": "yarn@4.3.0"
 }
