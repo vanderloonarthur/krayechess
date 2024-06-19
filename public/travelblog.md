@@ -184,7 +184,7 @@ sidebar:
       </a>
     </div>
     <div class="image-item">
-      <a href="/stuttgart.md/" class="golden-link">
+      <a href="/stuttgart.html/" class="golden-link">
         <img src="/assets/images/stag3.jpeg" alt="Stuttgart" />
         <div class="image-caption">
           <p class="golden-text">Marshall Stuttgart [december 2020]</p>

@@ -1,89 +1,210 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="{{ page.description | default: site.description }}">
+  <title>{{ page.title | default: site.title }}</title>
+  <!-- Google Tag Manager (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HB19E314J8"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/10.12.2/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/10.12.2/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/10.12.2/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/10.12.2/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/10.12.2/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/10.12.2/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/10.12.2/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/10.12.2/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/10.12.2/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/10.12.2/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
-
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
+    gtag('config', 'G-HB19E314J8');
+  </script>
+  <!-- CSS Styles -->
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      overflow: hidden; /* Prevent scrollbars */
+      font-family: "Arial", sans-serif;
+    }
+    .fade-out-element {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: black;
+    }
+    .fullscreen-container {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+    .fullscreen-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 1;
+      transition: opacity 2s ease;
+    }
+    .intro-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: white;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 10px;
+      opacity: 0;
+      transition: opacity 2s ease;
+      font-size: 1.2em;
+    }
+    .enter-button {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 10px 20px;
+      background-color: red;
+      color: white;
+      border: 2px solid silver;
+      cursor: pointer;
+      font-size: 1em;
+      border-radius: 5px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    .enter-button:hover {
+      background-color: green;
+      color: white;
+    }
+    .blog-content {
+      margin: 20px;
+      padding: 20px;
+      background-color: #f0f0f0;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    @media only screen and (max-width: 768px) {
+      .intro-text h1 {
+        font-size: 1.5em;
       }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+      .intro-text p {
+        font-size: 1em;
+      }
+      .enter-button {
+        font-size: 0.8em;
+        padding: 8px 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TXS8FJVW" height="0" width="0" style="display: none; visibility: hidden;"></iframe>
+  </noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  
+  <div class="fade-out-element">
+    <div class="fullscreen-container">
+      <!-- Replace image source with your actual path -->
+      <img src="images/eiffeltower.webp" alt="Eiffel Tower at sunset" class="fullscreen-image" id="fade-out-image" />
+      
+      <!-- Introductory Text Section -->
+      <div class="intro-text" id="intro-text">
+        <h1>Reis door Europa met Arthur Ross!</h1>
+        <p>
+          Ontdek de schoonheid van Europa met onze spannende reisverhalen.
+          Laat je meevoeren naar de meest prachtige bestemmingen en ervaar de
+          cultuur, geschiedenis en het avontuur!
+        </p>
+      </div>
+      <!-- End Introductory Text Section -->
+      
+      <!-- Enter Website Button -->
+      <button class="enter-button" id="enter-button" aria-label="Get ready to enter the website">Get ready!</button>
     </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+  </div>
+  
+  <!-- Audio element to play the tune -->
+  <audio id="intro-tune" src="/audio/intro_tune.wav"></audio>
+  
+  <!-- Include Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth.js"></script>
+  <!-- Initialize Firebase -->
+  <script>
+    const firebaseConfig = {
+        apiKey: process.env.FIREBASE_API_KEY,
+        authDomain: process.env.FIREBASE_AUTH_DOMAIN,
+        projectId: process.env.FIREBASE_PROJECT_ID,
+        storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
+        messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID,
+        appId: process.env.FIREBASE_APP_ID,
+        measurementId: process.env.FIREBASE_MEASUREMENT_ID
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    const auth = firebase.auth();
+</script>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+<!-- JavaScript for Button Click and Audio Playback -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+    var image = document.querySelector(".fullscreen-image");
+    var introText = document.getElementById("intro-text");
+    var button = document.getElementById("enter-button");
+    var audio = document.getElementById("intro-tune");
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
+    var enterWebsite = function () {
+        // Play the audio
+        audio.play().then(function () {
+            // Audio has finished playing
+            // Fade out the image
+            image.style.opacity = 0;
+
+            // Show intro text after a delay
+            setTimeout(function () {
+                introText.style.opacity = 1;
+            }, 1000); // Adjust delay as needed
+
+            // Navigate to travelblog.html after audio duration
+            audio.onended = function () {
+                window.location.href = "travelblog.html";
+            };
+        }).catch(function (error) {
+            console.log("Autoplay failed:", error);
+            // If autoplay fails, you might want to provide an alternative
+            // way to proceed or handle the error gracefully.
+        });
+
+        // Hide button after clicking
+        button.style.display = "none";
+    };
+
+    // Add event listener to the button
+    button.addEventListener("click", enterWebsite);
+
+    // Optional: Prevent default form submission or link navigation
+    document.querySelectorAll('form').forEach(function(form) {
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+            // Handle form submission logic here
+        });
+    });
+
+    // Optional: Handle link click prevention
+    document.querySelectorAll('a').forEach(function(link) {
+        link.addEventListener('click', function(event) {
+            event.preventDefault();
+            // Handle link click logic here
+        });
+    });
+
+    button.focus();
+});
+</script>
+
+  <!-- Showdown library for Markdown to HTML conversion -->
+  <script src="https://cdn.jsdelivr.net/npm/showdown@2.0.0/dist/showdown.min.js"></script>
+</body>
 </html>
