@@ -138,14 +138,13 @@ description: Ontdek de schoonheid van Europa met onze spannende reisverhalen.
       projectId: process.env.FIREBASE_PROJECT_ID,
       storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
       messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID,
-      appId: process.env.FIREBASE_APP_ID
+      appId: process.env.FIREBASE_APP_ID,
       measurementId: process.env.FIREBASE_MEASUREMENT_ID
     };
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
     const auth = firebase.auth();
   </script>
-  
   <!-- JavaScript for Button Click and Google Sign-in -->
   <script>
     document.addEventListener("DOMContentLoaded", function () {
@@ -170,6 +169,23 @@ description: Ontdek de schoonheid van Europa met onze spannende reisverhalen.
 
       button.addEventListener("click", enterWebsite);
 
+      // Optional: Prevent default form submission or link navigation
+      document.querySelectorAll('form').forEach(function(form) {
+        form.addEventListener('submit', function(event) {
+          event.preventDefault();
+          // Handle form submission logic here
+        });
+      });
+
+      // Optional: Handle link click prevention
+      document.querySelectorAll('a').forEach(function(link) {
+        link.addEventListener('click', function(event) {
+          event.preventDefault();
+          // Handle link click logic here
+        });
+      });
+
+      // Optional: Firebase authentication handling
       auth.getRedirectResult().then((result) => {
         if (result.user) {
           console.log('User signed in:', result.user);

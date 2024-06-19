@@ -1,10 +1,12 @@
 {
   "hosting": {
-    "public": "public",
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
+    "public": "public", // Replace with your public directory
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "rewrites": [
+      {
+        "source": "**",
+        "function": "app" // Assuming "app" is the Firebase function serving index.html
+      }
     ]
   }
 }
