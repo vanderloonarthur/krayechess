@@ -1,16 +1,10 @@
 {
   "hosting": {
-    "public": "/arpross", // Replace with your actual public directory if different
+    "public": "public",
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
-    ],
-    "rewrites": [
-      {
-        "source": "**",
-        "destination": "/index.html" // Adjust this to your main HTML file if different
-      }
     ]
   }
 }
