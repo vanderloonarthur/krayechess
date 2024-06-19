@@ -185,7 +185,7 @@ Het heeft even mogen duren, maar ik heb uiteindelijk een slaapplek gevonden in G
 • Verdrag afsluiten van de landen omringende Nederland: 5 landen verband</p>
 <img src="{{ site.baseurl }}/assets/images/fist.JPG" alt="Powerfist">
 <figcaption>Powerfist</figcaption>
-<h3>III. Power to the People</h3>
+<h3>III. Power to the People[test]</h3>
 <p>
 I was just stopped by the German police in Weener, now I’m in the bus to Leer and going to Berlin.. they wanted to see my passport and asked if I had drugs on me.
 I’m in the back of the bus I like the back of the bus. I told myself to not let any woman stop me and trust the planet Mars.
