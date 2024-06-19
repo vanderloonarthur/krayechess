@@ -1,7 +1,8 @@
 const path = require('path');
 
 module.exports = {
-  entry: './eslint.config.js', // Adjust the entry point to your main JavaScript file
+  mode: 'production',
+  entry: './assets/js/_main.js', // Adjust entry point as per your project structure
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
@@ -14,11 +15,10 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['@babel/preset-env']
-            // add any other babel options if needed
-          }
-        }
-      }
-    ]
-  }
+            presets: ['@babel/preset-env'],
+          },
+        },
+      },
+    ],
+  },
 };
