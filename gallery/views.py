@@ -1,5 +1,6 @@
+# gallery/views.py
+
 from django.http import JsonResponse
-from django.http import HttpResponse
 from django.shortcuts import render
 from django.views.decorators.csrf import csrf_exempt
 from .models import Feedback
@@ -35,7 +36,13 @@ def receive_feedback(request):
     else:
         return JsonResponse({'error': 'Invalid request method'}, status=405)
 
-
+@csrf_exempt
 def feedback_list(request):
     feedbacks = Feedback.objects.all()
     return render(request, 'feedback_list.html', {'feedbacks': feedbacks})
+
+def home(request):
+    return render(request, 'home.html')
+
+def about(request):
+    return render(request, 'about.html')
