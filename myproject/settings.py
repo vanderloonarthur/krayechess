@@ -55,6 +55,7 @@ MIDDLEWARE = [
 CORS_ALLOWED_ORIGINS = [
     "http://127.0.0.1:3000",
     "https://www.kraye.nl",
+    "https://kraye.nl",
     # Add more allowed origins if needed
 ]
 
