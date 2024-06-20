@@ -263,73 +263,69 @@
                 button.classList.add('selected-feedback');
                 console.log('Selected Feedback:', feedback, 'Reaction:', reaction);
             }
+
             window.submitFeedback = function () {
-            var selectedButton = document.querySelector('#feedback-buttons button.selected-feedback');
-            var feedback = selectedButton ? selectedButton.textContent : '';
-            var reaction = selectedButton ? selectedButton.getAttribute('aria-label') : '';
-            var additionalComments = document.getElementById("additionalComments").value;
+                var selectedButton = document.querySelector('#feedback-buttons button.selected-feedback');
+                var feedback = selectedButton ? selectedButton.textContent.trim() : '';
+                var reaction = selectedButton ? selectedButton.getAttribute('aria-label').trim() : '';
+                var additionalComments = document.getElementById("additionalComments").value.trim();
 
-            console.log('Feedback:', feedback, 'Reaction:', reaction, 'Additional Comments:', additionalComments);
+                console.log('Feedback:', feedback, 'Reaction:', reaction, 'Additional Comments:', additionalComments);
 
-            sendFeedback(feedback, reaction, additionalComments);
-
-            var confirmationMessage = document.createElement('p');
-            confirmationMessage.innerText = 'Thank you for your feedback!';
-            var modalContent = document.querySelector('.modal-content'); // Corrected quote here
-            modalContent.appendChild(confirmationMessage);
-            setTimeout(function () {
-                closeModal();
-                modalContent.removeChild(confirmationMessage);
-                clearFeedbackSelection();
-            }, 2000);
-        }
-
-        function sendFeedback(feedback, reaction, additionalComments) {
-            var xhr = new XMLHttpRequest();
-            var url = "http://127.0.0.1:8000/gallery/receive_feedback/";
-            xhr.open("POST", url, true);
-            xhr.setRequestHeader("Content-Type", "application/json");
-
-            var payload = JSON.stringify({
-                feedback: feedback,
-                reaction: reaction,
-                additional_comments: additionalComments
-            });
-
-            xhr.onreadystatechange = function () {
-                if (xhr.readyState === 4) {
-                    if (xhr.status === 200) {
-                        console.log('Feedback sent successfully:', xhr.responseText);
-                    } else {
-                        console.error('Error in sending feedback:', xhr.status, xhr.responseText);
-                    }
+                if (feedback === '') {
+                    alert('Please select your feedback!');
+                    return;
                 }
-            };
 
-            xhr.send(payload);
-        }
+                sendFeedback(feedback, reaction, additionalComments);
 
-        window.scrollToTop = function () {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        }
+                var confirmationMessage = document.createElement('p');
+                confirmationMessage.innerText = 'Thank you for your feedback!';
+                var modalContent = document.querySelector('.modal-content');
+                modalContent.appendChild(confirmationMessage);
+                setTimeout(function () {
+                    closeModal();
+                    modalContent.removeChild(confirmationMessage);
+                    clearFeedbackSelection();
+                }, 2000);
+            }
 
-        window.addEventListener('scroll', function () {
-            var scrollUpBtn = document.getElementById("scrollUpBtn");
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                scrollUpBtn.style.display = "block";
-            } else {
-                scrollUpBtn.style.display = "none";
+            function sendFeedback(feedback, reaction, additionalComments) {
+                var xhr = new XMLHttpRequest();
+                var url = "http://127.0.0.1:8000/gallery/receive_feedback/";
+                xhr.open("POST", url, true);
+                xhr.setRequestHeader("Content-Type", "application/json");
+
+                var payload = JSON.stringify({
+                    feedback: feedback,
+                    reaction: reaction,
+                    additional_comments: additionalComments
+                });
+
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState === 4) {
+                        if (xhr.status === 200) {
+                            console.log('Feedback sent successfully:', xhr.responseText);
+                        } else {
+                            console.error('Error in sending feedback:', xhr.status, xhr.responseText);
+                        }
+                    }
+                };
+
+                xhr.send(payload);
+            }
+
+            window.clearFeedbackSelection = function () {
+                document.querySelectorAll('#feedback-buttons button').forEach(function (btn) {
+                    btn.classList.remove('selected-feedback');
+                });
+                document.getElementById("additionalComments").value = '';
+            }
+
+            window.scrollToTop = function () {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
             }
         });
-
-        function clearFeedbackSelection() {
-            var selectedButton = document.querySelector('#feedback-buttons button.selected-feedback');
-            if (selectedButton) {
-                selectedButton.classList.remove('selected-feedback');
-            }
-            document.getElementById("additionalComments").value = '';
-        }
-    });
-</script>
+    </script>
 </body>
 </html>
