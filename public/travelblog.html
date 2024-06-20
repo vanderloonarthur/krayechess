@@ -286,7 +286,7 @@
 
         function sendFeedback(feedback, reaction, additionalComments) {
             var xhr = new XMLHttpRequest();
-            var url = "http://127.0.0.1:8000/receive_feedback/";
+            var url = "http://127.0.0.1:8000/gallery/receive_feedback/";
             xhr.open("POST", url, true);
             xhr.setRequestHeader("Content-Type", "application/json");
 

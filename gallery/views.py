@@ -14,13 +14,16 @@ def receive_feedback(request):
     if request.method == 'POST':
         try:
             data = json.loads(request.body)
+            logger.info(f"Received feedback data: {data}")
+
             feedback = data.get('feedback')
             reaction = data.get('reaction')
             additional_comments = data.get('additional_comments')
 
+            logger.info(f"Feedback: {feedback}, Reaction: {reaction}, Additional comments: {additional_comments}")
+
             # Save data to the database
             try:
-                logger.info(f"Received feedback: {feedback}, reaction: {reaction}, additional_comments: {additional_comments}")
                 Feedback.objects.create(
                     feedback=feedback,
                     reaction=reaction,
@@ -35,6 +38,7 @@ def receive_feedback(request):
             return JsonResponse({'error': 'Invalid request data'}, status=400)
     else:
         return JsonResponse({'error': 'Invalid request method'}, status=405)
+
 
 @csrf_exempt
 def feedback_list(request):
