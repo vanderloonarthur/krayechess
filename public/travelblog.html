@@ -291,33 +291,40 @@
             }
 
             function sendFeedback(feedback, reaction, additionalComments) {
-                var xhr = new XMLHttpRequest();
-                var url = "http://127.0.0.1:8000/gallery/receive_feedback/";
-                xhr.open("POST", url, true);
-                xhr.setRequestHeader("Content-Type", "application/json");
+    var xhr = new XMLHttpRequest();
+    var url = "https://your-secure-api-url.com/gallery/receive_feedback/"; // Use HTTPS URL
+    xhr.open("POST", url, true);
+    xhr.setRequestHeader("Content-Type", "application/json");
 
-                var payload = JSON.stringify({
-                    feedback: feedback,
-                    reaction: reaction,
-                    additional_comments: additionalComments
-                });
+    var payload = JSON.stringify({
+        feedback: feedback,
+        reaction: reaction,
+        additional_comments: additionalComments
+    });
 
-                xhr.onreadystatechange = function () {
-                    if (xhr.readyState === 4) {
-                        if (xhr.status === 200) {
-                            console.log('Feedback sent successfully:', xhr.responseText);
-                        } else {
-                            console.error('Error in sending feedback:', xhr.status, xhr.responseText);
-                        }
-                    }
-                };
-
-                xhr.onerror = function () {
-                    console.error('Request failed.');
-                };
-
-                xhr.send(payload);
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4) {
+            if (xhr.status === 200) {
+                console.log('Feedback sent successfully:', xhr.responseText);
+            } else {
+                console.error('Error in sending feedback:', xhr.status, xhr.responseText);
+                alert('Failed to send feedback. Please try again later.');
             }
+        }
+    };
+
+    xhr.onerror = function () {
+        console.error('Request failed.');
+        alert('Failed to send feedback. Please check your internet connection and try again.');
+    };
+
+    try {
+        xhr.send(payload);
+    } catch (error) {
+        console.error('An error occurred while sending feedback:', error);
+        alert('An error occurred. Please try again later.');
+    }
+}
 
             window.clearFeedbackSelection = function () {
                 document.querySelectorAll('#feedback-buttons button').forEach(function (btn) {

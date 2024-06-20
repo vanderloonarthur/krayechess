@@ -145,3 +145,7 @@ LOGGING = {
         },
     },
 }
+# For HTTPS
+SECURE_SSL_REDIRECT = True  # Ensure that all requests are redirected to HTTPS
+CSRF_COOKIE_SECURE = True
+SESSION_COOKIE_SECURE = True
