@@ -59,6 +59,21 @@ CORS_ALLOWED_ORIGINS = [
     # Add more allowed origins if needed
 ]
 
+CORS_ALLOW_METHODS = [
+    'DELETE',
+    'GET',
+    'OPTIONS',
+    'PATCH',
+    'POST',
+    'PUT',
+]
+
+CORS_ALLOW_HEADERS = [
+    'authorization',
+    'content-type',
+    'x-csrftoken',
+]
+
 ROOT_URLCONF = 'myproject.urls'
 
 TEMPLATES = [
