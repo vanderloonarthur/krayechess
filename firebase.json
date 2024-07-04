@@ -1,6 +1,7 @@
 {
   "functions": {
-    "source": "functions"
+    "source": "functions",
+    "runtime": "nodejs22"
   },
   "hosting": {
     "public": "public",
@@ -8,6 +9,27 @@
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
     ]
+  },
+  "emulators": {
+    "functions": {
+      "port": 5001  // Assuming this is for the functions emulator port, adjust as necessary
+    },
+    "hosting": {
+      "port": 5006  // Change this to a different port number as per your setup
+    },
+    "ui": {
+      "enabled": true
+    },
+    "singleProjectMode": true
+  },
+  "remoteconfig": {
+    "template": "remoteconfig.template.json"
   }
 }
