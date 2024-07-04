@@ -1,5 +1,22 @@
 <html lang="en">
 <head>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database.js"></script>
+    <script>
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+    apiKey: process.env.FIREBASE_API_KEY,
+    authDomain: process.env.FIREBASE_AUTH_DOMAIN,
+    databaseURL: process.env.FIREBASE_DATABASE_URL,
+    projectId: process.env.FIREBASE_PROJECT_ID,
+    storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
+    messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID,
+    appId: process.env.FIREBASE_APP_ID
+};
+
+firebase.initializeApp(firebaseConfig);
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Reis door Europa met Arthur Ross! Ontdek de schoonheid van Europa met deze boeiende reisverhalen.">
@@ -15,11 +32,11 @@
 
         .image-gallery {
             display: grid;
-            grid-template-columns: repeat(2, 1fr); /* 2 columns of equal width */
+            grid-template-columns: repeat(2, 1fr);
             gap: 20px;
             padding: 20px;
-            max-width: 1200px; /* Adjust as needed */
-            margin: auto; /* Center the gallery */
+            max-width: 1200px;
+            margin: auto;
         }
 
         .image-item {
@@ -31,9 +48,9 @@
         }
 
         .image-item img {
-            width: 100%; /* Ensures the image fills its container */
-            height: auto; /* Maintains aspect ratio */
-            object-fit: cover; /* Ensures the image covers its container */
+            width: 100%;
+            height: auto;
+            object-fit: cover;
             transition: transform 0.2s ease-in-out;
             cursor: pointer;
         }
@@ -103,7 +120,6 @@
                 opacity: 0;
                 transform: translate(-50%, -50%) scale(0.5);
             }
-
             to {
                 opacity: 1;
                 transform: translate(-50%, -50%) scale(1);
@@ -164,7 +180,6 @@
             background-color: #FFD700 !important;
         }
 
-        /* New styles for the feedback button */
         .feedback-btn {
             display: block;
             margin: 20px auto;
@@ -187,7 +202,6 @@
 </head>
 
 <body>
-
     <div class="image-gallery">
         <div class="image-item">
             <a href="/milaan.html" class="golden-link">
@@ -223,6 +237,7 @@
         </div>
     </div>
     <button class="feedback-btn" onclick="openModal()" aria-label="Give Feedback">Give Feedback</button>
+    
     <!-- Feedback Modal -->
     <div id="feedback-modal" class="modal">
         <div class="modal-content">
@@ -291,40 +306,40 @@
             }
 
             function sendFeedback(feedback, reaction, additionalComments) {
-    var xhr = new XMLHttpRequest();
-    var url = "https://0.0.0.0/gallery/receive_feedback/"; // Use HTTPS URL
-    xhr.open("POST", url, true);
-    xhr.setRequestHeader("Content-Type", "application/json");
+                var xhr = new XMLHttpRequest();
+                var url = "https://kraye.nl/gallery/receive_feedback/"; // Use HTTPS URL
+                xhr.open("POST", url, true);
+                xhr.setRequestHeader("Content-Type", "application/json");
 
-    var payload = JSON.stringify({
-        feedback: feedback,
-        reaction: reaction,
-        additional_comments: additionalComments
-    });
+                var payload = JSON.stringify({
+                    feedback: feedback,
+                    reaction: reaction,
+                    additional_comments: additionalComments
+                });
 
-    xhr.onreadystatechange = function () {
-        if (xhr.readyState === 4) {
-            if (xhr.status === 200) {
-                console.log('Feedback sent successfully:', xhr.responseText);
-            } else {
-                console.error('Error in sending feedback:', xhr.status, xhr.responseText);
-                alert('Failed to send feedback. Please try again later.');
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState === 4) {
+                        if (xhr.status === 200) {
+                            console.log('Feedback sent successfully:', xhr.responseText);
+                        } else {
+                            console.error('Error in sending feedback:', xhr.status, xhr.responseText);
+                            alert('Failed to send feedback. Please try again later.');
+                        }
+                    }
+                };
+
+                xhr.onerror = function () {
+                    console.error('Request failed.');
+                    alert('Failed to send feedback. Please check your internet connection and try again.');
+                };
+
+                try {
+                    xhr.send(payload);
+                } catch (error) {
+                    console.error('An error occurred while sending feedback:', error);
+                    alert('An error occurred. Please try again later.');
+                }
             }
-        }
-    };
-
-    xhr.onerror = function () {
-        console.error('Request failed.');
-        alert('Failed to send feedback. Please check your internet connection and try again.');
-    };
-
-    try {
-        xhr.send(payload);
-    } catch (error) {
-        console.error('An error occurred while sending feedback:', error);
-        alert('An error occurred. Please try again later.');
-    }
-}
 
             window.clearFeedbackSelection = function () {
                 document.querySelectorAll('#feedback-buttons button').forEach(function (btn) {
@@ -336,6 +351,16 @@
             window.scrollToTop = function () {
                 window.scrollTo({ top: 0, behavior: 'smooth' });
             }
+
+            // Show the scroll-up button when scrolling down
+            window.onscroll = function () {
+                var scrollUpBtn = document.getElementById('scrollUpBtn');
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    scrollUpBtn.style.display = "block";
+                } else {
+                    scrollUpBtn.style.display = "none";
+                }
+            };
         });
     </script>
 </body>
