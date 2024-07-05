@@ -1,29 +1,15 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database.js"></script>
-    <script>
-        // Your web app's Firebase configuration
-        const firebaseConfig = {
-    apiKey: process.env.FIREBASE_API_KEY,
-    authDomain: process.env.FIREBASE_AUTH_DOMAIN,
-    databaseURL: process.env.FIREBASE_DATABASE_URL,
-    projectId: process.env.FIREBASE_PROJECT_ID,
-    storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
-    messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID,
-    appId: process.env.FIREBASE_APP_ID
-};
-
-firebase.initializeApp(firebaseConfig);
-    </script>
-
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Reis door Europa met Arthur Ross! Ontdek de schoonheid van Europa met deze boeiende reisverhalen.">
     <title>Gallery - Reis door Europa met Arthur Ross!</title>
     <style>
         body {
-            color: red !important;
+            color: red;
             background-color: black;
             font-family: 'Arial', sans-serif;
             margin: 0;
@@ -74,7 +60,7 @@ firebase.initializeApp(firebaseConfig);
         }
 
         .golden-link {
-            color: green !important;
+            color: green;
             text-decoration: none;
             font-weight: bold;
         }
@@ -153,13 +139,14 @@ firebase.initializeApp(firebaseConfig);
         }
 
         .modal-content textarea {
-            width: 100%;
+            width: calc(100% - 22px); /* Adjust for border width */
             background-color: #333;
             color: #fff;
             border: 1px solid #888;
             border-radius: 5px;
             padding: 10px;
             resize: none;
+            margin-top: 10px;
         }
 
         .feedback-text {
@@ -262,106 +249,108 @@ firebase.initializeApp(firebaseConfig);
     <button id="scrollUpBtn" onclick="scrollToTop()" aria-label="Scroll to Top">Scroll to Top</button>
 
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            window.openModal = function () {
-                document.getElementById("feedback-modal").style.display = "flex";
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyD0y_hj6GpwTT7XB0ym0TFz194a0VYtgJI",
+            authDomain: "kraye-8f638.firebaseapp.com",
+            projectId: "kraye-8f638",
+            storageBucket: "kraye-8f638.appspot.com",
+            messagingSenderId: "609579364512",
+            databaseURL: "https://kraye-8f638-default-rtdb.europe-west4.firebasedatabase.app",
+            appId: "1:609579364512:web:c3f499cf3ea1015c2b19c5"
+        };
+
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+
+        // Initialize Firestore
+        const db = firebase.firestore();
+
+        // Function to open modal
+        function openModal() {
+            document.getElementById("feedback-modal").style.display = "flex";
+        }
+
+        // Function to close modal
+        function closeModal() {
+            document.getElementById("feedback-modal").style.display = "none";
+        }
+
+        // Function to select feedback
+        function selectFeedback(button, feedback, reaction) {
+            document.querySelectorAll('#feedback-buttons button').forEach(function (btn) {
+                btn.classList.remove('selected-feedback');
+            });
+            button.classList.add('selected-feedback');
+            console.log('Selected Feedback:', feedback, 'Reaction:', reaction);
+        }
+
+        // Function to submit feedback
+        function submitFeedback() {
+            var selectedButton = document.querySelector('#feedback-buttons button.selected-feedback');
+            var feedback = selectedButton ? selectedButton.textContent.trim() : '';
+            var reaction = selectedButton ? selectedButton.getAttribute('aria-label').trim() : '';
+            var additionalComments = document.getElementById("additionalComments").value.trim();
+
+            console.log('Feedback:', feedback, 'Reaction:', reaction, 'Additional Comments:', additionalComments);
+
+            if (feedback === '') {
+                alert('Please select your feedback!');
+                return;
             }
 
-            window.closeModal = function () {
-                document.getElementById("feedback-modal").style.display = "none";
+            sendFeedback(feedback, reaction, additionalComments);
+
+            var confirmationMessage = document.createElement('p');
+            confirmationMessage.innerText = 'Thank you for your feedback!';
+            var modalContent = document.querySelector('.modal-content');
+            modalContent.appendChild(confirmationMessage);
+            setTimeout(function () {
+                closeModal();
+                modalContent.removeChild(confirmationMessage);
+                clearFeedbackSelection();
+            }, 2000);
+        }
+
+        // Function to send feedback to Firestore
+        function sendFeedback(feedback, reaction, additionalComments) {
+            db.collection("feedback").add({
+                feedback: feedback,
+                reaction: reaction,
+                additional_comments: additionalComments,
+                timestamp: firebase.firestore.FieldValue.serverTimestamp()
+            })
+            .then(function(docRef) {
+                console.log("Feedback sent successfully:", docRef.id);
+            })
+            .catch(function(error) {
+                console.error("Error sending feedback:", error);
+                alert('Failed to send feedback. Please try again later.');
+            });
+        }
+
+        // Function to clear feedback selection
+        function clearFeedbackSelection() {
+            document.querySelectorAll('#feedback-buttons button').forEach(function (btn) {
+                btn.classList.remove('selected-feedback');
+            });
+            document.getElementById("additionalComments").value = '';
+        }
+
+        // Function to scroll to top
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Show the scroll-up button when scrolling down
+        window.onscroll = function () {
+            var scrollUpBtn = document.getElementById('scrollUpBtn');
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                scrollUpBtn.style.display = "block";
+            } else {
+                scrollUpBtn.style.display = "none";
             }
-
-            window.selectFeedback = function (button, feedback, reaction) {
-                document.querySelectorAll('#feedback-buttons button').forEach(function (btn) {
-                    btn.classList.remove('selected-feedback');
-                });
-                button.classList.add('selected-feedback');
-                console.log('Selected Feedback:', feedback, 'Reaction:', reaction);
-            }
-
-            window.submitFeedback = function () {
-                var selectedButton = document.querySelector('#feedback-buttons button.selected-feedback');
-                var feedback = selectedButton ? selectedButton.textContent.trim() : '';
-                var reaction = selectedButton ? selectedButton.getAttribute('aria-label').trim() : '';
-                var additionalComments = document.getElementById("additionalComments").value.trim();
-
-                console.log('Feedback:', feedback, 'Reaction:', reaction, 'Additional Comments:', additionalComments);
-
-                if (feedback === '') {
-                    alert('Please select your feedback!');
-                    return;
-                }
-
-                sendFeedback(feedback, reaction, additionalComments);
-
-                var confirmationMessage = document.createElement('p');
-                confirmationMessage.innerText = 'Thank you for your feedback!';
-                var modalContent = document.querySelector('.modal-content');
-                modalContent.appendChild(confirmationMessage);
-                setTimeout(function () {
-                    closeModal();
-                    modalContent.removeChild(confirmationMessage);
-                    clearFeedbackSelection();
-                }, 2000);
-            }
-
-            function sendFeedback(feedback, reaction, additionalComments) {
-                var xhr = new XMLHttpRequest();
-                var url = "https://kraye.nl/gallery/receive_feedback/"; // Use HTTPS URL
-                xhr.open("POST", url, true);
-                xhr.setRequestHeader("Content-Type", "application/json");
-
-                var payload = JSON.stringify({
-                    feedback: feedback,
-                    reaction: reaction,
-                    additional_comments: additionalComments
-                });
-
-                xhr.onreadystatechange = function () {
-                    if (xhr.readyState === 4) {
-                        if (xhr.status === 200) {
-                            console.log('Feedback sent successfully:', xhr.responseText);
-                        } else {
-                            console.error('Error in sending feedback:', xhr.status, xhr.responseText);
-                            alert('Failed to send feedback. Please try again later.');
-                        }
-                    }
-                };
-
-                xhr.onerror = function () {
-                    console.error('Request failed.');
-                    alert('Failed to send feedback. Please check your internet connection and try again.');
-                };
-
-                try {
-                    xhr.send(payload);
-                } catch (error) {
-                    console.error('An error occurred while sending feedback:', error);
-                    alert('An error occurred. Please try again later.');
-                }
-            }
-
-            window.clearFeedbackSelection = function () {
-                document.querySelectorAll('#feedback-buttons button').forEach(function (btn) {
-                    btn.classList.remove('selected-feedback');
-                });
-                document.getElementById("additionalComments").value = '';
-            }
-
-            window.scrollToTop = function () {
-                window.scrollTo({ top: 0, behavior: 'smooth' });
-            }
-
-            // Show the scroll-up button when scrolling down
-            window.onscroll = function () {
-                var scrollUpBtn = document.getElementById('scrollUpBtn');
-                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                    scrollUpBtn.style.display = "block";
-                } else {
-                    scrollUpBtn.style.display = "none";
-                }
-            };
-        });
+        };
     </script>
 </body>
 </html>
